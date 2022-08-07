@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="S261_ADCP">
+<GeographicMap>
+<MapDomain lon_max="204.023" lat_max="21.6071" lon_min="198.254" lat_min="16.3307"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="1" x_right="204.023" y_offset_bb="7" y_length_bb="7" y_top="21.6071" x_length_bb="7" x_projection="100" y_projection="100" y_bottom="16.3307" x_left="198.254"/>
+</Window>
+</MapWindow>
+<Section width="0.003832" coordinate="2">
+<xNodes>202.119,202.085,202.028,201.924,201.856,201.844,201.684,201.546,201.431,200.846,200.582,200.571,200.514,200.387,200.353,200.387,200.296,200.169,200.169,200.124</xNodes>
+<yNodes>21.2597,21.1728,21.1294,20.6083,20.25,20.0654,19.794,19.3706,18.9255,18.6866,17.9918,17.7964,17.6227,17.297,17.1884,17.1124,17.0147,16.7867,16.6998,16.6673</yNodes>
+</Section>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis var_list="2" var_id="0" is_reversed="F"/>
+<!--Latitude-->
+<yAxis var_list="2" var_id="1" is_reversed="F"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<zAxis var_list="2" var_id="7" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="6" window_mode="3" window_type="0"/>
+<Arrows arrow_color="-2" scale="200" x_var_id="5" y_var_id="6" line_style="0" line_width="1"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="11" x_right="204.023" y_offset_bb="2" y_length_bb="17" y_top="21.6071" x_length_bb="15.5" x_projection="100" y_projection="100" y_bottom="16.3307" x_left="198.254"/>
+<ColorScale z_range_start="50" z_range_end="750"/>
+<UnitArrow arrow_color="0" post_data="T" background_color="30" frame_color="0" own_coordinates="F" arrow_length="1" x_coordinate="11.1" dragging="T" y_coordinate="5.11042" text="200 mm/s" font_size="11.938" text_color="0" frame_width="0" clipping="F"/>
+</Window>
+</DataWindow>
+<IsoSurfaceVariables>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--North Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="9" sampleID="0"/>
+</View>

@@ -1,0 +1,1114 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="PIPA topography" version="2.6.0-Brighton">
+    <title>PIPA topography</title>
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+        <customproperties/>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="vector_depths20140720090706377" name="vector depths">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="ETOPO_data20140719212323491" name="ETOPO data">
+            <customproperties>
+                <property key="overview" value="1"/>
+            </customproperties>
+        </layer-tree-layer>
+    </layer-tree-group>
+    <relations/>
+    <mapcanvas>
+        <units>degrees</units>
+        <extent>
+            <xmin>-186.87570460821433471</xmin>
+            <ymin>-6.11951116992512567</ymin>
+            <xmax>-174.63295945603618975</xmax>
+            <ymax>0.23389899478826148</ymax>
+        </extent>
+        <projections>0</projections>
+        <destinationsrs>
+            <spatialrefsys>
+                <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                <srsid>3452</srsid>
+                <srid>4326</srid>
+                <authid>EPSG:4326</authid>
+                <description>WGS 84</description>
+                <projectionacronym>longlat</projectionacronym>
+                <ellipsoidacronym>WGS84</ellipsoidacronym>
+                <geographicflag>true</geographicflag>
+            </spatialrefsys>
+        </destinationsrs>
+        <layer_coordinate_transform_info/>
+    </mapcanvas>
+    <visibility-presets/>
+    <layer-tree-canvas>
+        <custom-order enabled="0">
+            <item>vector_depths20140720090706377</item>
+            <item>ETOPO_data20140719212323491</item>
+        </custom-order>
+    </layer-tree-canvas>
+    <legend updateDrawingOrder="true">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="vector depths" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="vector_depths20140720090706377" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ETOPO data" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="1" layerid="ETOPO_data20140719212323491" visible="1"/>
+            </filegroup>
+        </legendlayer>
+    </legend>
+    <Composer title="PIPA depths" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="279.4" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+            <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+                <Extent ymin="-15.01962609249866887" xmin="-195.55138699091611443" ymax="22.49067483808347845" xmax="-161.99624680800906162"/>
+                <LayerSet/>
+                <Grid/>
+                <ComposerMapGrid leftAnnotationDirection="0" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" gridFramePenThickness="0.5" showAnnotation="0" bottomAnnotationDirection="0" bottomAnnotationPosition="1" name="Grid 1" gridStyle="0" intervalX="0" intervalY="0" gridFrameStyle="0" rightAnnotationPosition="1" topAnnotationDirection="0" leftAnnotationPosition="1" blendMode="0" show="0" frameFillColor1="255,255,255,255" gridFrameWidth="2" frameFillColor2="0,0,0,255" annotationFontColor="0,0,0,255" gridFrameSideFlags="15" gridFramePenColor="0,0,0,255" offsetX="0" annotationPrecision="3" offsetY="0" frameAnnotationDistance="1" unit="0" uuid="{01f99efb-43cf-4d9f-8468-24ecd384f057}" topAnnotationPosition="1" rightAnnotationDirection="0" annotationFormat="0" crossLength="3">
+                    <lineStyle>
+                        <symbol alpha="1" type="line" name="">
+                            <layer pass="0" class="SimpleLine" locked="0">
+                                <prop k="capstyle" v="flat"/>
+                                <prop k="customdash" v="5;2"/>
+                                <prop k="customdash_map_unit_scale" v="0,0"/>
+                                <prop k="customdash_unit" v="MM"/>
+                                <prop k="draw_inside_polygon" v="0"/>
+                                <prop k="joinstyle" v="bevel"/>
+                                <prop k="line_color" v="0,0,0,255"/>
+                                <prop k="line_style" v="solid"/>
+                                <prop k="line_width" v="0.3"/>
+                                <prop k="line_width_unit" v="MM"/>
+                                <prop k="offset" v="0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="use_custom_dash" v="0"/>
+                                <prop k="width_map_unit_scale" v="0,0"/>
+                            </layer>
+                        </symbol>
+                    </lineStyle>
+                    <markerStyle>
+                        <symbol alpha="1" type="marker" name="">
+                            <layer pass="0" class="SimpleMarker" locked="0">
+                                <prop k="angle" v="0"/>
+                                <prop k="color" v="0,0,0,255"/>
+                                <prop k="horizontal_anchor_point" v="1"/>
+                                <prop k="name" v="circle"/>
+                                <prop k="offset" v="0,0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="outline_color" v="0,0,0,255"/>
+                                <prop k="outline_style" v="solid"/>
+                                <prop k="outline_width" v="0"/>
+                                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                                <prop k="outline_width_unit" v="MM"/>
+                                <prop k="scale_method" v="area"/>
+                                <prop k="size" v="2"/>
+                                <prop k="size_map_unit_scale" v="0,0"/>
+                                <prop k="size_unit" v="MM"/>
+                                <prop k="vertical_anchor_point" v="1"/>
+                            </layer>
+                        </symbol>
+                    </markerStyle>
+                </ComposerMapGrid>
+                <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{0acf5c6f-8769-48a7-89f8-9e8179bb7616}" name="Overview 1" show="1" blendMode="0">
+                    <symbol alpha="0.3" type="fill" name="">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_color" v="0,0,0,255"/>
+                            <prop k="outline_style" v="no"/>
+                            <prop k="outline_width" v="0.26"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                        </layer>
+                    </symbol>
+                </ComposerMapOverview>
+                <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+                <ComposerItem pagey="38.7556" page="1" id="" lastValidViewScaleFactor="1.41732" positionMode="0" positionLock="false" x="45.1056" y="38.7556" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="162.178" outlineWidth="0.3" excludeFromExports="0" uuid="{f50867ec-46c4-4a6c-b652-77917f492b67}" height="181.294" itemRotation="0" frame="false" pagex="45.1056">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerMap>
+        </Composition>
+    </Composer>
+    <Composer title="PIPA" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="279.4" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+        </Composition>
+    </Composer>
+    <Composer title="Composer 3" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="355.6" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+        </Composition>
+    </Composer>
+    <Composer title="PIPA topography" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="279.4" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
+                <styles>
+                    <style marginBottom="2" name="title" font=".Lucida Grande UI,16,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="group" font=".Lucida Grande UI,14,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="subgroup" font=".Lucida Grande UI,12,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="symbol" font=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" marginLeft="2" name="symbolLabel" font=".Lucida Grande UI,12,-1,5,50,0,0,0,0,0"/>
+                </styles>
+                <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+                    <customproperties/>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vector_depths20140720090706377" name="vector depths">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ETOPO_data20140719212323491" name="ETOPO data">
+                        <customproperties>
+                            <property key="legend/title-style" value="subgroup"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Shiptrack20140807222839806" name="Shiptrack">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Station_locations20140927211526342" name="Station locations">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                </layer-tree-group>
+                <ComposerItem pagey="60.0844" page="1" id="" lastValidViewScaleFactor="2.0381" positionMode="0" positionLock="false" x="212.453" y="60.0844" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="38.8" outlineWidth="0.3" excludeFromExports="0" uuid="{f42d0d10-797e-4ac1-9b9c-bac59c6c1a04}" height="97.9" itemRotation="0" frame="false" pagex="212.453">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerLegend>
+            <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+                <Extent ymin="-7.9634290213316774" xmin="-176.85641367623526321" ymax="0.60804675834871524" xmax="-168.53828200826956163"/>
+                <LayerSet/>
+                <Grid/>
+                <ComposerMapGrid leftAnnotationDirection="0" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" gridFramePenThickness="0.5" showAnnotation="1" bottomAnnotationDirection="0" bottomAnnotationPosition="1" name="Grid 1" gridStyle="0" intervalX="0.5" intervalY="0.5" gridFrameStyle="0" rightAnnotationPosition="1" topAnnotationDirection="0" leftAnnotationPosition="1" blendMode="0" show="1" frameFillColor1="255,255,255,255" gridFrameWidth="2" frameFillColor2="0,0,0,255" annotationFontColor="0,0,0,255" gridFrameSideFlags="15" gridFramePenColor="0,0,0,255" offsetX="0" annotationPrecision="3" offsetY="0" frameAnnotationDistance="1" unit="0" uuid="{2c6dcfae-88df-44f0-96ba-953ece7248f8}" topAnnotationPosition="1" rightAnnotationDirection="0" annotationFormat="2" crossLength="3">
+                    <lineStyle>
+                        <symbol alpha="1" type="line" name="">
+                            <layer pass="0" class="SimpleLine" locked="0">
+                                <prop k="capstyle" v="flat"/>
+                                <prop k="customdash" v="5;2"/>
+                                <prop k="customdash_map_unit_scale" v="0,0"/>
+                                <prop k="customdash_unit" v="MM"/>
+                                <prop k="draw_inside_polygon" v="0"/>
+                                <prop k="joinstyle" v="bevel"/>
+                                <prop k="line_color" v="0,0,0,255"/>
+                                <prop k="line_style" v="solid"/>
+                                <prop k="line_width" v="0.3"/>
+                                <prop k="line_width_unit" v="MM"/>
+                                <prop k="offset" v="0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="use_custom_dash" v="0"/>
+                                <prop k="width_map_unit_scale" v="0,0"/>
+                            </layer>
+                        </symbol>
+                    </lineStyle>
+                    <markerStyle>
+                        <symbol alpha="1" type="marker" name="">
+                            <layer pass="0" class="SimpleMarker" locked="0">
+                                <prop k="angle" v="0"/>
+                                <prop k="color" v="0,0,0,255"/>
+                                <prop k="horizontal_anchor_point" v="1"/>
+                                <prop k="name" v="circle"/>
+                                <prop k="offset" v="0,0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="outline_color" v="0,0,0,255"/>
+                                <prop k="outline_style" v="solid"/>
+                                <prop k="outline_width" v="0"/>
+                                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                                <prop k="outline_width_unit" v="MM"/>
+                                <prop k="scale_method" v="area"/>
+                                <prop k="size" v="2"/>
+                                <prop k="size_map_unit_scale" v="0,0"/>
+                                <prop k="size_unit" v="MM"/>
+                                <prop k="vertical_anchor_point" v="1"/>
+                            </layer>
+                        </symbol>
+                    </markerStyle>
+                </ComposerMapGrid>
+                <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{f8ae00f4-77c6-4d3f-aa32-bdbb5dcf6ff4}" name="Overview 1" show="1" blendMode="0">
+                    <symbol alpha="0.3" type="fill" name="">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_color" v="0,0,0,255"/>
+                            <prop k="outline_style" v="no"/>
+                            <prop k="outline_width" v="0.26"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                        </layer>
+                    </symbol>
+                </ComposerMapOverview>
+                <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+                <ComposerItem pagey="5" page="1" id="" lastValidViewScaleFactor="2.0381" positionMode="0" positionLock="false" x="4" y="5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="197" outlineWidth="0.3" excludeFromExports="0" uuid="{5e5a3e7b-dd5a-45e8-8ebc-7276a4673da6}" height="203" itemRotation="0" frame="false" pagex="4">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerMap>
+        </Composition>
+    </Composer>
+    <Composer title="Winslow" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="279.4" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
+                <styles>
+                    <style marginBottom="2" name="title" font=".Lucida Grande UI,16,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="group" font=".Lucida Grande UI,14,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="subgroup" font=".Lucida Grande UI,12,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="symbol" font=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" marginLeft="2" name="symbolLabel" font=".Lucida Grande UI,12,-1,5,50,0,0,0,0,0"/>
+                </styles>
+                <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+                    <customproperties/>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vector_depths20140720090706377" name="vector depths">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ETOPO_data20140719212323491" name="ETOPO data">
+                        <customproperties>
+                            <property key="legend/title-style" value="subgroup"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Shiptrack20140807222839806" name="Shiptrack">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Station_locations20140927211526342" name="Station locations">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                </layer-tree-group>
+                <ComposerItem pagey="14.2289" page="1" id="" lastValidViewScaleFactor="2.0381" positionMode="0" positionLock="false" x="231.097" y="14.2289" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="38.8" outlineWidth="0.3" excludeFromExports="0" uuid="{23123ebc-f9f3-48f0-9d86-764a8e305d5b}" height="97.9" itemRotation="0" frame="false" pagex="231.097">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerLegend>
+            <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+                <Extent ymin="-2.8752473911215648" xmin="-175.87548646144790609" ymax="-1.0421677882892193" xmax="-173.83134984942648771"/>
+                <LayerSet/>
+                <Grid/>
+                <ComposerMapGrid leftAnnotationDirection="0" annotationFont="Helvetica,14,-1,5,75,0,0,0,0,0" gridFramePenThickness="0" showAnnotation="1" bottomAnnotationDirection="1" bottomAnnotationPosition="0" name="Grid 1" gridStyle="0" intervalX="0.166666666667" intervalY="0.166666666667" gridFrameStyle="1" rightAnnotationPosition="0" topAnnotationDirection="1" leftAnnotationPosition="0" blendMode="0" show="1" frameFillColor1="255,255,255,255" gridFrameWidth="3" frameFillColor2="0,0,0,255" annotationFontColor="0,0,0,255" gridFrameSideFlags="15" gridFramePenColor="0,0,0,255" offsetX="0" annotationPrecision="0" offsetY="0" frameAnnotationDistance="3" unit="0" uuid="{d7764e1a-5017-495b-9c35-4cd5f8423d1a}" topAnnotationPosition="0" rightAnnotationDirection="0" annotationFormat="1" crossLength="3">
+                    <lineStyle>
+                        <symbol alpha="1" type="line" name="">
+                            <layer pass="0" class="SimpleLine" locked="0">
+                                <prop k="capstyle" v="flat"/>
+                                <prop k="customdash" v="5;2"/>
+                                <prop k="customdash_map_unit_scale" v="0,0"/>
+                                <prop k="customdash_unit" v="MM"/>
+                                <prop k="draw_inside_polygon" v="0"/>
+                                <prop k="joinstyle" v="bevel"/>
+                                <prop k="line_color" v="0,0,0,255"/>
+                                <prop k="line_style" v="solid"/>
+                                <prop k="line_width" v="0.3"/>
+                                <prop k="line_width_unit" v="MM"/>
+                                <prop k="offset" v="0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="use_custom_dash" v="0"/>
+                                <prop k="width_map_unit_scale" v="0,0"/>
+                            </layer>
+                        </symbol>
+                    </lineStyle>
+                    <markerStyle>
+                        <symbol alpha="1" type="marker" name="">
+                            <layer pass="0" class="SimpleMarker" locked="0">
+                                <prop k="angle" v="0"/>
+                                <prop k="color" v="0,0,0,255"/>
+                                <prop k="horizontal_anchor_point" v="1"/>
+                                <prop k="name" v="circle"/>
+                                <prop k="offset" v="0,0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="outline_color" v="0,0,0,255"/>
+                                <prop k="outline_style" v="solid"/>
+                                <prop k="outline_width" v="0"/>
+                                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                                <prop k="outline_width_unit" v="MM"/>
+                                <prop k="scale_method" v="area"/>
+                                <prop k="size" v="2"/>
+                                <prop k="size_map_unit_scale" v="0,0"/>
+                                <prop k="size_unit" v="MM"/>
+                                <prop k="vertical_anchor_point" v="1"/>
+                            </layer>
+                        </symbol>
+                    </markerStyle>
+                </ComposerMapGrid>
+                <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{e93dad0a-1601-4002-829d-2a60bfd050e1}" name="Overview 1" show="1" blendMode="0">
+                    <symbol alpha="0.3" type="fill" name="">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_color" v="0,0,0,255"/>
+                            <prop k="outline_style" v="no"/>
+                            <prop k="outline_width" v="0.26"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                        </layer>
+                    </symbol>
+                </ComposerMapOverview>
+                <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+                <ComposerItem pagey="14.8659" page="1" id="" lastValidViewScaleFactor="2.0381" positionMode="0" positionLock="false" x="13" y="14.8659" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="207.603" outlineWidth="0.3" excludeFromExports="0" uuid="{243e291b-7476-4357-9ba3-3b3b375a3963}" height="186.168" itemRotation="0" frame="true" pagex="13">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerMap>
+        </Composition>
+    </Composer>
+    <Composer title="PIPAMAP" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="279.4" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
+                <styles>
+                    <style marginBottom="2" name="title" font=".Lucida Grande UI,16,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="group" font=".Lucida Grande UI,14,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="subgroup" font=".Lucida Grande UI,12,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" name="symbol" font=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" marginLeft="2" name="symbolLabel" font=".Lucida Grande UI,12,-1,5,50,0,0,0,0,0"/>
+                </styles>
+                <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+                    <customproperties/>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vector_depths20140720090706377" name="vector depths">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Shiptrack20140807222839806" name="Shiptrack">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ETOPO_data20140719212323491" name="ETOPO data">
+                        <customproperties>
+                            <property key="legend/title-style" value="subgroup"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Station_locations20140927211526342" name="Station locations">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                </layer-tree-group>
+                <ComposerItem pagey="60.0233" page="1" id="" lastValidViewScaleFactor="2.0381" positionMode="0" positionLock="false" x="238.42" y="60.0233" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="38.8" outlineWidth="0.3" excludeFromExports="0" uuid="{8b509293-e4c5-497d-a9db-3a5a7c2eda51}" height="97.9" itemRotation="0" frame="false" pagex="238.42">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerLegend>
+            <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+                <Extent ymin="-6.63749999964946902" xmin="-176.24539473641777931" ymax="-0.49776315828954321" xmax="-169.25460526358222069"/>
+                <LayerSet/>
+                <Grid/>
+                <ComposerMapGrid leftAnnotationDirection="0" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" gridFramePenThickness="0.5" showAnnotation="0" bottomAnnotationDirection="0" bottomAnnotationPosition="1" name="Grid 1" gridStyle="0" intervalX="0.5" intervalY="0.5" gridFrameStyle="0" rightAnnotationPosition="1" topAnnotationDirection="0" leftAnnotationPosition="1" blendMode="0" show="1" frameFillColor1="255,255,255,255" gridFrameWidth="2" frameFillColor2="0,0,0,255" annotationFontColor="0,0,0,255" gridFrameSideFlags="15" gridFramePenColor="0,0,0,255" offsetX="0" annotationPrecision="3" offsetY="0" frameAnnotationDistance="1" unit="0" uuid="{f1ae1081-fd5a-4f16-8c33-d294d53c73d9}" topAnnotationPosition="1" rightAnnotationDirection="0" annotationFormat="1" crossLength="3">
+                    <lineStyle>
+                        <symbol alpha="1" type="line" name="">
+                            <layer pass="0" class="SimpleLine" locked="0">
+                                <prop k="capstyle" v="round"/>
+                                <prop k="customdash" v="5;2"/>
+                                <prop k="customdash_map_unit_scale" v="0,0"/>
+                                <prop k="customdash_unit" v="MM"/>
+                                <prop k="draw_inside_polygon" v="0"/>
+                                <prop k="joinstyle" v="round"/>
+                                <prop k="line_color" v="88,83,209,255"/>
+                                <prop k="line_style" v="dash"/>
+                                <prop k="line_width" v="0.06"/>
+                                <prop k="line_width_unit" v="MM"/>
+                                <prop k="offset" v="0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="use_custom_dash" v="0"/>
+                                <prop k="width_map_unit_scale" v="0,0"/>
+                            </layer>
+                        </symbol>
+                    </lineStyle>
+                    <markerStyle>
+                        <symbol alpha="1" type="marker" name="">
+                            <layer pass="0" class="SimpleMarker" locked="0">
+                                <prop k="angle" v="0"/>
+                                <prop k="color" v="0,0,0,255"/>
+                                <prop k="horizontal_anchor_point" v="1"/>
+                                <prop k="name" v="circle"/>
+                                <prop k="offset" v="0,0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="outline_color" v="0,0,0,255"/>
+                                <prop k="outline_style" v="solid"/>
+                                <prop k="outline_width" v="0"/>
+                                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                                <prop k="outline_width_unit" v="MM"/>
+                                <prop k="scale_method" v="area"/>
+                                <prop k="size" v="2"/>
+                                <prop k="size_map_unit_scale" v="0,0"/>
+                                <prop k="size_unit" v="MM"/>
+                                <prop k="vertical_anchor_point" v="1"/>
+                            </layer>
+                        </symbol>
+                    </markerStyle>
+                </ComposerMapGrid>
+                <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{d6976561-509b-463d-8c13-d49ab94961f3}" name="Overview 1" show="1" blendMode="0">
+                    <symbol alpha="0.3" type="fill" name="">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_color" v="0,0,0,255"/>
+                            <prop k="outline_style" v="no"/>
+                            <prop k="outline_width" v="0.26"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                        </layer>
+                    </symbol>
+                </ComposerMapOverview>
+                <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+                <ComposerItem pagey="7" page="1" id="" lastValidViewScaleFactor="2.0381" positionMode="0" positionLock="false" x="6" y="7" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="230" outlineWidth="0.3" excludeFromExports="0" uuid="{4658a2a4-fd9d-411b-8310-9e5007ab361a}" height="202" itemRotation="0" frame="false" pagex="6">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerMap>
+        </Composition>
+    </Composer>
+    <Composer title="Pipa stations" visible="0">
+        <Composition gridVisible="0" printResolution="300" paperWidth="279.4" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="10" numPages="1" paperHeight="215.9" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+            <symbol alpha="1" type="fill" name="">
+                <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
+                    <prop k="color" v="255,255,255,255"/>
+                    <prop k="joinstyle" v="bevel"/>
+                    <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="outline_color" v="0,0,0,255"/>
+                    <prop k="outline_style" v="no"/>
+                    <prop k="outline_width" v="0.26"/>
+                    <prop k="outline_width_unit" v="MM"/>
+                    <prop k="style" v="solid"/>
+                </layer>
+            </symbol>
+            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
+                <styles>
+                    <style marginBottom="2" name="title" font="Helvetica,14,-1,5,50,1,0,0,0,0"/>
+                    <style marginTop="2" name="group" font="Helvetica,11,-1,5,50,1,0,0,0,0"/>
+                    <style marginTop="2" name="subgroup" font="Helvetica,11,-1,5,50,1,0,0,0,0"/>
+                    <style marginTop="2" name="symbol" font=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0"/>
+                    <style marginTop="2" marginLeft="2" name="symbolLabel" font="Helvetica,11,-1,5,50,1,0,0,0,0"/>
+                </styles>
+                <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+                    <customproperties/>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Station_locations20140927211526342" name="Station locations">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="vector_depths20140720090706377" name="vector depths">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Shiptrack20140807222839806" name="Shiptrack">
+                        <customproperties>
+                            <property key="legend/title-style" value="hidden"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ETOPO_data20140719212323491" name="ETOPO data">
+                        <customproperties>
+                            <property key="legend/title-style" value="subgroup"/>
+                        </customproperties>
+                    </layer-tree-layer>
+                </layer-tree-group>
+                <ComposerItem pagey="90.2044" page="1" id="" lastValidViewScaleFactor="2.76124" positionMode="0" positionLock="false" x="204.091" y="90.2044" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="37.4" outlineWidth="0.3" excludeFromExports="0" uuid="{15f3703c-b1cb-4c3f-bbc1-1bd9578be1e2}" height="98.1" itemRotation="0" frame="false" pagex="204.091">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerLegend>
+            <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+                <Extent ymin="-6.79307788179447414" xmin="-176.34636476939346039" ymax="-0.706907747117552" xmax="-169.15363523060653961"/>
+                <LayerSet/>
+                <Grid/>
+                <ComposerMapGrid leftAnnotationDirection="0" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" gridFramePenThickness="0.5" showAnnotation="1" bottomAnnotationDirection="0" bottomAnnotationPosition="1" name="Grid 1" gridStyle="0" intervalX="1" intervalY="1" gridFrameStyle="1" rightAnnotationPosition="1" topAnnotationDirection="0" leftAnnotationPosition="1" blendMode="0" show="1" frameFillColor1="255,255,255,255" gridFrameWidth="2" frameFillColor2="0,0,0,255" annotationFontColor="0,0,0,255" gridFrameSideFlags="15" gridFramePenColor="0,0,0,255" offsetX="0" annotationPrecision="0" offsetY="0" frameAnnotationDistance="1" unit="0" uuid="{3c085787-f6dd-4e4b-a085-c0d971041a81}" topAnnotationPosition="1" rightAnnotationDirection="0" annotationFormat="1" crossLength="3">
+                    <lineStyle>
+                        <symbol alpha="1" type="line" name="">
+                            <layer pass="0" class="SimpleLine" locked="0">
+                                <prop k="capstyle" v="flat"/>
+                                <prop k="customdash" v="5;2"/>
+                                <prop k="customdash_map_unit_scale" v="0,0"/>
+                                <prop k="customdash_unit" v="MM"/>
+                                <prop k="draw_inside_polygon" v="0"/>
+                                <prop k="joinstyle" v="bevel"/>
+                                <prop k="line_color" v="0,0,0,255"/>
+                                <prop k="line_style" v="solid"/>
+                                <prop k="line_width" v="0.3"/>
+                                <prop k="line_width_unit" v="MM"/>
+                                <prop k="offset" v="0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="use_custom_dash" v="0"/>
+                                <prop k="width_map_unit_scale" v="0,0"/>
+                            </layer>
+                        </symbol>
+                    </lineStyle>
+                    <markerStyle>
+                        <symbol alpha="1" type="marker" name="">
+                            <layer pass="0" class="SimpleMarker" locked="0">
+                                <prop k="angle" v="0"/>
+                                <prop k="color" v="0,0,0,255"/>
+                                <prop k="horizontal_anchor_point" v="1"/>
+                                <prop k="name" v="circle"/>
+                                <prop k="offset" v="0,0"/>
+                                <prop k="offset_map_unit_scale" v="0,0"/>
+                                <prop k="offset_unit" v="MM"/>
+                                <prop k="outline_color" v="0,0,0,255"/>
+                                <prop k="outline_style" v="solid"/>
+                                <prop k="outline_width" v="0"/>
+                                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                                <prop k="outline_width_unit" v="MM"/>
+                                <prop k="scale_method" v="area"/>
+                                <prop k="size" v="2"/>
+                                <prop k="size_map_unit_scale" v="0,0"/>
+                                <prop k="size_unit" v="MM"/>
+                                <prop k="vertical_anchor_point" v="1"/>
+                            </layer>
+                        </symbol>
+                    </markerStyle>
+                </ComposerMapGrid>
+                <ComposerMapOverview frameMap="-1" centered="0" inverted="0" uuid="{16dd8657-6a49-434f-b85d-8e5d38c34d6b}" name="Overview 1" show="1" blendMode="0">
+                    <symbol alpha="0.3" type="fill" name="">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_color" v="0,0,0,255"/>
+                            <prop k="outline_style" v="no"/>
+                            <prop k="outline_width" v="0.26"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                        </layer>
+                    </symbol>
+                </ComposerMapOverview>
+                <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+                <ComposerItem pagey="12.3554" page="1" id="" lastValidViewScaleFactor="2.76124" positionMode="0" positionLock="true" x="20.9419" y="12.3554" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="231" outlineWidth="0.3" excludeFromExports="0" uuid="{f617fed9-c2a3-400b-988d-7611ae1722f7}" height="195.462" itemRotation="0" frame="false" pagex="20.9419">
+                    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+                </ComposerItem>
+            </ComposerMap>
+        </Composition>
+    </Composer>
+    <projectlayers layercount="2">
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>ETOPO_data20140719212323491</id>
+            <datasource>./ETOPO data.csv</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>ETOPO data</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties>
+                <property key="identify/format" value="Value"/>
+            </customproperties>
+            <provider>gdal</provider>
+            <noData>
+                <noDataList bandNo="1" useSrcNoData="0"/>
+            </noData>
+            <pipe>
+                <rasterrenderer opacity="1" alphaBand="-1" classificationMax="-2" classificationMinMaxOrigin="MinMaxFullExtentEstimated" band="1" classificationMin="-6783" type="singlebandpseudocolor">
+                    <rasterTransparency/>
+                    <rastershader>
+                        <colorrampshader colorRampType="INTERPOLATED" clip="0">
+                            <item alpha="255" value="-6783" label="-6783.000000" color="#0571b0"/>
+                            <item alpha="255" value="-6166.55" label="-6166.545455" color="#388fc0"/>
+                            <item alpha="255" value="-5550.09" label="-5550.090909" color="#6baed1"/>
+                            <item alpha="255" value="-4933.64" label="-4933.636364" color="#9bc9e0"/>
+                            <item alpha="255" value="-4317.18" label="-4317.181818" color="#bfdbe9"/>
+                            <item alpha="255" value="-3700.73" label="-3700.727273" color="#e4edf2"/>
+                            <item alpha="255" value="-3084.27" label="-3084.272727" color="#f6e8e1"/>
+                            <item alpha="255" value="-2467.82" label="-2467.818182" color="#f5cab7"/>
+                            <item alpha="255" value="-1851.36" label="-1851.363636" color="#f4ac8c"/>
+                            <item alpha="255" value="-1234.91" label="-1234.909091" color="#e87867"/>
+                            <item alpha="255" value="-618.455" label="-618.454545" color="#d93c43"/>
+                            <item alpha="255" value="-2" label="-2.000000" color="#ca0020"/>
+                        </colorrampshader>
+                    </rastershader>
+                </rasterrenderer>
+                <brightnesscontrast brightness="0" contrast="0"/>
+                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+                <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>0</blendMode>
+        </maplayer>
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>vector_depths20140720090706377</id>
+            <datasource>./vector depths.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>vector depths</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">ogr</provider>
+            <previewExpression>COALESCE( "ID", '&lt;NULL>' )</previewExpression>
+            <vectorjoins/>
+            <expressionfields/>
+            <edittypes>
+                <edittype widgetv2type="TextEdit" name="ID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="line_color" v="0,0,0,255"/>
+                            <prop k="line_style" v="solid"/>
+                            <prop k="line_width" v="0.26"/>
+                            <prop k="line_width_unit" v="MM"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/angleOffset" value="0"/>
+                <property key="labeling/blendMode" value="0"/>
+                <property key="labeling/bufferBlendMode" value="0"/>
+                <property key="labeling/bufferColorA" value="255"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferDraw" value="false"/>
+                <property key="labeling/bufferJoinStyle" value="64"/>
+                <property key="labeling/bufferNoFill" value="false"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/bufferSizeInMapUnits" value="false"/>
+                <property key="labeling/bufferTransp" value="0"/>
+                <property key="labeling/centroidWhole" value="false"/>
+                <property key="labeling/decimals" value="3"/>
+                <property key="labeling/displayAll" value="false"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="false"/>
+                <property key="labeling/fieldName" value=""/>
+                <property key="labeling/fontBold" value="false"/>
+                <property key="labeling/fontCapitals" value="0"/>
+                <property key="labeling/fontFamily" value=".Lucida Grande UI"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontLetterSpacing" value="0"/>
+                <property key="labeling/fontLimitPixelSize" value="false"/>
+                <property key="labeling/fontMaxPixelSize" value="10000"/>
+                <property key="labeling/fontMinPixelSize" value="3"/>
+                <property key="labeling/fontSize" value="13"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/fontWordSpacing" value="0"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="false"/>
+                <property key="labeling/labelOffsetInMapUnits" value="true"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+                <property key="labeling/limitNumLabels" value="false"/>
+                <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+                <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+                <property key="labeling/maxNumLabels" value="2000"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="0"/>
+                <property key="labeling/multilineAlign" value="0"/>
+                <property key="labeling/multilineHeight" value="1"/>
+                <property key="labeling/namedStyle" value=""/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/placeDirectionSymbol" value="0"/>
+                <property key="labeling/placement" value="2"/>
+                <property key="labeling/placementFlags" value="10"/>
+                <property key="labeling/plussign" value="false"/>
+                <property key="labeling/preserveRotation" value="true"/>
+                <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/quadOffset" value="4"/>
+                <property key="labeling/reverseDirectionSymbol" value="false"/>
+                <property key="labeling/rightDirectionSymbol" value=">"/>
+                <property key="labeling/scaleMax" value="10000000"/>
+                <property key="labeling/scaleMin" value="1"/>
+                <property key="labeling/scaleVisibility" value="false"/>
+                <property key="labeling/shadowBlendMode" value="6"/>
+                <property key="labeling/shadowColorB" value="0"/>
+                <property key="labeling/shadowColorG" value="0"/>
+                <property key="labeling/shadowColorR" value="0"/>
+                <property key="labeling/shadowDraw" value="false"/>
+                <property key="labeling/shadowOffsetAngle" value="135"/>
+                <property key="labeling/shadowOffsetDist" value="1"/>
+                <property key="labeling/shadowOffsetGlobal" value="true"/>
+                <property key="labeling/shadowOffsetUnits" value="1"/>
+                <property key="labeling/shadowRadius" value="1.5"/>
+                <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+                <property key="labeling/shadowRadiusUnits" value="1"/>
+                <property key="labeling/shadowScale" value="100"/>
+                <property key="labeling/shadowTransparency" value="30"/>
+                <property key="labeling/shadowUnder" value="0"/>
+                <property key="labeling/shapeBlendMode" value="0"/>
+                <property key="labeling/shapeBorderColorA" value="255"/>
+                <property key="labeling/shapeBorderColorB" value="128"/>
+                <property key="labeling/shapeBorderColorG" value="128"/>
+                <property key="labeling/shapeBorderColorR" value="128"/>
+                <property key="labeling/shapeBorderWidth" value="0"/>
+                <property key="labeling/shapeBorderWidthUnits" value="1"/>
+                <property key="labeling/shapeDraw" value="false"/>
+                <property key="labeling/shapeFillColorA" value="255"/>
+                <property key="labeling/shapeFillColorB" value="255"/>
+                <property key="labeling/shapeFillColorG" value="255"/>
+                <property key="labeling/shapeFillColorR" value="255"/>
+                <property key="labeling/shapeJoinStyle" value="64"/>
+                <property key="labeling/shapeOffsetUnits" value="1"/>
+                <property key="labeling/shapeOffsetX" value="0"/>
+                <property key="labeling/shapeOffsetY" value="0"/>
+                <property key="labeling/shapeRadiiUnits" value="1"/>
+                <property key="labeling/shapeRadiiX" value="0"/>
+                <property key="labeling/shapeRadiiY" value="0"/>
+                <property key="labeling/shapeRotation" value="0"/>
+                <property key="labeling/shapeRotationType" value="0"/>
+                <property key="labeling/shapeSVGFile" value=""/>
+                <property key="labeling/shapeSizeType" value="0"/>
+                <property key="labeling/shapeSizeUnits" value="1"/>
+                <property key="labeling/shapeSizeX" value="0"/>
+                <property key="labeling/shapeSizeY" value="0"/>
+                <property key="labeling/shapeTransparency" value="0"/>
+                <property key="labeling/shapeType" value="0"/>
+                <property key="labeling/textColorA" value="255"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+                <property key="labeling/textTransp" value="0"/>
+                <property key="labeling/upsidedownLabels" value="0"/>
+                <property key="labeling/wrapChar" value=""/>
+                <property key="labeling/xOffset" value="0"/>
+                <property key="labeling/yOffset" value="0"/>
+            </customproperties>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>ID</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name=".Lucida Grande UI"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+            <edittypes>
+                <edittype widgetv2type="TextEdit" name="ID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
+        </maplayer>
+    </projectlayers>
+    <properties>
+        <WMSContactPerson type="QString"></WMSContactPerson>
+        <WMSOnlineResource type="QString"></WMSOnlineResource>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
+        <WMSKeywordList type="QStringList">
+            <value></value>
+        </WMSKeywordList>
+        <WFSUrl type="QString"></WFSUrl>
+        <Paths>
+            <Absolute type="bool">false</Absolute>
+        </Paths>
+        <WMSServiceTitle type="QString"></WMSServiceTitle>
+        <WFSLayers type="QStringList"/>
+        <WMSContactMail type="QString"></WMSContactMail>
+        <PositionPrecision>
+            <DecimalPlaces type="int">2</DecimalPlaces>
+            <Automatic type="bool">true</Automatic>
+            <DegreeFormat type="QString">DM</DegreeFormat>
+        </PositionPrecision>
+        <WCSUrl type="QString"></WCSUrl>
+        <WMSContactPhone type="QString"></WMSContactPhone>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+        <NorthArrow>
+            <Rotation type="int">0</Rotation>
+            <Enabled type="bool">false</Enabled>
+            <Placement type="int">0</Placement>
+            <Automatic type="bool">true</Automatic>
+        </NorthArrow>
+        <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+        <Measure>
+            <Ellipsoid type="QString">NONE</Ellipsoid>
+        </Measure>
+        <WFSTLayers>
+            <Insert type="QStringList"/>
+            <Update type="QStringList"/>
+            <Delete type="QStringList"/>
+        </WFSTLayers>
+        <Gui>
+            <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+            <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+            <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+            <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+            <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+            <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+            <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+        </Gui>
+        <Digitizing>
+            <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+            <LayerSnappingList type="QStringList">
+                <value>vector_depths20140720090706377</value>
+            </LayerSnappingList>
+            <LayerSnappingEnabledList type="QStringList">
+                <value>disabled</value>
+            </LayerSnappingEnabledList>
+            <SnappingMode type="QString">advanced</SnappingMode>
+            <AvoidIntersectionsList type="QStringList"/>
+            <LayerSnappingToleranceUnitList type="QStringList">
+                <value>0</value>
+            </LayerSnappingToleranceUnitList>
+            <LayerSnapToList type="QStringList">
+                <value>to_vertex_and_segment</value>
+            </LayerSnapToList>
+            <DefaultSnapType type="QString">off</DefaultSnapType>
+            <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+            <LayerSnappingToleranceList type="QStringList">
+                <value>0.000000</value>
+            </LayerSnappingToleranceList>
+        </Digitizing>
+        <Identify>
+            <disabledLayers type="QStringList"/>
+        </Identify>
+        <Macros>
+            <pythonCode type="QString"></pythonCode>
+        </Macros>
+        <Grid>
+            <AnnotationFrameDistance type="double">0</AnnotationFrameDistance>
+            <IntervalX type="double">0.5</IntervalX>
+            <IntervalY type="double">0.5</IntervalY>
+            <AnnotationFont type="QString">.Lucida Grande UI,16,-1,5,50,0,0,0,0,0</AnnotationFont>
+            <AnnotationPrecision type="int">0</AnnotationPrecision>
+            <MarkerSymbol type="QString">&lt;symbol alpha="1" type="marker" name="marker symbol">
+ &lt;layer pass="0" class="SimpleMarker" locked="0">
+  &lt;prop k="angle" v="0"/>
+  &lt;prop k="color" v="255,0,0,255"/>
+  &lt;prop k="color_border" v="0,0,0,255"/>
+  &lt;prop k="horizontal_anchor_point" v="1"/>
+  &lt;prop k="name" v="cross"/>
+  &lt;prop k="offset" v="0,0"/>
+  &lt;prop k="offset_unit" v="MM"/>
+  &lt;prop k="outline_style" v="solid"/>
+  &lt;prop k="outline_width" v="0"/>
+  &lt;prop k="outline_width_unit" v="MM"/>
+  &lt;prop k="scale_method" v="area"/>
+  &lt;prop k="size" v="20"/>
+  &lt;prop k="size_unit" v="MM"/>
+  &lt;prop k="vertical_anchor_point" v="1"/>
+ &lt;/layer>
+&lt;/symbol>
+</MarkerSymbol>
+            <Enabled type="bool">true</Enabled>
+            <AnnotationDirection type="int">0</AnnotationDirection>
+            <LineSymbol type="QString">&lt;symbol alpha="1" type="line" name="line symbol">
+ &lt;layer pass="0" class="SimpleLine" locked="0">
+  &lt;prop k="capstyle" v="square"/>
+  &lt;prop k="color" v="0,0,0,255"/>
+  &lt;prop k="customdash" v="5;2"/>
+  &lt;prop k="customdash_unit" v="MM"/>
+  &lt;prop k="draw_inside_polygon" v="0"/>
+  &lt;prop k="joinstyle" v="bevel"/>
+  &lt;prop k="offset" v="0"/>
+  &lt;prop k="offset_unit" v="MM"/>
+  &lt;prop k="penstyle" v="solid"/>
+  &lt;prop k="use_custom_dash" v="0"/>
+  &lt;prop k="width" v="0.26"/>
+  &lt;prop k="width_unit" v="MM"/>
+ &lt;/layer>
+&lt;/symbol>
+</LineSymbol>
+            <MapUnits type="int">2</MapUnits>
+            <Style type="int">0</Style>
+            <OffsetX type="double">0</OffsetX>
+            <ShowAnnotation type="bool">false</ShowAnnotation>
+            <OffsetY type="double">0</OffsetY>
+        </Grid>
+        <WMSAccessConstraints type="QString"></WMSAccessConstraints>
+        <WCSLayers type="QStringList"/>
+        <Legend>
+            <filterByMap type="bool">false</filterByMap>
+        </Legend>
+        <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+            <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+            <ProjectCRSID type="int">3452</ProjectCRSID>
+        </SpatialRefSys>
+        <DefaultStyles>
+            <Fill type="QString"></Fill>
+            <Line type="QString"></Line>
+            <Marker type="QString"></Marker>
+            <RandomColors type="bool">true</RandomColors>
+            <AlphaInt type="int">255</AlphaInt>
+            <ColorRamp type="QString"></ColorRamp>
+        </DefaultStyles>
+        <WMSFees type="QString"></WMSFees>
+        <WMSUrl type="QString"></WMSUrl>
+    </properties>
+</qgis>

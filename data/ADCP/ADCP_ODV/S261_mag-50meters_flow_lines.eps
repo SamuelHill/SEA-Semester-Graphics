@@ -1,0 +1,12531 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: S261_mag-50meters_flow_lines.eps
+%%Creator: Ocean Data View, 4.6.3
+%%CreationDate: Aug/11/2015 20:26:53
+%%Pages: 1
+%%DocumentFonts: Arial-BoldItalic Arial-Bold
+%%BoundingBox: 41 231 578 608
+%%EndComments
+%%BeginProlog
+%This is the "PS_Graph" Version 2.22 preamble (May/23/2013)
+%(c) Reiner Schlitzer, 2013
+
+/BeginPlot { /preVMState save def
+	     /BeginMatrix matrix currentmatrix def init } def
+/EndPlot { preVMState restore } def
+
+%                                       abbreviations
+/Fill { gsave fill grestore } bind def
+/np   { newpath } bind def
+
+/tmpstr 20 string def
+/PrintNum {				% num
+  tmpstr cvs print ( ) print } def
+/PrintLn { (\n) print flush } def
+%					text-alignment constants
+/TA_CC 0 def /TA_CU 1 def /TA_CL 2 def 
+/TA_RU 3 def /TA_RL 4 def /TA_LU 5 def 
+/TA_LL 6 def /TA_RC 7 def /TA_LC 8 def 
+%					ABBREVIATIONS
+/xdef { exch def }     bind def     /S    { setrgbcolor }  bind def
+/smul { scalefak mul } bind def     /sdiv { scalefak div } bind def
+/m    {moveto}         bind def     /l    {lineto}         bind def
+/rm   {rmoveto}        bind def     /rl   {rlineto}        bind def
+%					FONTS
+/getfont {                              %fontsize (pt) fontname
+  dup /fname xdef findfont exch smul dup /fsize xdef scalefont setfont } def
+/Roman   { /Times-Roman getfont } def
+/Helvet  { /Helvetica   getfont } def
+%/Helvet  { /Helvetica-Bold getfont } def
+/Math    { /Symbol      getfont } def
+/SetMyFont { fontfak mul dfltFont getfont } def
+/bigfont   {14 SetMyFont } def  /medfont  {11 SetMyFont} def
+/smallfont {8 SetMyFont}  def  /minifont {6 SetMyFont}  def
+%					LINES
+/solid_line  {[] 0 setdash} def
+/dotted_line {/c [ currentlinewidth .5] maximum def [c 3 c mul] 0 setdash} def
+/dashed_line {/c [ currentlinewidth .5] maximum def
+              [10 c mul 4 c mul] 0 setdash} def
+/extra_thick_line  {9.00 smul setlinewidth} def
+/very_thick_line   {6.75 smul setlinewidth} def
+/thick_line        {4.75 smul setlinewidth} def
+/medium_thick_line {3.50 smul setlinewidth} def
+/medium_line       {2.50 smul setlinewidth} def
+/thin_medium_line  {1.60 smul setlinewidth} def
+/thin_line         {0.75 smul setlinewidth} def
+/very_thin_line    {0.10 smul setlinewidth} def
+%					SUPERSCRIPTS & SUBSCRIPTS
+/superscript {				% string
+  dup stringwidth pop .6 mul /xd xdef /yd (H) stringwidth pop .5 mul def
+  currentpoint /y0 xdef /x0 xdef
+  0 yd rm  gsave .6 .6 scale show grestore  x0 xd add y0 m  } def
+/subscript {				% string
+  dup stringwidth pop .6 mul /xd xdef /yd (H) stringwidth pop -4 div def
+  currentpoint /y0 xdef /x0 xdef
+  0 yd rm  gsave .6 .6 scale show grestore  x0 xd add y0 m  } def
+%					initialize graphics
+/init {
+  A4_paper            linXlinY             /ul-pt { cm-pt } def
+  1 setlinecap        1 setlinejoin        /lenfak 1 def
+  /scalefak 1 def     /stroke? false def   /fill? false def
+  /usrclip? false def /showpage? true def  /frame? true def
+  /usrrot? false def  /usrrota? false def  /grid? false def
+  /leftlbl? true def  /tic? false def      /lorg TA_CC def
+  /xOrigin 0 def      /yOrigin 0 def       /paperfak 1 def
+  /fontfak 1 def      /nativeFont (Helvetica-Bold) def
+  /dfltFont nativeFont def
+  0 0 0 setTextFrameColor 1 1 1 setTextFillColor } def
+/magnify { scalefak mul /scalefak xdef /lenfak lenfak smul def } def
+/A4_paper    { /xoffset_pt  595 def } def 
+/Legal_paper { /xoffset_pt  612 def } def 
+/A3_paper    { /xoffset_pt  839 def /paperfak 1.4095 def
+   paperfak magnify } def 
+/A2_paper    { /xoffset_pt 1180 def /paperfak 1.9867 def
+   paperfak magnify } def 
+/A1_paper    { /xoffset_pt 1650 def /paperfak 2.8000 def
+   paperfak magnify } def 
+/A0_paper    { /xoffset_pt 2410 def /paperfak 4.3000 def
+   paperfak magnify } def 
+/default_usrsys {
+  usrrot? { /xmin 0 def /xmax 30 def /xof 0 def /xlen 30 def
+            /ymin 0 def /ymax 21 def /yof 0 def /ylen 21 def }
+          { /xmin 0 def /xmax 21 def /xof 0 def /xlen 21 def
+            /ymin 0 def /ymax 30 def /yof 0 def /ylen 30 def } ifelse
+  usrsys } def
+/setcolor { pop } def /setpalette { pop } def
+%                                       PROJECTIONS
+/linXlinY { /projection { } def } def
+/linXlogY { /projection { log } def } def
+/logXlinY { /projection { exch log exch } def } def
+/logXlogY { /projection { log exch log exch } def } def
+%                         		MOVE AND LINE VERSIONS
+/cm-pt {28.35 mul} bind def
+/in-pt {72 mul} bind def
+/pt-in {72 div} bind def
+/M  {projection hlp-dev m} def
+/L  {projection hlp-dev l} def
+/RM {ryh-d exch rxh-d exch rm} def
+/RL {ryh-d exch rxh-d exch rl} def /R { RL } bind def
+/Line {gsave usrclip? { dousrclip } if np M L stroke grestore} def
+/line {gsave usrclip? { dousrclip } if np m l stroke grestore} def
+%					COORDINATE TRANSFORMATIONS
+/hlp-dev { yh-d exch xh-d exch } def
+/dev-hlp { yd-h exch xd-h exch } def
+/xh-d { xli sub xfak mul } def       /yh-d { yli sub yfak mul } def
+/xd-h { xfak div xli add } def       /yd-h { yfak div yli add } def
+/rxd-h { xd-h xli sub } def          /ryd-h { yd-h yli sub } def
+/rxh-d { xli add xh-d } def          /ryh-d { yli add yh-d } def
+%					MATHEMATICAL FUNCTIONS
+/mean { add 2 div } def /Exp { 2.71828 exch exp } def
+/minimum { /min  1.e20 def 		% array - min
+  { dup min lt {/min xdef} {pop} ifelse } forall  min } def
+/maximum { /max -1.e20 def		% array - max
+  { dup max gt {/max xdef} {pop} ifelse } forall  max } def
+%					SETUP USER-COORDINATE SYSTEM
+/usrframepath { np 0 0 m x@ 0 l x@ y@ l 0 y@ l closepath } def
+/dousrframe { usrframepath stroke } def
+/dousrclip  { usrframepath clip } def
+/usrsysSet {
+  BeginMatrix setmatrix
+  xmin ymin projection /yli xdef /xli xdef /xlen@ xlen smul def
+  xmax ymax projection /yre xdef /xre xdef /ylen@ ylen smul def
+  /xof@ xof smul xOrigin paperfak mul add def
+  /yof@ yof smul yOrigin paperfak mul add def
+  /x@ xlen@ ul-pt def /y@ ylen@ ul-pt def
+  usrrota?
+   {xlen@ ylen@ gt usrrot? and { xoffset_pt 0 translate 90 rotate } if } 
+   {usrrot? { xoffset_pt 0 translate 90 rotate } if }   ifelse
+  xof@ ul-pt  yof@ ul-pt translate
+  /xfak {x@ xre xli sub div} def /yfak {y@ yre yli sub div} def
+ } def
+/usrsys {
+  usrsysSet
+  usrclip? { dousrclip } if   frame? { dousrframe } if
+  medium_line medfont
+ } def
+/UsrSys {		% xmin xmax xlen xof ymin ymax ylen yof
+  /yof xdef /ylen xdef /ymax xdef /ymin xdef
+  /xof xdef /xlen xdef /xmax xdef /xmin xdef usrsys
+ } def
+/SetupUsrSys {		% xmin xmax xlen xof ymin ymax ylen yof
+  /yof xdef /ylen xdef /ymax xdef /ymin xdef
+  /xof xdef /xlen xdef /xmax xdef /xmin xdef usrsysSet
+ } def
+%					% LABEL X- AND Y- AXIS
+/chksmall { dup abs 1.e-5 lt { pop 0 } if } def
+/autoct {				% start, tinc, linc, amin, end (usr)
+  /@e xdef /@a xdef /@l xdef /@t xdef /@s xdef
+  [ @s @a @s sub @t div cvi @t mul add
+    @s @e  @s sub @t div cvi @t mul add
+    2 copy exch sub dup abs div @t abs mul exch
+    { 0 } for
+    @s @a @s sub @l div cvi @l mul add
+    @s @e  @s sub @l div cvi @l mul add
+    2 copy exch sub dup abs div @l abs mul exch
+    { dup dup cvi eq { cvi } if  1 } for ] } def
+/xaxlabl {				% xs, tinc, linc (usr)
+  xmin xmax autoct xaxlbl } def
+/yaxlabl {				% ys, tinc, linc (usr)
+  ymin ymax autoct yaxlbl } def
+/xaxlbl {				% array
+  /myempty save def /ct xdef
+  /fsmall fsize .7 mul sdiv def /fnorm fsize sdiv def
+  /d (M) stringwidth pop 2 mul def
+  /x0 xli xh-d d sub def /x1 xre xh-d d add def
+  /str 20 string def thin_line /tic? true def
+  0 2 ct length 1 sub { /# xdef /x ct # get def /t ct # 1 add get def
+   t 0 eq { thin_line fsmall fname getfont
+            /lorg TA_CL def ( ) x ymax projection showstring
+            /lorg TA_CU def ( ) x ymin projection showstring }
+          { medium_line  fnorm fname getfont
+            /lorg TA_CL def ( ) x ymax projection showstring
+            /lorg TA_CU def x chksmall str cvs x ymin projection showstring
+            grid? { very_thin_line x ymin projection x ymax projection Line } if
+           } ifelse  } for
+  /del d 0.6 mul ryd-h def /tic? false def
+  fnorm 1.1 mul fname getfont
+  /lorg TA_CU def /labl xtitle def xli xre mean yli del sub showlabl
+  fsize 1.2 mul sdiv fname getfont
+  /lorg TA_CL def /labl title def  xli xre mean yre del 0.5 mul add showlabl
+  myempty restore } def
+/yaxlbl {				% array
+  /myempty save def /ct xdef /maxl 10 smul def
+  /fsmall fsize .7 mul sdiv def /fnorm fsize sdiv def
+  /d (M) stringwidth pop 2 mul def
+  /y0 yli yh-d d sub def /y1 yre yh-d d add def
+  /str 20 string def thin_line /tic? true def
+  0 2 ct length 1 sub { /# xdef /y ct # get def /t ct # 1 add get def
+   t 0 eq { thin_line fsmall fname getfont
+            /lorg TA_RC def ( ) xmin y projection showstring
+            /lorg TA_LC def ( ) xmax y projection showstring }
+          { medium_line  fnorm fname getfont
+            /lorg TA_RC def y chksmall str cvs dup stringwidth pop dup
+             maxl gt { /maxl xdef } { pop } ifelse
+             xmin y projection showstring
+            /lorg TA_LC def ( ) xmax y projection showstring
+            grid? { very_thin_line xmin y projection xmax y projection Line } if
+           } ifelse } for
+  /tic? false def /lorg TA_CL def /labl ytitle def
+  fnorm 1.1 mul fname getfont
+  xli maxl 1.25 mul rxd-h sub  yli yre mean  vertlabl
+  myempty restore } def
+/xaxis {				% yval xs tinc, linc (usr)
+  xmin xmax autoct
+  /myempty save def /ct xdef /yval xdef
+  /fsmall fsize .7 mul sdiv def /fnorm fsize sdiv def
+  lorg TA_CL eq { } {/lorg TA_CU def} ifelse
+  /d (M) stringwidth pop 2 mul def
+  /x0 xli xh-d d sub def /x1 xre xh-d d add def
+  xmin yval xmax yval Line thin_line /tic? true def
+  0 2 ct length 1 sub { /# xdef /x ct # get def /t ct # 1 add get def
+   t 0 eq { thin_line fsmall fname getfont
+            ( ) x yval projection showstring }
+          { medium_line  fnorm fname getfont
+            x tmpstr cvs x yval projection showstring
+            grid? { very_thin_line x ymin projection x ymax projection Line } if
+           } ifelse  } for
+  /del d 0.9 mul ryd-h def lorg TA_CL eq { /del del -1 mul def } if
+  /tic? false def  fnorm 1.1 mul fname getfont
+  /labl xtitle def xli xre mean yval del sub showlabl
+  fsize 1.2 mul sdiv fname getfont
+  /lorg TA_LL def /labl title def  xli yre del add showlabl
+  myempty restore } def
+/yaxis {				% xval ys, tinc, linc (usr)
+  ymin ymax autoct
+  /myempty save def /ct xdef /xval xdef /maxl 10 def
+  lorg TA_LC eq { } {/lorg TA_RC def} ifelse
+  /fsmall fsize .7 mul sdiv def /fnorm fsize sdiv def
+  /d (M) stringwidth pop 2 mul def
+  /y0 yli yh-d d sub def /y1 yre yh-d d add def
+  xval ymin xval ymax Line thin_line /tic? true def
+  0 2 ct length 1 sub { /# xdef /y ct # get def /t ct # 1 add get def
+   t 0 eq { thin_line fsmall fname getfont
+            ( ) xval y projection showstring }
+          { medium_line  fnorm fname getfont
+             y tmpstr cvs dup stringwidth pop dup
+             maxl gt { /maxl xdef } { pop } ifelse
+             xval y projection showstring
+             grid? { very_thin_line xmin y projection xmax y projection Line } if
+           } ifelse } for
+  /tic? false def /labl ytitle def fnorm 1.1 mul fname getfont
+  lorg TA_RC eq { /maxl maxl -1 mul def } if
+  /xval xval xh-d maxl 1.5 mul add xd-h def /yval yli yre mean def
+  lorg TA_RC eq { /lorg TA_CL def     xval yval vertlabl }
+                { /lorg TA_CL def -90 xval yval rotlabl  } ifelse
+  myempty restore } def
+%					labels and tics
+%	leftlbl?:	true leftjustified	false centered
+%
+/setTextFrameColor { /bTFrC xdef /gTFrC xdef /rTFrC xdef } def
+/setTextFillColor  { /bTFiC xdef /gTFiC xdef /rTFiC xdef } def
+/lblcoord { 				
+  lorg TA_CC eq {/x0 xo .5 xxl mul sub def /y0 yo .5 yyl  mul sub def} if
+  lorg TA_CU eq {/x0 xo .5 xxl mul sub def /y0 yo    yyl      sub def} if
+  lorg TA_CL eq {/x0 xo .5 xxl mul sub def /y0 yo                 def} if
+  lorg TA_RU eq {/x0 xo    xxl     sub def /y0 yo    yyl      sub def} if
+  lorg TA_RL eq {/x0 xo    xxl     sub def /y0 yo                 def} if
+  lorg TA_LU eq {/x0 xo                def /y0 yo    yyl      sub def} if
+  lorg TA_LL eq {/x0 xo                def /y0 yo                 def} if
+  lorg TA_RC eq {/x0 xo    xxl     sub def /y0 yo .5 yyl  mul sub def} if
+  lorg TA_LC eq {/x0 xo                def /y0 yo .5 yyl  mul sub def} if
+  /x1 x0 xxl add def /y1 y0 yyl add def np x0 y0 m x1 y0 l
+  x1 y1 l x0 y1 l closepath
+  fill?   {gsave rTFiC gTFiC bTFiC setrgbcolor fill grestore} if
+  stroke? {gsave rTFrC gTFrC bTFrC setrgbcolor stroke grestore} if } def
+/setTextProperties {    % pt lorg  fill?  stroke?
+  /stroke? xdef /fill? xdef /lorg xdef SetMyFont } def
+/myshow {                            % string
+  /myempty save def
+  /str xdef str length /strlen xdef /strind 0 def
+  { strind strlen ge {exit} if       % exit if no more characters
+    str strind get 126 eq               % get next char; is it '~'
+     { str strind 1 add dup /strind xdef get dup dup dup dup 3 copy  % next ch 7x
+       35 eq { fsize sdiv fname getfont } if                       % ~#
+       36 eq { fsize /Symbol findfont exch scalefont setfont } if  % ~$
+       37 eq { (\275) show } if                                    % ~%
+      115 eq { (\373) show } if                                    % ~s
+      126 eq { (~) show } if                                       % ~~
+       94 eq { str strind 1 add dup /strind xdef 1 getinterval
+               superscript } if                                    % ~^
+       95 eq { str strind 1 add dup /strind xdef 1 getinterval
+               subscript } if                                      % ~_
+       34 eq { str strind 1 add dup /strind xdef 1 getinterval dup
+               show currentpoint 3 -1 roll stringwidth pop -2 div
+               (\310) stringwidth pop -2 div add 0 rm
+               str strind get 90 le { 0 .2 fsize mul rm } if
+               (\310) show m } if }                                % ~"
+     { str strind 1 getinterval show } ifelse
+    /strind strind 1 add def
+  } loop currentpoint myempty restore m } def
+/mystringwidth {                            % string - wx wy (dev)
+  /myempty save def
+  /str xdef str length /strlen xdef /strind 0 def /wx 0 def
+  { strind strlen ge {exit} if       % exit if no more characters
+    str strind get 126 eq               % get next char; is it '~'
+     {
+       str strind 1 add dup /strind xdef get dup dup 3 copy  % next char 6x
+       36 eq { fsize /Symbol findfont exch scalefont setfont } if  % ~$
+       35 eq { fsize sdiv fname getfont } if                       % ~#
+      115 eq { (\373) stringwidth pop wx add /wx xdef } if         % ~s
+      126 eq { (~) stringwidth pop wx add /wx xdef } if            % ~~
+       94 eq exch 95 eq or { str strind 1 add dup /strind xdef 1 getinterval
+               stringwidth pop .6 mul wx add /wx xdef } if         % ~^ or ~_
+      }
+      { str strind 1 getinterval stringwidth pop wx add /wx xdef }  ifelse
+    /strind strind 1 add def
+  } loop  wx 0
+  myempty restore } def
+/showlabl {				% x0 y0 (hlp)
+  hlp-dev /yo xdef /xo xdef labl length /nl xdef /xw 0 def
+  (H) stringwidth pop 1.5 mul /yinc xdef
+  labl { mystringwidth pop /wx xdef wx xw gt {/xw wx def} if } forall
+  /xxl xw yinc add def /yyl nl .25 add yinc mul def
+  lblcoord  /# 0 def
+  labl {mystringwidth pop /xslen xdef leftlbl? {/xslen xw def} if
+        x0 xxl xslen sub 2 div add   y1 # 1 add yinc mul sub   m
+        labl # get myshow /# # 1 add def} forall
+  tic? {xo yo tic} if  } def
+/showstring { 				% (string) x0 y0 (hlp)
+  hlp-dev /yo xdef /xo xdef /yyl (H) stringwidth pop 2.2 mul def 
+  dup mystringwidth pop yyl 2 div add /xxl xdef
+  lblcoord x0 yyl 4 div add   y0 yyl .3 mul add  m  myshow
+  tic? {xo yo tic} if } def
+/showString { 				% (string) x0 y0 (hlp)
+  hlp-dev /yo xdef /xo xdef /yyl (H) stringwidth pop 1.9 mul def 
+  dup mystringwidth pop yyl 0.20 mul add /xxl xdef lblcoord
+  x0 yyl 0.015 mul add y0 yyl .25 mul add  m myshow } def
+/vertlabl {				% x0 y0 (hlp)
+  gsave hlp-dev translate 90 rotate xli yli showlabl grestore } def
+/rotlabl {				% ang x0 y0 (hlp)
+  gsave hlp-dev translate rotate xli yli showlabl grestore } def
+/rotatedText {			% (string) ang x0 y0 (hlp)
+  gsave hlp-dev translate rotate xli yli showString grestore } def
+/clipRotatedText {		% ang x0 y0 (hlp)
+  hlp-dev /y0 xdef /x0 xdef dup cos /fC xdef sin /fS xdef
+  /xxl xxl 1.15 mul def /yyl yyl 0.5 mul def usrframepath
+  /x1 fS yyl mul  0.5 mul  fC xxl mul 0.5 mul sub x0 add def
+  /y1 fS xxl mul -0.5 mul  fC yyl mul 0.5 mul sub y0 add def
+  x1                  y1                              m
+  fS yyl mul -1 mul   fC yyl mul  1  mul              rl
+  fC xxl mul          fS xxl mul  1  mul              rl
+  fS yyl mul          fC yyl mul -1  mul              rl
+  x1                  y1                              l   clip } def
+/twoplabl {				% x1 y1 x2 y2 (hlp)
+  hlp-dev /y2 xdef /x2 xdef  hlp-dev /y1 xdef /x1 xdef
+  /num y2 y1 sub def /den x2 x1 sub def
+  num den mul 0 ne { num den atan /ang xdef
+  ang 90 gt ang 270 lt and  {/ang ang 180 sub def} if
+  ang x1 x2 mean y1 y2 mean dev-hlp rotlabl } if  } def
+/tic {					% -
+  np m (0) stringwidth pop .6 mul /ticlen xdef
+  lorg TA_CU eq {/xdel  0        def /ydel -1 ticlen mul  def} if
+  lorg TA_CL eq {/xdel  0        def /ydel  1 ticlen mul  def} if
+  lorg TA_RC eq {/xdel -1 ticlen mul  def /ydel  0  def} if
+  lorg TA_LC eq {/xdel  1 ticlen mul  def /ydel  0  def} if
+  xdel ydel rl stroke } def
+%					ARROWS, DOTS AND OTHER SYMBOLS
+%new stroke arrows below
+/unitarrow { np  -0.5 0 m 1 0 rl
+  0.25 0.075 m 0.5 0 l 0.25 -0.075 l stroke } def
+/arrow {				% alength (ul) angle x0 y0 (hlp)
+  gsave hlp-dev translate rotate lenfak mul ul-pt dup dup
+  scale currentlinewidth exch div setlinewidth unitarrow grestore } def
+/unitdot { np 0 0 1 0 360 arc fill? { Fill } if stroke } def
+
+/dotr { smul 3 1 roll			% x y (usr) radius (pt)
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unitdot grestore } def
+/minidot { 0.8 dotr } def /smalldot { 1.4 dotr } def
+/meddot { 2.3 dotr } def /bigdot { 3.8 dotr } def /dot { smalldot } def
+/unitsqu { np -.82 -.82 m .82 -.82 l .82 .82 l -.82 .82 l closepath
+  fill? { Fill } if stroke } def
+/square { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unitsqu grestore } def
+/minisqu { 0.9 square } def /smallsqu { 1.5 square } def
+/medsqu { 2.5 square } def /bigsqu { 4.0 square } def
+/unitdiam { np 0 -1.32 m .98 0 l 0 1.32 l -.98 0 l closepath
+  fill? { Fill } if stroke } def
+/diam { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unitdiam grestore } def
+/minidiam { 1.2 diam } def /smalldiam { 1.9 diam } def
+/meddiam { 3.2 diam } def /bigdiam { 5 diam } def
+/unitplus { np 0 -1 m 0 1 l  -1 0 m 1 0 l stroke } def
+/plusr { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unitplus grestore } def
+/miniplus { 1.2 plusr } def /smallplus { 1.9 plusr } def
+/medplus { 3.2 plusr } def /bigplus { 5 plusr } def /plus { medplus } def
+/unitx { np -.9 -.9 m .9 .9 l  .9 -.9 m -.9 .9 l stroke } def
+/xr { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unitx grestore } def
+/minix { 0.9 xr } def /smallx { 1.5 xr } def /medx { 2.5 xr } def
+/bigx { 4 xr } def
+/unitstar { np -.7 -.7 m .7 .7 l  .7 -.7 m -.7 .7 l
+  -1 0 m 1 0 l  0 -1 m 0 1 l stroke } def
+/starr { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unitstar grestore } def
+/ministar { 1.2 starr } def /smallstar { 1.6 starr } def
+/medstar { 2.5 starr } def /bigstar { 4 starr } def
+/unittrian { np -1.12 -.59 m 1.12 -.59 l 0 1.45 l
+  closepath fill? { Fill } if stroke } def
+/trianr { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale
+ currentlinewidth exch div setlinewidth unittrian grestore } def
+/minitrian { 1.0 trianr } def /smalltrian { 1.3 trianr } def
+/medtrian { 2.2 trianr } def /bigtrian { 3.5 trianr } def
+/utrianr { smul 3 1 roll
+ gsave projection hlp-dev translate dup dup scale 180 rotate
+ currentlinewidth exch div setlinewidth unittrian grestore } def
+/miniutrian { 1.0 utrianr } def /smallutrian { 1.3 utrianr } def
+/medutrian { 2.2 utrianr } def /bigutrian { 3.5 utrianr } def
+%					BOXES
+/bar {					% xul, yul, xor, yor (hlp)
+  2 copy hlp-dev 6 3 roll exch 6 1 roll sub rxh-d
+  5 -2 roll sub ryh-d box } def
+/box {					% x0, y0, xlen, ylen (dev)
+  /myempty save def /yl xdef /xl xdef /y0 xdef /x0 xdef
+  np x0 y0 m xl 0 rl 0 yl rl xl -1 mul 0 rl closepath
+  fill? { Fill } if stroke? { stroke } if myempty restore  } def
+/blackbox {				% x0, y0, xlen, ylen (dev)
+  gsave           /fill? true def /stroke? true def box grestore } def
+/whitebox {				% x0, y0, xlen, ylen (dev)
+  gsave 1 setgray /fill? true def /stroke? false def 4 copy box
+  grestore gsave /fill? false def /stroke? true def box grestore } def
+%
+/xmapframe {				% xstart, xinc (hlp)
+  /myempty save def very_thin_line
+  rxh-d abs /xinc xdef xh-d /xstart xdef
+%  /width [ x@ y@ mean 3.5e-3 mul 1.0 ] maximum def
+  /width [ x@ y@ mean 9.0e-3 mul 1.5 ] maximum def
+  /xleft xli xh-d width sub def /xright xre xh-d def
+  /ydown yli yh-d width sub def /yup yre yh-d def
+  xleft ydown width width whitebox  xright ydown width width whitebox
+  xleft yup   width width whitebox  xright yup   width width whitebox
+  xstart           xinc  2 mul   xright
+  {/x xdef /xdist [ xinc xright x sub ] minimum def
+      x      ydown xdist  width blackbox
+      x      yup   xdist  width blackbox   } for
+  xstart xinc add  xinc  2 mul   xright
+  {/x xdef /xdist [ xinc xright x sub ] minimum def
+      x      ydown xdist  width whitebox
+      x      yup   xdist  width whitebox   } for
+  xstart           xinc -2 mul   xleft  width add
+  {/x xdef /xdist [ xinc -1 mul xli xh-d x sub ] maximum def
+      x      ydown xdist  width whitebox
+      x      yup   xdist  width whitebox   } for
+  xstart xinc add  xinc -2 mul   xleft  width add
+  {/x xdef /xdist [ xinc -1 mul xli xh-d x sub ] maximum def
+      x      ydown xdist  width blackbox
+      x      yup   xdist  width blackbox   } for
+  myempty restore } def
+/ymapframe {				% ystart, yinc (hlp)
+  /myempty save def very_thin_line
+  ryh-d abs /yinc xdef yh-d /ystart xdef
+%  /width [ x@ y@ mean 3.5e-3 mul 1.0 ] maximum def
+  /width [ x@ y@ mean 9.0e-3 mul 1.5 ] maximum def
+  /xleft xli xh-d width sub def /xright xre xh-d def
+  /ydown yli yh-d width sub def /yup yre yh-d def
+  ystart           yinc  2 mul   yup
+  {/y xdef /ydist [ yinc yre yh-d y sub ] minimum def
+      xleft  y     width ydist blackbox
+      xright y     width ydist blackbox   } for
+  ystart yinc add  yinc  2 mul   yup
+  {/y xdef /ydist [ yinc yre yh-d y sub ] minimum def
+      xleft  y     width ydist whitebox
+      xright y     width ydist whitebox   } for
+  ystart           yinc -2 mul   ydown width add
+  {/y xdef /ydist [ yinc -1 mul yli yh-d y sub ] maximum def
+      xleft  y     width ydist whitebox
+      xright y     width ydist whitebox   } for
+  ystart yinc add  yinc -2 mul   ydown width add
+  {/y xdef /ydist [ yinc -1 mul yli yh-d y sub ] maximum def
+      xleft  y     width ydist blackbox
+      xright y     width ydist blackbox   } for
+  myempty restore } def
+/xmaplabl {				% (string) x (hlp)
+  /myempty save def /stroke? false def /fill? false def
+  /width [ x@ y@ mean 3.5e-3 mul 1.75 ] maximum def
+  /ydown yli yh-d width sub def /yup yre yh-d def
+  /x xdef /str xdef /lorg TA_CU def str x xh-d ydown dev-hlp showstring
+  myempty restore } def
+/ymaplabl {				% (string) y (hlp)
+  /myempty save def /stroke? false def /fill? false def
+  /width [ x@ y@ mean 3.5e-3 mul 1.75 ] maximum def
+  /xleft xli xh-d width sub def /xright xre xh-d def
+  /y xdef /str xdef /lorg TA_RC def str xleft y yh-d dev-hlp showstring
+  myempty restore } def
+/unitAWIstar { np 
+    0  1.5 m -0.273  0.667 l -1.061  1.061 l -0.667  0.273 l
+ -1.5    0 l -0.667 -0.273 l -1.061 -1.061 l -0.273 -0.667 l
+    0 -1.5 l  0.273 -0.667 l  1.061 -1.061 l  0.667 -0.273 l
+  1.5    0 l  0.667  0.273 l  1.061  1.061 l  0.273  0.667 l 0 1.5 l
+  closepath fill } def
+/AWIstarr {              % x y (usr) size (pt)
+  smul 3 1 roll  gsave 
+  projection hlp-dev translate dup scale unitAWIstar grestore } def
+/AWI_logo {	         % size [cm] angle xcenter ycenter (hlp)
+  gsave 0.0 0.42 0.65 setrgbcolor
+  hlp-dev translate rotate 4.3 div smul dup scale 2.5 setlinewidth
+  62 68 dev-hlp 10 sdiv AWIstarr
+  np -61 0 moveto 61 0 lineto 0 -61 moveto 0 61 lineto stroke
+  np 0   0 61 0 360 arc stroke
+  np 0 -45 15 0 360 arc fill
+  np 0  45 15 0 360 arc fill
+  np 0   0 61 0 360 arc clip
+  np 0 -19 64 0 360 arc stroke
+  np 0  19 64 0 360 arc stroke
+  np  18.75 0 48.75 0 360 arc stroke
+  np -18.75 0 48.75 0 360 arc stroke
+  np -10  53 moveto -17  58 lineto
+          -10 -53 moveto -17 -58 lineto stroke
+  np  10  53 moveto  17  58 lineto
+           10 -53 moveto  17 -58 lineto stroke
+  grestore } def
+%                                       COLOR & SHADING
+/C { dup red exch get exch dup gre
+     exch get exch blu exch get setrgbcolor } bind def
+/E { np dup yg exch 1 add get exch yg exch get
+     dup xll exch M xur exch L dup xur exch L xll exch L
+     gsave fill grestore stroke } bind def
+/G { C dup E 1 add } bind def /g { dup E 1 add } bind def /j { 1 add } bind def
+/T { C np dup dely add exch dup xll exch M
+     dup xur exch L exch dup xur exch L dup xll
+     exch L exch xll exch L fill } bind def
+%%EndProlog
+%%Page: 1 1
+%%PageOrientation: Portrait
+%<Document=S261_mag-50meters_flow_lines.eps>
+BeginPlot
+/usrclip? false def /usrrot? false def 
+/scalefak 0.793985 def /lenfak 0.793985 def 
+/xOrigin 0 def /yOrigin 0 def /fontfak 0.975 def 
+/dfltFont (Arial-BoldItalic) def 
+/nativeFont (Arial-Bold) def 
+%<DataWindow>
+/usrclip? false def /frame? false def 0 setgray
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<ColorTable>
+/red [
+ 0.000 0.000 0.000 0.000 0.800 0.698 0.659 0.800 0.498 0.498 0.098 0.004 1.000
+ 1.000 0.992 1.000 0.188 0.220 0.318 0.400 0.478 0.549 0.608 0.659 0.710 0.757
+ 0.808 0.847 0.886 0.918 0.957 0.984 0.933 0.918 0.902 0.886 0.871 0.855 0.843
+ 0.827 0.812 0.792 0.773 0.737 0.690 0.620 0.541 0.447 0.349 0.275 0.200 0.145
+ 0.106 0.094 0.102 0.129 0.169 0.216 0.271 0.325 0.373 0.416 0.447 0.467 0.471
+ 0.459 0.435 0.400 0.357 0.306 0.251 0.200 0.149 0.106 0.071 0.043 0.020 0.012
+ 0.016 0.027 0.051 0.082 0.125 0.169 0.216 0.263 0.310 0.353 0.396 0.435 0.475
+ 0.514 0.553 0.592 0.639 0.682 0.733 0.784 0.831 0.886 0.929 0.957 0.976 0.988
+ 0.992 0.996 0.996 1.000 1.000 0.996 0.992 0.980 0.965 0.945 0.922 0.894 0.875
+ 0.863 0.863 0.878 0.906 0.941 0.973 0.988 0.996 0.984 0.965 0.929 0.890 0.863
+ 0.843 0.835 0.835 0.839 0.851 0.867 0.882 0.902 0.925 0.953 0.976 0.996 1.000
+ 1.000 1.000 0.816 0.839 0.851 0.824 0.749 0.698 0.643 0.631 0.600 0.545 0.502
+ 0.525 0.545 0.573 0.592 0.420 0.502 0.545 0.584 0.624 0.635 0.655 0.714 0.780
+ 0.761 0.729 0.706 0.678 0.714 0.745 0.804 0.859 ] def
+/gre [
+ 0.000 0.000 0.698 0.600 0.000 0.000 0.471 0.800 0.498 0.498 1.000 0.922 0.000
+ 0.098 0.773 1.000 0.188 0.220 0.318 0.400 0.478 0.549 0.608 0.659 0.710 0.757
+ 0.808 0.847 0.886 0.918 0.957 0.984 0.776 0.690 0.573 0.475 0.392 0.310 0.282
+ 0.318 0.412 0.486 0.561 0.604 0.612 0.588 0.525 0.439 0.337 0.263 0.235 0.243
+ 0.267 0.314 0.376 0.447 0.533 0.600 0.686 0.753 0.808 0.871 0.910 0.937 0.945
+ 0.941 0.925 0.890 0.855 0.816 0.780 0.757 0.745 0.749 0.769 0.800 0.843 0.875
+ 0.894 0.906 0.902 0.886 0.863 0.839 0.816 0.796 0.784 0.776 0.776 0.784 0.800
+ 0.824 0.851 0.878 0.910 0.929 0.945 0.945 0.933 0.902 0.863 0.820 0.788 0.757
+ 0.729 0.710 0.678 0.655 0.631 0.604 0.576 0.553 0.529 0.506 0.478 0.447 0.416
+ 0.380 0.345 0.302 0.267 0.224 0.169 0.118 0.071 0.027 0.004 0.000 0.000 0.004
+ 0.016 0.031 0.051 0.082 0.122 0.173 0.231 0.298 0.376 0.459 0.545 0.631 0.714
+ 0.773 0.780 0.745 0.792 0.820 0.824 0.827 0.827 0.816 0.776 0.722 0.663 0.608
+ 0.576 0.541 0.525 0.506 0.420 0.584 0.627 0.643 0.675 0.655 0.651 0.686 0.737
+ 0.694 0.659 0.616 0.573 0.576 0.588 0.698 0.820 ] def
+/blu [
+ 0.000 1.000 0.000 0.600 0.000 0.698 0.278 0.800 0.498 1.000 0.098 0.643 0.000
+ 1.000 0.106 1.000 0.188 0.220 0.318 0.400 0.478 0.549 0.608 0.659 0.710 0.757
+ 0.808 0.847 0.886 0.918 0.957 0.984 0.937 0.914 0.886 0.863 0.839 0.816 0.800
+ 0.776 0.757 0.749 0.749 0.761 0.788 0.827 0.875 0.914 0.961 0.992 1.000 0.988
+ 0.965 0.941 0.925 0.922 0.929 0.949 0.973 0.988 0.988 0.969 0.937 0.894 0.855
+ 0.812 0.761 0.702 0.635 0.573 0.514 0.463 0.416 0.376 0.341 0.306 0.263 0.235
+ 0.208 0.188 0.173 0.165 0.165 0.173 0.188 0.216 0.243 0.278 0.310 0.341 0.369
+ 0.392 0.404 0.408 0.404 0.392 0.369 0.341 0.310 0.267 0.231 0.196 0.169 0.145
+ 0.122 0.106 0.090 0.075 0.063 0.051 0.039 0.027 0.020 0.016 0.008 0.004 0.000
+ 0.000 0.000 0.000 0.000 0.008 0.012 0.020 0.027 0.039 0.051 0.063 0.078 0.094
+ 0.118 0.137 0.165 0.192 0.224 0.255 0.286 0.318 0.349 0.384 0.427 0.471 0.518
+ 0.561 0.565 0.694 0.745 0.773 0.776 0.804 0.824 0.851 0.878 0.886 0.910 0.933
+ 0.945 0.957 0.953 0.953 0.420 0.506 0.502 0.514 0.525 0.533 0.537 0.584 0.627
+ 0.604 0.573 0.541 0.518 0.510 0.506 0.675 0.808 ] def
+%</ColorTable>
+
+0.941176 setgray
+very_thin_line
+%<CDT=%sBackgrd>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+0 0 M
+598 0 R
+1302 0 R
+0 228 R
+0 1138 R
+-1302 0 R
+-598 0 R
+0 -1138 R
+0 -228 R
+0 0 R
+fill
+grestore
+%</CDT=%sBackgrd>
+
+0.920882 setgray
+very_thin_line
+%<CDT=%s6000M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+0 0 M
+515 0 R
+1385 0 R
+0 292 R
+0 1074 R
+0 -1071 R
+0 -295 R
+-551 0 R
+-1250 0 R
+-99 0 R
+0 0 R
+fill
+np
+1900 0 M
+0 309 R
+0 1057 R
+0 -840 R
+0 -526 R
+-591 0 R
+-1309 0 R
+278 0 R
+1438 0 R
+184 0 R
+fill
+np
+1900 0 M
+0 345 R
+0 1021 R
+-224 0 R
+-1468 0 R
+-208 0 R
+0 -752 R
+201 -614 R
+485 0 R
+669 0 R
+545 0 R
+0 0 R
+fill
+np
+0 0 M
+297 0 R
+75 0 R
+397 0 R
+-436 0 R
+-333 655 R
+0 711 R
+0 -412 R
+0 -954 R
+0 0 R
+fill
+grestore
+%</CDT=%s6000M>
+
+0.90399 setgray
+very_thin_line
+%<CDT=%s5500M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+898 0 M
+166 0 R
+135 0 R
+301 0 R
+300 0 R
+100 0 R
+0 222 R
+0 -24 R
+0 1 R
+0 15 R
+0 -3 R
+0 5 R
+0 -41 R
+0 -175 R
+0 119 R
+0 37 R
+0 24 R
+0 -180 R
+-45 0 R
+-54 0 R
+-1 0 R
+-47 0 R
+-253 0 R
+-85 0 R
+-216 0 R
+-225 0 R
+-17 0 R
+-11 0 R
+-21 0 R
+-27 0 R
+-300 0 R
+-5 0 R
+-94 0 R
+99 0 R
+76 0 R
+-76 0 R
+-69 0 R
+69 0 R
+19 0 R
+50 0 R
+231 0 R
+fill
+np
+1900 1366 M
+0 -149 R
+0 -87 R
+0 -171 R
+0 -23 R
+0 94 R
+0 100 R
+0 236 R
+0 -236 R
+0 -209 R
+0 -92 R
+0 -122 R
+0 122 R
+0 145 R
+0 -25 R
+0 163 R
+0 -15 R
+0 33 R
+0 13 R
+0 -13 R
+0 -67 R
+0 -205 R
+0 -29 R
+0 -300 R
+0 -301 R
+0 -228 R
+0 177 R
+0 51 R
+0 301 R
+0 18 R
+0 87 R
+0 -105 R
+0 -279 R
+0 -22 R
+0 -228 R
+-56 0 R
+-44 0 R
+-191 0 R
+-109 0 R
+-301 0 R
+-224 0 R
+-65 0 R
+-12 0 R
+-161 0 R
+-139 0 R
+-301 0 R
+-297 0 R
+597 0 R
+1303 0 R
+0 436 R
+0 930 R
+0 0 R
+fill
+np
+0 0 M
+0 225 R
+0 3 R
+0 11 R
+0 89 R
+0 117 R
+0 84 R
+0 70 R
+0 42 R
+0 28 R
+0 94 R
+0 66 R
+0 301 R
+0 151 R
+0 85 R
+0 -236 R
+0 -267 R
+0 -34 R
+0 -300 R
+0 -301 R
+0 -44 R
+0 -184 R
+34 0 R
+154 0 R
+109 0 R
+163 0 R
+138 0 R
+255 0 R
+45 0 R
+293 0 R
+-36 0 R
+-2 0 R
+46 0 R
+301 0 R
+300 0 R
+100 0 R
+0 205 R
+0 23 R
+0 13 R
+0 288 R
+0 16 R
+0 284 R
+0 182 R
+0 119 R
+0 236 R
+-100 0 R
+-300 0 R
+-301 0 R
+-89 0 R
+-212 0 R
+-152 0 R
+-148 0 R
+-126 0 R
+-175 0 R
+-100 0 R
+-197 0 R
+0 -313 R
+0 -1053 R
+0 0 R
+fill
+np
+0 829 M
+0 2 R
+0 -2 R
+0 -224 R
+0 -76 R
+0 -301 R
+0 -151 R
+0 -77 R
+0 28 R
+0 1338 R
+755 0 R
+1145 0 R
+-573 0 R
+-1327 0 R
+0 -770 R
+0 -596 R
+0 248 R
+0 581 R
+fill
+grestore
+%</CDT=%s5500M>
+
+0.887755 setgray
+very_thin_line
+%<CDT=%s5000M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+0 1366 M
+0 -114 R
+0 -122 R
+0 -182 R
+0 -119 R
+0 -300 R
+0 -184 R
+0 81 R
+0 103 R
+0 260 R
+0 40 R
+0 18 R
+0 283 R
+0 138 R
+36 98 R
+-36 0 R
+0 0 R
+fill
+np
+898 208 M
+301 -208 R
+301 0 R
+285 228 R
+15 22 R
+100 279 R
+0 300 R
+-100 283 R
+-300 9 R
+-115 9 R
+91 236 R
+-277 0 R
+-301 0 R
+-300 0 R
+-54 0 R
+-247 -212 R
+-120 -24 R
+-152 -301 R
+248 -300 R
+24 -14 R
+301 -281 R
+100 -6 R
+200 -20 R
+fill
+grestore
+%</CDT=%s5000M>
+
+0.867826 setgray
+very_thin_line
+%<CDT=%s4500M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1199 155 M
+301 -30 R
+103 103 R
+195 301 R
+-85 300 R
+-213 141 R
+-301 -101 R
+-301 220 R
+-300 -188 R
+-99 -72 R
+99 -297 R
+1 -3 R
+299 -186 R
+223 -115 R
+78 -73 R
+fill
+grestore
+%</CDT=%s4500M>
+
+0.847517 setgray
+very_thin_line
+%<CDT=%s4000M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s4000M>
+
+0.827222 setgray
+very_thin_line
+%<CDT=%s3500M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s3500M>
+
+0.806638 setgray
+very_thin_line
+%<CDT=%s3000M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s3000M>
+
+0.780255 setgray
+very_thin_line
+%<CDT=%s2500M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s2500M>
+
+0.754101 setgray
+very_thin_line
+%<CDT=%s2000M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s2000M>
+
+0.729732 setgray
+very_thin_line
+%<CDT=%s1500M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s1500M>
+
+0.705013 setgray
+very_thin_line
+%<CDT=%s1250M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s1250M>
+
+0.678614 setgray
+very_thin_line
+%<CDT=%s1000M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s1000M>
+
+0.652232 setgray
+very_thin_line
+%<CDT=%s750M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s750M>
+
+0.625834 setgray
+very_thin_line
+%<CDT=%s500M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s500M>
+
+0.598154 setgray
+very_thin_line
+%<CDT=%s250M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s250M>
+
+0.567712 setgray
+very_thin_line
+%<CDT=%s100M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s100M>
+
+0.534905 setgray
+very_thin_line
+%<CDT=%s50M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s50M>
+
+%<MapFrame>
+/fill? false def /stroke? false def
+0 setgray
+184.602 185.866 19 4.04834 -2.15183 -1.24333 13.6622 11.7842 UsrSys
+very_thin_line
+12.886 SetMyFont
+  184.800     0.100 xmapframe
+184.8 ymin 184.8 ymax Line
+(175.2\312W)   184.800 xmaplabl
+185 ymin 185 ymax Line
+(175\312W)   185.000 xmaplabl
+185.2 ymin 185.2 ymax Line
+(174.8\312W)   185.200 xmaplabl
+185.4 ymin 185.4 ymax Line
+(174.6\312W)   185.400 xmaplabl
+185.6 ymin 185.6 ymax Line
+(174.4\312W)   185.600 xmaplabl
+185.8 ymin 185.8 ymax Line
+(174.2\312W)   185.800 xmaplabl
+   -2.000     0.100 ymapframe
+xmin -2 xmax -2 Line
+(2\312S)    -2.000 ymaplabl
+xmin -1.8 xmax -1.8 Line
+(1.8\312S)    -1.800 ymaplabl
+xmin -1.6 xmax -1.6 Line
+(1.6\312S)    -1.600 ymaplabl
+xmin -1.4 xmax -1.4 Line
+(1.4\312S)    -1.400 ymaplabl
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%</MapFrame>
+
+%<WindowStamp>
+/fill? false def /stroke? false def /lorg 5 def
+0 setgray
+7.73161 dfltFont getfont
+(Ocean Data View) 90 1908 0 rotatedText
+/lorg 0 def 12 SetMyFont
+very_thin_line
+%</WindowStamp>
+
+0.8 setgray
+very_thin_line
+0.8 setgray
+solid_line
+0 setlinewidth
+%<CDT=%s50M>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%s50M>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.146883 0.745296 0.413748 S
+1.11669 180.032 1776 32 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.443595 0.78764 0.34699 S
+1.59127 197.198 1754 93 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.9785 0.550088 0.0265049 S
+2.22479 216.696 1746 148 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.829084 0.933913 0.31133 S
+1.84872 226.996 1740 166 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.774395 0.945098 0.346517 S
+1.81113 224.539 1735 161 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.634867 0.906905 0.404288 S
+1.73562 217.31 1731 157 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.56669 0.860609 0.405295 S
+1.69241 210.277 1728 137 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.204013 0.82153 0.184344 S
+1.44412 206.479 1729 119 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.388388 0.776471 0.304204 S
+1.56308 198.048 1728 100 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.322423 0.782025 0.253468 S
+1.51698 207.181 1723 87 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0669718 0.893965 0.168551 S
+1.35771 186.268 1712 134 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.353933 0.776471 0.279149 S
+1.54222 175.269 1704 182 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.675517 0.926299 0.394018 S
+1.76632 179.529 1694 232 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.837766 0.929686 0.304784 S
+1.84197 180.312 1685 280 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.971939 0.795499 0.174975 S
+1.96125 176.638 1676 329 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.576379 0.867384 0.406271 S
+1.68727 172.28 1667 379 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.409628 0.899825 0.717998 S
+0.951908 164.747 1657 426 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.107683 0.748852 0.378119 S
+1.12437 154.301 1647 473 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0154726 0.859663 0.248295 S
+1.23821 150.116 1636 514 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0172427 0.895674 0.205264 S
+1.29036 155.969 1628 544 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0245212 0.902953 0.193118 S
+1.30759 166.649 1623 574 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.161166 0.747906 0.426902 S
+1.10878 177.799 1616 579 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.448814 0.934508 0.790082 S
+0.922738 197.301 1612 616 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.196384 0.572656 0.940978 S
+0.667207 220.185 1598 677 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.195483 0.571389 0.940597 S
+0.67541 205.346 1595 681 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.404822 0.895018 0.710002 S
+0.970793 225.533 1594 678 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.217868 0.814771 0.189517 S
+1.45583 226.862 1591 668 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.259251 0.797543 0.213642 S
+1.48426 226.973 1586 648 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.212772 0.817136 0.187259 S
+1.45473 224.611 1583 628 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.268574 0.794614 0.219089 S
+1.48839 228.569 1581 636 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.379477 0.873396 0.670237 S
+0.98792 212.043 1567 680 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.459281 0.941329 0.813443 S
+0.912494 211.012 1542 717 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.231373 0.246845 0.996704 S
+0.47454 181.603 1518 759 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.104677 0.271504 0.962295 S
+0.544446 178.86 1497 798 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.784146 0.516686 0.74902 S
+0.222102 172.309 1476 833 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.658015 0.601038 0.806119 S
+0.300425 155.286 1458 875 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0982986 0.296986 0.949538 S
+0.531751 118.314 1442 913 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.538384 0.522927 0.875669 S
+0.341564 125.546 1430 962 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.125994 0.43827 0.922057 S
+0.608546 89.7866 1417 1001 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.297078 0.285313 0.98265 S
+0.434689 95.7341 1408 1040 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.822797 0.345617 0.770642 S
+0.118195 322.283 1398 1079 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.848463 0.294789 0.807095 S
+0.103841 154.889 1370 1103 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.813764 0.399741 0.759365 S
+0.16694 9.8907 1348 1100 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.788357 0.500725 0.74902 S
+0.208723 35.5982 1347 1098 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.150912 0.494347 0.925872 S
+0.635959 37.6204 1347 1095 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.102327 0.280873 0.95761 S
+0.549773 343.325 1347 1074 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0992599 0.293156 0.951461 S
+0.557191 6.10647 1346 1062 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.188891 0.562051 0.937865 S
+0.666265 5.76751 1359 1059 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.309972 0.81883 0.577584 S
+1.02361 9.09737 1375 1067 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.698863 0.610315 0.783185 S
+0.294038 34.3882 1386 1053 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.410147 0.400839 0.931441 S
+0.403055 8.22603 1363 1018 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.86807 0.378912 0.835431 S
+0.0739097 261.957 1330 987 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.615732 0.585138 0.82977 S
+0.33462 252.991 1300 950 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.305943 0.729198 0.98265 S
+0.732368 258.651 1265 918 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.411307 0.864225 0.970611 S
+0.797666 249.398 1237 884 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.331533 0.759976 0.988235 S
+0.746491 237.095 1203 855 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.439384 0.928222 0.76965 S
+0.939386 217.174 1171 829 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.408698 0.898894 0.716457 S
+0.964981 215.034 1138 801 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.41915 0.874907 0.965164 S
+0.801325 220.067 1100 775 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.292531 0.712917 0.97882 S
+0.724328 244.244 1073 772 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.462776 0.942489 0.826261 S
+0.902497 245.887 1072 768 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.109834 0.748653 0.380072 S
+1.13599 236.788 1070 757 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.276493 0.796796 0.541054 S
+1.04153 222.768 1073 740 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.104265 0.874327 0.164706 S
+1.38639 229.771 1074 719 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.230823 0.771084 0.493568 S
+1.06651 218.286 1071 693 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.375387 0.870054 0.663905 S
+0.986881 187.233 1056 661 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.338918 0.779019 0.266957 S
+1.53083 192.583 1020 632 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.227741 0.810666 0.19527 S
+1.46084 205.863 989 597 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0269627 0.905394 0.189059 S
+1.30962 204.621 953 567 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0781109 0.888396 0.165774 S
+1.3687 187.152 922 543 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.748333 0.945098 0.360555 S
+1.80722 175.925 886 512 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.824384 0.935088 0.314458 S
+1.85101 180.72 852 482 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.988785 0.753017 0.141802 S
+2.00318 183.006 819 450 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.996033 0.710018 0.10605 S
+2.05486 193.107 783 403 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.923949 0.481209 0.00863661 S
+2.30965 183.405 740 400 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+1 0.64065 0.0673838 S
+2.12958 181.301 732 398 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.764569 0.945098 0.351812 S
+1.81443 186.255 726 387 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.995132 0.714565 0.109697 S
+2.0461 192.945 718 373 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.792935 0.942947 0.335424 S
+1.82637 193.711 720 360 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.754452 0.945098 0.357259 S
+1.80969 197.834 726 344 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.936965 0.850874 0.221653 S
+1.91817 191.73 730 356 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.952316 0.826764 0.201938 S
+1.93664 182.273 722 401 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.564614 0.859159 0.405097 S
+1.6943 182.335 712 442 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.758114 0.945098 0.355291 S
+1.81414 170.69 702 487 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.67599 0.926513 0.393896 S
+1.76662 171.58 691 530 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0191958 0.897627 0.201999 S
+1.29264 161.977 685 572 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.259693 0.785992 0.523064 S
+1.05162 167.671 681 617 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.315496 0.823072 0.584375 S
+1.02321 159.811 679 656 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.189776 0.563302 0.938231 S
+0.670341 160.988 620 921 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.448692 0.440711 0.913054 S
+0.389747 153.868 618 969 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.779217 0.535424 0.74902 S
+0.239525 125.528 614 1009 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.517967 0.504219 0.884184 S
+0.373523 124.346 612 1050 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.247395 0.25275 0.99501 S
+0.45909 146.604 609 1089 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.462531 0.931456 0.903227 S
+0.844888 137.194 607 1113 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.310719 0.298955 0.976913 S
+0.436175 121.437 596 1113 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.676249 0.607111 0.795987 S
+0.302402 120.435 593 1113 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.478462 0.467994 0.900649 S
+0.381676 139.627 592 1110 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.535943 0.520699 0.876692 S
+0.371193 154.352 590 1117 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.310628 0.734905 0.983993 S
+0.733616 126.196 579 1124 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.220447 0.607477 0.951064 S
+0.689643 126.209 565 1122 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.268452 0.682902 0.971633 S
+0.711248 132.354 552 1088 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.459358 0.927016 0.910201 S
+0.84408 160.772 532 1042 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.16846 0.749584 0.433631 S
+1.10709 156.665 514 1000 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.427131 0.917327 0.747173 S
+0.94928 172.549 497 957 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.191348 0.754864 0.454765 S
+1.09117 161.264 478 909 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.146456 0.745327 0.413352 S
+1.11646 140.742 457 870 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0710918 0.891905 0.167529 S
+1.36053 161.171 441 825 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.465476 0.943389 0.836179 S
+0.897485 153.494 427 780 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0658885 0.773999 0.335134 S
+1.17914 140.274 429 779 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.469413 0.944701 0.850599 S
+0.885733 147.723 429 777 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.255543 0.662623 0.966094 S
+0.701544 144.812 433 779 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.267964 0.682155 0.97142 S
+0.714414 128.617 440 794 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.445914 0.438025 0.914275 S
+0.402938 138.509 450 803 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.857298 0.322393 0.819287 S
+0.0916224 104.589 462 812 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.840375 0.288579 0.79585 S
+0.149843 23.4827 474 813 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0945907 0.311849 0.942123 S
+0.569954 215.872 487 780 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.468986 0.941894 0.870893 S
+0.874268 212.049 461 742 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.333074 0.836606 0.606027 S
+1.0142 212.606 427 709 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.364111 0.798001 0.988235 S
+0.766248 219.135 399 676 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.175875 0.751293 0.440467 S
+1.10015 205.828 372 640 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.01561 0.893767 0.208331 S
+1.28232 198.148 342 607 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.638865 0.909575 0.403952 S
+1.74025 206.222 319 568 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.438743 0.785702 0.343587 S
+1.60244 203.832 289 535 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.980026 0.552377 0.0272679 S
+2.22974 206.651 265 495 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.999451 0.658213 0.0767224 S
+2.10994 208.449 233 460 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.198138 0.82446 0.182391 S
+1.44745 201.851 208 432 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0680247 0.893446 0.168292 S
+1.35648 199.678 195 427 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.076936 0.888991 0.166064 S
+1.36474 204.108 199 421 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.242817 0.804379 0.204059 S
+1.47415 210.66 202 416 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0167086 0.854719 0.252613 S
+1.2379 216.304 207 416 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.200488 0.757092 0.463233 S
+1.08035 235.819 214 411 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0174868 0.895918 0.204837 S
+1.28465 229.075 231 408 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.164614 0.841398 0.171817 S
+1.42243 239.572 245 408 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.203922 0.821561 0.184314 S
+1.44364 237.57 262 395 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.502556 0.816831 0.385458 S
+1.64337 235.645 268 377 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.290944 0.789029 0.232136 S
+1.49493 233.516 273 359 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.536233 0.839292 0.398917 S
+1.66747 222.955 277 341 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.420142 0.781277 0.329061 S
+1.58045 232.061 280 327 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.840009 0.928405 0.303014 S
+1.85954 211.48 284 316 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+1 0.654734 0.0744335 S
+2.11287 216.522 287 307 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.993271 0.584237 0.0425422 S
+2.19086 209.119 294 327 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.988998 0.751537 0.140536 S
+2.00495 205.301 319 321 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.984329 0.130327 0.0176547 S
+2.56465 207.06 281 306 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.977707 0.0195163 0.043183 S
+2.63616 207.037 245 292 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.861799 0.156725 0.245167 S
+2.90487 203 214 282 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.937926 0.49752 0.0132906 S
+2.29237 207.437 186 276 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.938048 0.497658 0.0133364 S
+2.2917 212.137 169 275 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.944915 0.505669 0.0156252 S
+2.28185 207.691 163 275 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.946563 0.507652 0.0159762 S
+2.28024 212.203 163 273 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.964843 0.529625 0.0196841 S
+2.25267 199.917 163 272 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.9832 0.558572 0.0302586 S
+2.21907 201.389 163 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.993652 0.721965 0.115618 S
+2.03854 212.749 163 270 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.943786 0.504341 0.0152438 S
+2.28426 211.802 164 270 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.994751 0.594583 0.0469825 S
+2.17918 203.734 165 270 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.989715 0.571603 0.0367742 S
+2.20251 201.214 167 270 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.791592 0.943282 0.336324 S
+1.83289 206.042 168 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.784833 0.944976 0.340841 S
+1.82447 208.721 170 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.832441 0.932723 0.308965 S
+1.8551 212.705 171 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.516533 0.825498 0.392996 S
+1.65864 207.573 172 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.516274 0.825315 0.39292 S
+1.65584 204.993 173 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.433738 0.784009 0.339925 S
+1.59817 203.163 174 271 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.0817273 0.88658 0.164858 S
+1.37295 203.436 176 264 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.520912 0.82855 0.394308 S
+1.66022 217.233 162 223 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.622492 0.898665 0.40531 S
+1.72423 219.511 186 168 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.827405 0.934325 0.312444 S
+1.84559 220.049 211 143 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.857969 0.918135 0.288914 S
+1.8716 221.544 223 88 arrow
+grestore
+%</Arrows>
+
+%<Arrows>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+solid_line
+medium_line
+0.52903 0.834241 0.39675 S
+1.65669 225.979 249 29 arrow
+grestore
+%</Arrows>
+
+%<ColorBar>
+/fill? false def /stroke? false def /lorg TA_LC def
+/xll 1955 def /xur 2012 def
+/dely 6.86545 def 0
+33 T 33 T 34 T 34 T 35 T 35 T 36 T 36 T 37 T 37 T 38 T 39 T 
+39 T 40 T 40 T 41 T 41 T 42 T 42 T 43 T 44 T 44 T 45 T 45 T 
+46 T 46 T 47 T 47 T 48 T 48 T 49 T 50 T 50 T 51 T 51 T 52 T 
+52 T 53 T 53 T 54 T 55 T 55 T 56 T 56 T 57 T 57 T 58 T 58 T 
+59 T 60 T 60 T 61 T 61 T 62 T 62 T 63 T 63 T 64 T 64 T 65 T 
+66 T 66 T 67 T 67 T 68 T 68 T 69 T 69 T 70 T 71 T 71 T 72 T 
+72 T 73 T 73 T 74 T 74 T 75 T 76 T 76 T 77 T 77 T 78 T 78 T 
+79 T 79 T 80 T 81 T 81 T 82 T 82 T 83 T 83 T 84 T 84 T 85 T 
+86 T 86 T 87 T 87 T 88 T 88 T 89 T 89 T 90 T 91 T 91 T 92 T 
+92 T 93 T 93 T 94 T 94 T 95 T 96 T 96 T 97 T 97 T 98 T 98 T 
+99 T 99 T 100 T 101 T 101 T 102 T 102 T 103 T 103 T 104 T 104 T 105 T 
+106 T 106 T 107 T 107 T 108 T 108 T 109 T 109 T 110 T 111 T 111 T 112 T 
+112 T 113 T 113 T 114 T 114 T 115 T 115 T 116 T 117 T 117 T 118 T 118 T 
+119 T 119 T 120 T 120 T 121 T 122 T 122 T 123 T 123 T 124 T 124 T 125 T 
+125 T 126 T 127 T 127 T 128 T 128 T 129 T 129 T 130 T 130 T 131 T 131 T 
+132 T 133 T 133 T 134 T 134 T 135 T 135 T 136 T 136 T 137 T 138 T 138 T 
+139 T 139 T 140 T 140 T 141 T 141 T 142 T 
+/yp xdef 144 C newpath xll yp M xur yp L xll xur mean yp 3 dely mul add L fill
+/yp 0 def 32 C newpath xll yp M xur yp L xll xur mean yp 3 dely mul sub L fill
+0 setgray
+
+ very_thin_line
+newpath xll 0 M xll xur mean 0 3 dely mul sub L xur 0 L
+ xur 1366 L xll xur mean 1366 3 dely mul add L xll 1366 L xll 0 L stroke
+10.9531 SetMyFont /xurT 2021 def
+1955 0 1967 0 Line
+2001 0 2012 0 Line
+(0) xurT 0 showstring
+1955 248 1967 248 Line
+2001 248 2012 248 Line
+(100) xurT 248 showstring
+1955 496 1967 496 Line
+2001 496 2012 496 Line
+(200) xurT 496 showstring
+1955 745 1967 745 Line
+2001 745 2012 745 Line
+(300) xurT 745 showstring
+1955 993 1967 993 Line
+2001 993 2012 993 Line
+(400) xurT 993 showstring
+1955 1242 1967 1242 Line
+2001 1242 2012 1242 Line
+(500) xurT 1242 showstring
+%</ColorBar>
+
+0.419608 setgray
+very_thin_line
+%<CDT=%sWorld>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%sWorld>
+
+0.219608 setgray
+solid_line
+very_thin_line
+%<CDT=%sWorld>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+grestore
+%</CDT=%sWorld>
+
+%<MapFrame>
+/fill? false def /stroke? false def
+0 setgray
+184.602 185.866 19 4.04834 -2.15183 -1.24333 13.6622 11.7842 UsrSys
+very_thin_line
+12.886 SetMyFont
+  184.800     0.100 xmapframe
+184.8 ymin 184.8 ymax Line
+(175.2\312W)   184.800 xmaplabl
+185 ymin 185 ymax Line
+(175\312W)   185.000 xmaplabl
+185.2 ymin 185.2 ymax Line
+(174.8\312W)   185.200 xmaplabl
+185.4 ymin 185.4 ymax Line
+(174.6\312W)   185.400 xmaplabl
+185.6 ymin 185.6 ymax Line
+(174.4\312W)   185.600 xmaplabl
+185.8 ymin 185.8 ymax Line
+(174.2\312W)   185.800 xmaplabl
+   -2.000     0.100 ymapframe
+xmin -2 xmax -2 Line
+(2\312S)    -2.000 ymaplabl
+xmin -1.8 xmax -1.8 Line
+(1.8\312S)    -1.800 ymaplabl
+xmin -1.6 xmax -1.6 Line
+(1.6\312S)    -1.600 ymaplabl
+xmin -1.4 xmax -1.4 Line
+(1.4\312S)    -1.400 ymaplabl
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%</MapFrame>
+
+%<WindowStamp>
+/fill? false def /stroke? false def /lorg 5 def
+0 setgray
+7.73161 dfltFont getfont
+(Ocean Data View) 90 1908 0 rotatedText
+/lorg 0 def 12 SetMyFont
+very_thin_line
+%</WindowStamp>
+
+%<Shapefile=/Users/SamHill/Desktop/PIPA for ODV/Winslow/Winslow topography.shp>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+-562 1732 M
+0 -7 R
+2 -3 R
+4 -9 R
+4 -13 R
+4 -12 R
+1 -9 R
+0 -4 R
+0 -4 R
+-2 -8 R
+-5 -13 R
+-6 -5 R
+-10 -7 R
+-2 -2 R
+-13 -9 R
+-2 -2 R
+-11 -8 R
+-5 -4 R
+-7 -7 R
+-5 -6 R
+-8 -10 R
+-1 -2 R
+-6 -13 R
+-3 -13 R
+-2 -6 R
+-2 -6 R
+-2 -13 R
+-3 -12 R
+-3 -13 R
+-3 -7 R
+-1 -5 R
+-7 -13 R
+-4 -7 R
+-3 -5 R
+-10 -12 R
+-1 -1 R
+-11 -11 R
+-2 -1 R
+-11 -9 R
+-4 -4 R
+-8 -6 R
+-8 -6 R
+-5 -4 R
+-11 -9 R
+-1 -1 R
+-12 -11 R
+-1 -2 R
+-11 -11 R
+-1 -2 R
+-10 -11 R
+-3 -5 R
+-4 -7 R
+0 -13 R
+4 -10 R
+1 -2 R
+10 -13 R
+2 -2 R
+6 -10 R
+6 -9 R
+2 -4 R
+11 -12 R
+12 -12 R
+2 -1 R
+11 -5 R
+12 -5 R
+13 -1 R
+12 0 R
+13 1 R
+12 0 R
+13 1 R
+12 0 R
+13 -3 R
+1 0 R
+11 -7 R
+6 -6 R
+7 -8 R
+3 -4 R
+6 -13 R
+4 -7 R
+2 -5 R
+5 -13 R
+5 -12 R
+6 -13 R
+7 -12 R
+0 -1 R
+10 -12 R
+2 -3 R
+13 -4 R
+12 6 R
+2 1 R
+11 7 R
+5 5 R
+7 11 R
+2 2 R
+10 13 R
+1 0 R
+10 12 R
+2 3 R
+9 10 R
+4 3 R
+10 9 R
+2 2 R
+13 10 R
+1 1 R
+11 8 R
+13 3 R
+8 1 R
+4 1 R
+13 0 R
+6 -1 R
+6 0 R
+7 0 R
+6 1 R
+13 3 R
+12 3 R
+7 6 R
+6 5 R
+6 7 R
+5 13 R
+1 3 R
+3 9 R
+0 13 R
+1 12 R
+-1 13 R
+-1 12 R
+-2 10 R
+0 3 R
+-4 12 R
+-2 13 R
+-3 13 R
+-2 12 R
+-1 13 R
+2 12 R
+2 13 R
+2 12 R
+-4 13 R
+-2 8 R
+-4 4 R
+-4 13 R
+-5 9 R
+-7 3 R
+-5 5 R
+-13 3 R
+-13 3 R
+-2 2 R
+-8 12 R
+-2 7 R
+-2 6 R
+2 6 R
+2 6 R
+6 13 R
+4 4 R
+13 5 R
+10 4 R
+3 0 R
+12 3 R
+13 3 R
+12 2 R
+13 1 R
+10 3 R
+2 1 R
+13 0 R
+12 1 R
+13 0 R
+12 0 R
+10 -2 R
+3 -1 R
+12 -4 R
+13 -6 R
+1 -1 R
+11 -10 R
+3 -3 R
+8 -13 R
+2 -4 R
+3 -8 R
+3 -13 R
+0 -12 R
+0 -13 R
+-4 -12 R
+10 -5 R
+13 -2 R
+12 -2 R
+13 0 R
+13 1 R
+12 4 R
+4 4 R
+5 12 R
+2 13 R
+2 2 R
+12 6 R
+13 0 R
+12 -3 R
+13 -1 R
+12 -1 R
+12 -1 R
+1 -2 R
+2 -13 R
+3 -12 R
+5 -13 R
+1 -3 R
+3 -9 R
+5 -13 R
+5 -8 R
+2 -4 R
+6 -13 R
+4 -7 R
+3 -5 R
+6 -13 R
+4 -7 R
+3 -5 R
+7 -13 R
+2 -5 R
+4 -8 R
+6 -12 R
+3 -5 R
+4 -8 R
+8 -12 R
+0 -2 R
+9 -11 R
+4 -5 R
+8 -7 R
+4 -5 R
+11 -8 R
+2 -1 R
+13 -3 R
+12 -2 R
+13 2 R
+12 2 R
+10 2 R
+3 1 R
+12 8 R
+6 4 R
+7 5 R
+11 7 R
+1 1 R
+13 4 R
+12 2 R
+13 1 R
+12 0 R
+13 0 R
+12 2 R
+11 3 R
+2 0 R
+12 5 R
+10 7 R
+3 3 R
+10 10 R
+2 4 R
+4 8 R
+5 13 R
+3 13 R
+1 4 R
+2 8 R
+2 13 R
+1 12 R
+1 13 R
+2 12 R
+3 13 R
+2 4 R
+2 8 R
+5 13 R
+5 10 R
+2 2 R
+10 13 R
+1 1 R
+10 11 R
+2 5 R
+6 8 R
+7 8 R
+12 1 R
+13 -5 R
+3 -4 R
+7 -13 R
+2 -2 R
+6 -10 R
+7 -9 R
+2 -4 R
+9 -12 R
+1 -2 R
+9 -11 R
+4 -3 R
+12 -9 R
+1 0 R
+12 -7 R
+12 0 R
+13 1 R
+12 3 R
+3 3 R
+10 10 R
+2 2 R
+9 13 R
+1 12 R
+0 5 R
+1 8 R
+-1 2 R
+-3 10 R
+-5 13 R
+-4 7 R
+-3 5 R
+-8 13 R
+-2 2 R
+-10 11 R
+-2 3 R
+-7 9 R
+-6 11 R
+-1 2 R
+-6 12 R
+-3 13 R
+-1 12 R
+3 13 R
+4 12 R
+4 7 R
+5 6 R
+8 9 R
+3 3 R
+9 7 R
+9 6 R
+4 3 R
+12 8 R
+4 1 R
+0 7 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+590 748 M
+-8 12 R
+-3 6 R
+-4 7 R
+-8 12 R
+-1 1 R
+-4 12 R
+2 13 R
+1 12 R
+-1 13 R
+-1 12 R
+3 8 R
+7 5 R
+6 7 R
+5 5 R
+7 10 R
+3 3 R
+10 8 R
+4 4 R
+9 8 R
+4 5 R
+8 4 R
+13 -1 R
+12 -1 R
+13 1 R
+12 2 R
+13 -1 R
+12 0 R
+13 0 R
+6 -4 R
+6 -10 R
+3 -3 R
+10 -12 R
+0 -1 R
+11 -12 R
+1 -1 R
+13 -10 R
+1 -1 R
+11 -7 R
+4 -6 R
+-1 -12 R
+-1 -13 R
+1 -12 R
+2 -13 R
+-4 -13 R
+-1 -1 R
+-4 -11 R
+-4 -13 R
+-3 -12 R
+-1 -4 R
+-3 -9 R
+-10 -12 R
+-12 -9 R
+-7 -4 R
+-6 -2 R
+-12 0 R
+-13 0 R
+-12 1 R
+-11 1 R
+-2 1 R
+-12 1 R
+-13 3 R
+-12 2 R
+-13 1 R
+-10 5 R
+-2 1 R
+-13 8 R
+-4 3 R
+-9 11 R
+-1 2 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+742 684 M
+-10 1 R
+-3 0 R
+-12 3 R
+-13 1 R
+-12 3 R
+-13 2 R
+-12 1 R
+-13 3 R
+-12 2 R
+-13 2 R
+-12 5 R
+-9 3 R
+-4 2 R
+-13 9 R
+-2 2 R
+-10 10 R
+-2 2 R
+-9 13 R
+-2 3 R
+-5 9 R
+-5 13 R
+-2 6 R
+-2 6 R
+-2 13 R
+0 13 R
+1 12 R
+0 13 R
+1 12 R
+2 8 R
+2 5 R
+6 12 R
+2 13 R
+-1 12 R
+-2 13 R
+5 5 R
+13 -1 R
+12 0 R
+13 3 R
+13 5 R
+1 0 R
+11 4 R
+13 0 R
+12 1 R
+13 0 R
+12 1 R
+13 -1 R
+12 -1 R
+13 -1 R
+5 -3 R
+7 -4 R
+10 -8 R
+3 -3 R
+9 -10 R
+3 -4 R
+9 -8 R
+4 -4 R
+9 -9 R
+3 -3 R
+8 -9 R
+5 -9 R
+2 -4 R
+0 -12 R
+1 -13 R
+0 -12 R
+1 -13 R
+-1 -13 R
+-2 -12 R
+-1 -11 R
+0 -2 R
+-1 -12 R
+0 -13 R
+0 -12 R
+0 -13 R
+0 -12 R
+-4 -13 R
+-8 -6 R
+-12 1 R
+-13 3 R
+-12 1 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+3 664 M
+-4 9 R
+-8 8 R
+-4 4 R
+-8 9 R
+-3 4 R
+3 3 R
+12 2 R
+9 7 R
+3 3 R
+8 10 R
+4 3 R
+8 -3 R
+5 -9 R
+0 -4 R
+0 -1 R
+-6 -11 R
+0 -13 R
+6 -11 R
+1 -1 R
+-1 -3 R
+-13 -7 R
+-12 1 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+15 650 M
+-8 -2 R
+-4 -2 R
+-5 2 R
+-7 5 R
+-3 7 R
+-9 10 R
+-3 3 R
+-8 12 R
+-2 4 R
+-6 9 R
+6 8 R
+3 4 R
+10 6 R
+12 3 R
+4 4 R
+8 12 R
+12 6 R
+13 6 R
+7 -12 R
+4 -12 R
+1 -11 R
+1 -2 R
+0 -12 R
+0 -13 R
+1 -12 R
+0 -13 R
+-2 -5 R
+-12 -5 R
+-13 0 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+250 648 M
+2 12 R
+1 6 R
+4 7 R
+9 8 R
+5 4 R
+7 7 R
+10 6 R
+3 2 R
+2 -2 R
+9 -13 R
+1 -2 R
+5 -10 R
+-1 -13 R
+-2 -12 R
+-2 -3 R
+-10 -10 R
+-2 -2 R
+-13 1 R
+-3 1 R
+-9 3 R
+-13 4 R
+-3 6 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+212 648 M
+2 12 R
+2 6 R
+2 7 R
+6 12 R
+4 8 R
+3 5 R
+7 12 R
+3 6 R
+4 7 R
+5 12 R
+3 12 R
+1 1 R
+2 12 R
+1 13 R
+-1 12 R
+0 13 R
+0 13 R
+3 12 R
+4 13 R
+3 2 R
+10 10 R
+2 2 R
+13 8 R
+12 0 R
+13 -4 R
+7 -6 R
+5 -4 R
+6 -8 R
+3 -13 R
+2 -12 R
+0 -13 R
+-1 -13 R
+-2 -12 R
+-1 -13 R
+-1 -12 R
+1 -13 R
+1 -12 R
+2 -13 R
+3 -12 R
+0 -1 R
+2 -12 R
+1 -12 R
+-1 -13 R
+-1 -12 R
+-1 -3 R
+-4 -10 R
+-6 -12 R
+-3 -3 R
+-11 -10 R
+-1 -1 R
+-13 -6 R
+-11 -5 R
+-1 -1 R
+-8 1 R
+-5 0 R
+-12 0 R
+-13 1 R
+-12 6 R
+-8 5 R
+-5 3 R
+-9 10 R
+-3 9 R
+-2 3 R
+-2 13 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+829 581 M
+-6 4 R
+-6 3 R
+-13 7 R
+-3 3 R
+-9 11 R
+-1 1 R
+-12 12 R
+0 1 R
+-10 12 R
+-2 3 R
+-10 10 R
+-3 2 R
+-12 8 R
+-4 2 R
+-9 4 R
+-12 5 R
+-13 3 R
+0 1 R
+-12 3 R
+-13 2 R
+-12 3 R
+-13 2 R
+-12 2 R
+-13 3 R
+-12 3 R
+-13 5 R
+-4 2 R
+-9 4 R
+-12 8 R
+0 1 R
+-13 11 R
+0 1 R
+-10 12 R
+-2 4 R
+-5 9 R
+-6 12 R
+-2 7 R
+-1 6 R
+-2 12 R
+-1 13 R
+0 13 R
+1 12 R
+1 13 R
+1 12 R
+1 4 R
+3 9 R
+4 12 R
+2 13 R
+1 12 R
+1 13 R
+2 3 R
+9 9 R
+3 3 R
+13 2 R
+12 2 R
+13 3 R
+10 3 R
+3 1 R
+12 2 R
+13 2 R
+12 1 R
+13 0 R
+12 0 R
+13 -1 R
+12 -1 R
+13 -3 R
+3 -1 R
+9 -4 R
+13 -7 R
+2 -2 R
+10 -9 R
+4 -3 R
+9 -9 R
+4 -4 R
+8 -9 R
+3 -3 R
+10 -12 R
+0 -1 R
+8 -12 R
+4 -12 R
+1 -1 R
+1 -12 R
+2 -13 R
+0 -12 R
+1 -13 R
+0 -13 R
+1 -12 R
+0 -13 R
+2 -12 R
+3 -13 R
+2 -7 R
+2 -5 R
+6 -13 R
+4 -7 R
+5 -5 R
+8 -9 R
+3 -4 R
+10 -9 R
+3 -3 R
+9 -9 R
+3 -4 R
+10 -11 R
+0 -1 R
+6 -13 R
+4 -12 R
+1 -13 R
+-2 -12 R
+-7 -13 R
+-2 -3 R
+-13 -8 R
+-12 0 R
+-13 1 R
+-13 6 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+338 598 M
+-10 -8 R
+-9 -5 R
+-3 -2 R
+-13 -4 R
+-12 -4 R
+-13 0 R
+-12 0 R
+-13 1 R
+-12 3 R
+-13 5 R
+-1 1 R
+-11 7 R
+-8 6 R
+-5 5 R
+-7 7 R
+-5 7 R
+-4 6 R
+-4 12 R
+-1 13 R
+2 12 R
+5 13 R
+2 3 R
+4 9 R
+8 13 R
+7 12 R
+6 11 R
+1 2 R
+5 12 R
+4 13 R
+2 10 R
+1 2 R
+1 13 R
+0 12 R
+1 13 R
+0 13 R
+0 12 R
+2 13 R
+4 12 R
+4 8 R
+2 5 R
+6 12 R
+4 4 R
+13 7 R
+4 2 R
+8 3 R
+13 4 R
+12 0 R
+13 -2 R
+11 -5 R
+1 -1 R
+13 -11 R
+1 -1 R
+8 -12 R
+3 -5 R
+4 -8 R
+6 -12 R
+2 -13 R
+1 -8 R
+0 -4 R
+0 -13 R
+0 -13 R
+-1 -12 R
+0 -13 R
+-1 -12 R
+0 -13 R
+1 -12 R
+1 -6 R
+1 -7 R
+1 -12 R
+1 -13 R
+1 -12 R
+0 -13 R
+-2 -12 R
+-2 -9 R
+-1 -4 R
+-5 -12 R
+-7 -10 R
+-2 -3 R
+-10 -10 R
+-3 -2 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+370 598 M
+-4 -5 R
+-9 -8 R
+-4 -3 R
+-12 -8 R
+-2 -2 R
+-11 -5 R
+-12 -5 R
+-6 -2 R
+-7 -2 R
+-12 -2 R
+-13 -1 R
+-12 0 R
+-13 0 R
+-12 3 R
+-6 2 R
+-7 2 R
+-12 5 R
+-10 5 R
+-3 3 R
+-12 8 R
+-2 2 R
+-11 9 R
+-4 4 R
+-8 8 R
+-5 4 R
+-8 8 R
+-5 5 R
+-7 9 R
+-4 3 R
+-8 13 R
+6 12 R
+6 5 R
+6 8 R
+6 5 R
+7 7 R
+6 5 R
+6 8 R
+6 7 R
+4 5 R
+9 12 R
+0 1 R
+7 12 R
+4 13 R
+1 3 R
+3 9 R
+2 13 R
+1 12 R
+0 13 R
+0 13 R
+1 12 R
+1 13 R
+2 12 R
+3 11 R
+0 2 R
+4 12 R
+7 13 R
+1 1 R
+11 11 R
+2 2 R
+12 8 R
+11 3 R
+2 0 R
+12 3 R
+13 3 R
+12 -1 R
+13 -2 R
+12 -3 R
+13 -7 R
+9 -6 R
+3 -3 R
+9 -9 R
+4 -5 R
+5 -8 R
+7 -12 R
+1 -1 R
+5 -12 R
+4 -12 R
+3 -13 R
+0 -1 R
+1 -11 R
+1 -13 R
+-1 -13 R
+0 -12 R
+0 -13 R
+0 -12 R
+0 -13 R
+1 -12 R
+1 -13 R
+1 -12 R
+2 -13 R
+0 -12 R
+0 -13 R
+-1 -12 R
+-3 -13 R
+-2 -6 R
+-2 -6 R
+-9 -13 R
+-1 -2 R
+-9 -10 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+817 560 M
+-13 7 R
+-7 5 R
+-5 5 R
+-8 8 R
+-5 5 R
+-7 8 R
+-5 6 R
+-5 6 R
+-8 9 R
+-3 4 R
+-9 9 R
+-4 3 R
+-9 7 R
+-9 6 R
+-3 1 R
+-13 6 R
+-12 5 R
+-2 0 R
+-11 3 R
+-12 3 R
+-13 2 R
+-12 3 R
+-10 2 R
+-3 0 R
+-12 3 R
+-13 4 R
+-13 5 R
+-1 0 R
+-11 6 R
+-11 7 R
+-2 1 R
+-12 11 R
+-11 13 R
+-2 2 R
+-7 10 R
+-5 12 R
+-1 1 R
+-3 12 R
+-2 13 R
+0 12 R
+0 13 R
+0 13 R
+1 12 R
+2 13 R
+2 12 R
+1 2 R
+2 11 R
+4 12 R
+3 13 R
+2 12 R
+1 6 R
+2 7 R
+7 12 R
+4 5 R
+11 8 R
+1 1 R
+13 4 R
+12 3 R
+13 4 R
+3 0 R
+10 3 R
+12 3 R
+13 2 R
+12 1 R
+13 0 R
+12 0 R
+13 -2 R
+12 -1 R
+13 -3 R
+6 -3 R
+6 -2 R
+13 -5 R
+7 -5 R
+5 -4 R
+12 -9 R
+1 -1 R
+12 -11 R
+12 -13 R
+1 -1 R
+8 -11 R
+4 -7 R
+4 -6 R
+6 -12 R
+3 -9 R
+1 -4 R
+2 -12 R
+2 -13 R
+1 -12 R
+1 -13 R
+1 -13 R
+2 -12 R
+2 -13 R
+4 -12 R
+5 -13 R
+4 -7 R
+4 -5 R
+9 -12 R
+0 -1 R
+12 -12 R
+12 -13 R
+1 0 R
+11 -12 R
+1 -2 R
+8 -11 R
+5 -6 R
+4 -6 R
+5 -13 R
+3 -8 R
+2 -4 R
+2 -13 R
+1 -12 R
+-1 -13 R
+-4 -12 R
+0 -1 R
+-8 -12 R
+-4 -4 R
+-13 -8 R
+-2 -1 R
+-10 -3 R
+-13 -1 R
+-12 2 R
+-12 2 R
+-1 1 R
+-13 6 R
+-12 6 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1255 547 M
+-1 0 R
+1 1 R
+13 3 R
+2 -4 R
+-2 -3 R
+-13 3 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+241 538 M
+-13 3 R
+-12 4 R
+-5 2 R
+-8 4 R
+-12 7 R
+-3 2 R
+-10 6 R
+-10 6 R
+-2 2 R
+-13 9 R
+-3 2 R
+-9 6 R
+-12 7 R
+-1 0 R
+-13 5 R
+-12 4 R
+-13 3 R
+-12 4 R
+-13 6 R
+-8 3 R
+-4 1 R
+-13 8 R
+-12 2 R
+-13 -3 R
+-12 -4 R
+-12 -4 R
+-12 1 R
+-8 11 R
+-2 13 R
+-3 4 R
+-6 8 R
+-4 13 R
+-2 5 R
+-9 7 R
+-4 2 R
+-12 9 R
+-4 2 R
+4 9 R
+4 3 R
+8 2 R
+13 5 R
+10 6 R
+2 1 R
+13 9 R
+2 2 R
+10 10 R
+6 3 R
+6 3 R
+12 8 R
+2 1 R
+11 11 R
+12 -5 R
+3 -6 R
+3 -12 R
+3 -13 R
+3 -12 R
+1 -10 R
+1 -3 R
+11 -11 R
+13 3 R
+12 -1 R
+13 -1 R
+12 4 R
+13 1 R
+13 5 R
+1 0 R
+11 7 R
+5 6 R
+8 9 R
+2 3 R
+7 13 R
+3 7 R
+2 5 R
+3 13 R
+3 12 R
+0 13 R
+1 13 R
+0 12 R
+1 13 R
+2 12 R
+1 6 R
+1 7 R
+3 12 R
+5 13 R
+3 6 R
+4 6 R
+9 12 R
+1 1 R
+11 9 R
+6 3 R
+7 4 R
+12 5 R
+13 3 R
+9 1 R
+3 0 R
+13 2 R
+12 -1 R
+10 -1 R
+3 0 R
+12 -3 R
+13 -5 R
+10 -5 R
+2 -1 R
+13 -9 R
+3 -2 R
+10 -9 R
+3 -4 R
+9 -11 R
+1 -1 R
+8 -13 R
+4 -7 R
+2 -5 R
+6 -13 R
+4 -11 R
+1 -1 R
+4 -13 R
+2 -12 R
+2 -13 R
+1 -13 R
+3 -12 R
+0 -1 R
+3 -12 R
+5 -12 R
+0 -13 R
+-2 -12 R
+-3 -13 R
+0 -12 R
+2 -13 R
+-1 -12 R
+0 -13 R
+-2 -12 R
+-2 -10 R
+-1 -3 R
+-5 -12 R
+-7 -11 R
+-1 -2 R
+-10 -12 R
+-1 -2 R
+-11 -11 R
+-2 -1 R
+-12 -11 R
+-2 -1 R
+-11 -8 R
+-7 -4 R
+-6 -3 R
+-12 -6 R
+-7 -4 R
+-6 -2 R
+-12 -4 R
+-13 -3 R
+-12 -3 R
+-9 0 R
+-4 0 R
+-12 0 R
+-4 0 R
+-9 0 R
+-12 3 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1197 522 M
+-4 -2 R
+-13 -10 R
+-12 -3 R
+-13 -3 R
+-12 0 R
+-13 4 R
+-5 2 R
+-7 5 R
+-10 7 R
+-3 3 R
+-5 10 R
+-5 12 R
+0 13 R
+3 12 R
+7 12 R
+2 1 R
+11 8 R
+5 5 R
+7 3 R
+13 6 R
+12 2 R
+13 -2 R
+12 -3 R
+10 -6 R
+3 -3 R
+12 -9 R
+1 -1 R
+12 -9 R
+3 -4 R
+7 -12 R
+2 -13 R
+-12 -11 R
+-2 -1 R
+-11 -6 R
+-8 -7 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1221 510 M
+-3 -2 R
+-13 -5 R
+-12 -6 R
+-13 -5 R
+-12 -3 R
+-13 -3 R
+-12 -1 R
+-13 2 R
+-12 2 R
+-13 2 R
+-10 6 R
+-2 2 R
+-11 11 R
+-2 3 R
+-3 9 R
+-3 13 R
+-2 12 R
+2 13 R
+3 12 R
+3 7 R
+3 6 R
+9 13 R
+1 0 R
+12 11 R
+3 1 R
+10 5 R
+12 5 R
+6 3 R
+7 2 R
+12 1 R
+13 -2 R
+10 -1 R
+2 -1 R
+13 -6 R
+11 -6 R
+1 -1 R
+13 -7 R
+6 -4 R
+6 -7 R
+7 -6 R
+6 -5 R
+11 -8 R
+1 0 R
+13 -7 R
+4 -5 R
+6 -13 R
+-7 -12 R
+-3 -3 R
+-13 -5 R
+-12 -4 R
+-1 -1 R
+-12 -6 R
+-9 -6 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1205 485 M
+-12 -5 R
+-13 -4 R
+-12 -3 R
+-3 -1 R
+-10 -2 R
+-12 -1 R
+-13 -1 R
+-12 0 R
+-13 0 R
+-12 1 R
+-12 3 R
+-1 1 R
+-13 6 R
+-5 6 R
+-7 12 R
+0 2 R
+-3 11 R
+-2 12 R
+0 13 R
+1 12 R
+2 13 R
+2 5 R
+2 7 R
+6 13 R
+4 8 R
+4 5 R
+9 10 R
+2 2 R
+11 9 R
+4 4 R
+8 4 R
+13 5 R
+9 3 R
+3 1 R
+13 3 R
+12 1 R
+13 -1 R
+12 -1 R
+7 -3 R
+6 -2 R
+12 -5 R
+11 -5 R
+2 -1 R
+12 -10 R
+3 -2 R
+10 -8 R
+5 -4 R
+7 -7 R
+7 -6 R
+6 -5 R
+7 -8 R
+5 -7 R
+3 -5 R
+4 -13 R
+-4 -12 R
+-3 -4 R
+-8 -9 R
+-4 -4 R
+-13 -7 R
+-1 -1 R
+-11 -7 R
+-11 -6 R
+-2 -1 R
+-12 -6 R
+-13 -5 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+960 372 M
+2 12 R
+5 9 R
+8 4 R
+5 3 R
+12 -2 R
+1 -1 R
+12 -8 R
+2 -5 R
+0 -12 R
+-2 -4 R
+-9 -9 R
+-4 -3 R
+-12 -6 R
+-13 7 R
+-1 2 R
+-6 13 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1016 334 M
+-11 -10 R
+-6 -2 R
+-7 -2 R
+-12 -2 R
+-13 2 R
+-5 2 R
+-7 5 R
+-9 7 R
+-4 4 R
+-5 9 R
+-4 12 R
+-2 13 R
+1 12 R
+3 13 R
+5 13 R
+2 4 R
+8 8 R
+5 5 R
+9 8 R
+3 2 R
+13 4 R
+12 2 R
+13 1 R
+12 -4 R
+9 -5 R
+4 -4 R
+5 -9 R
+4 -12 R
+1 -13 R
+1 -13 R
+-2 -12 R
+-6 -13 R
+-3 -5 R
+-4 -7 R
+-9 -11 R
+-1 -2 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+992 298 M
+-7 -1 R
+-5 -1 R
+-7 1 R
+-6 0 R
+-12 5 R
+-13 6 R
+-1 1 R
+-11 10 R
+-3 3 R
+-8 12 R
+-2 4 R
+-4 9 R
+-3 12 R
+-3 13 R
+1 12 R
+3 13 R
+3 13 R
+3 7 R
+2 5 R
+7 13 R
+4 6 R
+4 6 R
+8 9 R
+5 4 R
+8 6 R
+11 6 R
+1 1 R
+13 6 R
+12 6 R
+13 10 R
+2 2 R
+7 13 R
+3 12 R
+0 2 R
+3 11 R
+4 12 R
+4 13 R
+2 4 R
+3 8 R
+7 13 R
+2 3 R
+7 10 R
+6 7 R
+4 5 R
+8 8 R
+5 5 R
+8 6 R
+9 6 R
+4 2 R
+12 7 R
+11 4 R
+2 0 R
+12 4 R
+13 2 R
+12 1 R
+13 0 R
+12 -2 R
+13 -3 R
+5 -2 R
+7 -3 R
+13 -6 R
+7 -4 R
+5 -3 R
+13 -9 R
+0 -1 R
+12 -11 R
+1 -1 R
+12 -11 R
+1 -1 R
+11 -13 R
+9 -13 R
+4 -8 R
+1 -4 R
+3 -13 R
+-3 -12 R
+-1 -3 R
+-5 -10 R
+-8 -9 R
+-3 -3 R
+-9 -9 R
+-6 -4 R
+-7 -4 R
+-12 -8 R
+-1 0 R
+-12 -7 R
+-12 -5 R
+-2 -1 R
+-11 -4 R
+-12 -4 R
+-13 -4 R
+-2 0 R
+-10 -3 R
+-13 -3 R
+-12 -2 R
+-13 -2 R
+-11 -3 R
+-1 0 R
+-13 -3 R
+-12 -6 R
+-7 -3 R
+-6 -7 R
+-4 -6 R
+-5 -12 R
+-3 -13 R
+-1 0 R
+-2 -13 R
+-3 -12 R
+-5 -13 R
+-2 -6 R
+-2 -6 R
+-8 -13 R
+-3 -4 R
+-7 -8 R
+-5 -5 R
+-11 -8 R
+-2 -1 R
+-12 -7 R
+-13 -3 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1036 297 M
+-6 -4 R
+-13 -7 R
+-4 -2 R
+-8 -3 R
+-13 -3 R
+-12 -1 R
+-13 1 R
+-12 3 R
+-8 3 R
+-5 2 R
+-12 7 R
+-5 4 R
+-8 7 R
+-6 5 R
+-6 8 R
+-4 5 R
+-6 12 R
+-3 9 R
+-1 4 R
+-3 12 R
+-1 13 R
+0 12 R
+2 13 R
+2 13 R
+1 6 R
+2 6 R
+3 13 R
+3 12 R
+4 13 R
+1 5 R
+1 7 R
+1 13 R
+-2 5 R
+-5 7 R
+-8 5 R
+-12 6 R
+-4 2 R
+-9 3 R
+-12 5 R
+-11 4 R
+-2 1 R
+-13 6 R
+-11 6 R
+-1 0 R
+-13 7 R
+-7 5 R
+-5 5 R
+-10 8 R
+-3 3 R
+-9 9 R
+-3 3 R
+-9 10 R
+-4 5 R
+-6 8 R
+-6 6 R
+-5 6 R
+-8 7 R
+-5 6 R
+-7 5 R
+-11 7 R
+-2 1 R
+-12 6 R
+-13 5 R
+-2 1 R
+-10 2 R
+-13 3 R
+-12 2 R
+-13 3 R
+-12 2 R
+-13 3 R
+-13 4 R
+-12 4 R
+-4 2 R
+-9 4 R
+-12 7 R
+-2 1 R
+-11 9 R
+-3 4 R
+-9 10 R
+-2 2 R
+-9 13 R
+-2 3 R
+-6 9 R
+-6 13 R
+0 6 R
+-1 6 R
+1 3 R
+1 10 R
+3 12 R
+-1 13 R
+0 13 R
+2 12 R
+2 13 R
+4 12 R
+1 6 R
+2 7 R
+4 12 R
+3 13 R
+4 12 R
+0 1 R
+2 12 R
+6 12 R
+4 7 R
+5 6 R
+8 7 R
+8 5 R
+4 3 R
+13 6 R
+12 4 R
+13 4 R
+13 4 R
+12 2 R
+13 2 R
+12 1 R
+13 0 R
+12 0 R
+0 -1 R
+13 -1 R
+12 -2 R
+13 -3 R
+12 -4 R
+5 -2 R
+8 -3 R
+12 -7 R
+5 -3 R
+8 -5 R
+9 -7 R
+3 -3 R
+11 -10 R
+2 -1 R
+10 -11 R
+2 -4 R
+8 -9 R
+5 -8 R
+3 -4 R
+6 -13 R
+3 -9 R
+2 -3 R
+3 -13 R
+2 -12 R
+2 -13 R
+1 -12 R
+2 -13 R
+1 -10 R
+0 -3 R
+4 -12 R
+4 -13 R
+5 -9 R
+1 -3 R
+8 -13 R
+3 -4 R
+7 -8 R
+6 -6 R
+6 -7 R
+6 -6 R
+5 -6 R
+8 -8 R
+4 -5 R
+8 -10 R
+2 -2 R
+9 -13 R
+2 -3 R
+6 -9 R
+6 -11 R
+1 -2 R
+7 -12 R
+5 -12 R
+0 -1 R
+6 -12 R
+5 -13 R
+1 -4 R
+9 -9 R
+4 -2 R
+4 2 R
+8 4 R
+11 9 R
+2 1 R
+11 12 R
+1 0 R
+13 12 R
+12 10 R
+3 3 R
+10 8 R
+5 4 R
+7 5 R
+12 8 R
+1 0 R
+13 7 R
+11 5 R
+1 0 R
+13 5 R
+12 3 R
+13 2 R
+12 1 R
+13 -1 R
+12 -1 R
+13 -2 R
+12 -4 R
+6 -3 R
+7 -3 R
+12 -6 R
+5 -3 R
+8 -6 R
+9 -7 R
+3 -3 R
+11 -9 R
+2 -3 R
+10 -10 R
+2 -3 R
+8 -9 R
+5 -7 R
+4 -6 R
+6 -13 R
+2 -6 R
+2 -6 R
+2 -13 R
+-1 -12 R
+-3 -7 R
+-1 -6 R
+-7 -12 R
+-4 -5 R
+-7 -8 R
+-6 -5 R
+-8 -7 R
+-4 -3 R
+-13 -9 R
+-2 -1 R
+-10 -6 R
+-13 -5 R
+-2 -1 R
+-10 -5 R
+-13 -4 R
+-12 -4 R
+-1 0 R
+-12 -3 R
+-12 -3 R
+-13 -3 R
+-10 -3 R
+-2 -1 R
+-13 -5 R
+-12 -7 R
+-1 0 R
+-12 -8 R
+-4 -4 R
+-8 -13 R
+0 -1 R
+-6 -12 R
+-4 -12 R
+-3 -7 R
+-2 -6 R
+-5 -12 R
+-6 -12 R
+0 -1 R
+-7 -12 R
+-5 -7 R
+-5 -6 R
+-8 -8 R
+-6 -4 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1033 272 M
+-3 -2 R
+-13 -5 R
+-12 -4 R
+-11 -2 R
+-2 0 R
+-12 -1 R
+-13 1 R
+-1 0 R
+-11 2 R
+-13 4 R
+-12 6 R
+-2 1 R
+-11 6 R
+-8 6 R
+-4 3 R
+-10 10 R
+-3 3 R
+-6 9 R
+-6 10 R
+-2 3 R
+-5 12 R
+-3 13 R
+-2 12 R
+-1 7 R
+0 6 R
+0 12 R
+0 13 R
+1 13 R
+1 12 R
+1 13 R
+0 12 R
+-1 13 R
+-2 3 R
+-4 9 R
+-8 10 R
+-3 3 R
+-10 8 R
+-7 4 R
+-6 4 R
+-12 8 R
+-1 1 R
+-12 8 R
+-6 4 R
+-6 5 R
+-11 8 R
+-2 1 R
+-11 11 R
+-1 1 R
+-12 12 R
+-1 1 R
+-10 11 R
+-2 3 R
+-9 10 R
+-4 5 R
+-7 8 R
+-5 5 R
+-8 7 R
+-5 4 R
+-12 9 R
+-13 5 R
+-12 5 R
+-12 2 R
+-1 0 R
+-12 3 R
+-13 3 R
+-12 2 R
+-13 2 R
+-13 3 R
+-12 2 R
+-13 4 R
+-12 4 R
+-6 2 R
+-7 3 R
+-12 8 R
+-2 2 R
+-11 8 R
+-4 4 R
+-8 13 R
+-4 12 R
+-9 9 R
+-8 4 R
+-4 4 R
+-10 8 R
+-3 13 R
+5 12 R
+8 7 R
+3 6 R
+9 12 R
+0 1 R
+-3 12 R
+-1 13 R
+1 12 R
+3 7 R
+2 6 R
+6 12 R
+5 13 R
+4 12 R
+3 13 R
+4 12 R
+1 6 R
+2 7 R
+5 12 R
+6 11 R
+1 2 R
+9 12 R
+2 3 R
+11 10 R
+2 1 R
+12 8 R
+7 3 R
+6 4 R
+12 6 R
+10 3 R
+3 1 R
+13 5 R
+12 2 R
+13 3 R
+12 0 R
+13 0 R
+12 -1 R
+13 -2 R
+12 -3 R
+13 -3 R
+5 -2 R
+7 -2 R
+13 -5 R
+12 -6 R
+13 -7 R
+8 -5 R
+4 -3 R
+13 -9 R
+0 -1 R
+12 -10 R
+3 -2 R
+10 -11 R
+2 -2 R
+9 -12 R
+1 -2 R
+7 -11 R
+6 -12 R
+0 -1 R
+5 -12 R
+5 -12 R
+3 -13 R
+1 -12 R
+2 -13 R
+2 -12 R
+3 -13 R
+2 -13 R
+2 -4 R
+4 -8 R
+6 -13 R
+3 -4 R
+6 -8 R
+6 -8 R
+4 -5 R
+9 -9 R
+2 -3 R
+10 -11 R
+2 -2 R
+11 -12 R
+10 -13 R
+2 -3 R
+8 -9 R
+5 -6 R
+5 -7 R
+7 -10 R
+3 -2 R
+10 -9 R
+8 -4 R
+4 -2 R
+13 -1 R
+7 3 R
+5 2 R
+13 6 R
+12 5 R
+13 8 R
+8 4 R
+4 2 R
+13 7 R
+9 4 R
+4 1 R
+12 5 R
+13 4 R
+11 2 R
+1 1 R
+13 1 R
+12 1 R
+13 0 R
+12 -1 R
+12 -2 R
+1 0 R
+12 -3 R
+13 -5 R
+9 -4 R
+3 -2 R
+13 -7 R
+5 -4 R
+7 -5 R
+9 -7 R
+4 -4 R
+10 -9 R
+2 -3 R
+9 -9 R
+4 -4 R
+7 -9 R
+5 -8 R
+3 -4 R
+7 -13 R
+3 -8 R
+2 -5 R
+4 -12 R
+1 -13 R
+0 -12 R
+-3 -13 R
+-4 -8 R
+-2 -4 R
+-6 -13 R
+-5 -6 R
+-5 -6 R
+-7 -8 R
+-6 -5 R
+-7 -5 R
+-10 -7 R
+-2 -1 R
+-13 -7 R
+-10 -5 R
+-2 -1 R
+-13 -5 R
+-12 -4 R
+-8 -2 R
+-5 -2 R
+-12 -4 R
+-13 -3 R
+-12 -4 R
+-13 -4 R
+-12 -6 R
+-5 -2 R
+-8 -7 R
+-7 -6 R
+-5 -6 R
+-5 -7 R
+-8 -11 R
+0 -1 R
+-6 -13 R
+-5 -12 R
+-1 -3 R
+-5 -10 R
+-6 -12 R
+-2 -3 R
+-6 -10 R
+-7 -9 R
+-3 -3 R
+-9 -10 R
+-3 -3 R
+-10 -7 R
+-9 -5 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1055 259 M
+-13 -8 R
+-10 -4 R
+-2 -1 R
+-13 -5 R
+-12 -2 R
+-13 -2 R
+-12 0 R
+-13 1 R
+-12 2 R
+-13 3 R
+-10 4 R
+-2 1 R
+-13 5 R
+-10 6 R
+-2 2 R
+-13 9 R
+-2 2 R
+-10 10 R
+-3 2 R
+-10 13 R
+-8 12 R
+-4 10 R
+-2 3 R
+-4 12 R
+-3 13 R
+-2 12 R
+-1 13 R
+0 12 R
+-1 13 R
+0 13 R
+0 6 R
+0 6 R
+-1 13 R
+-5 12 R
+-6 13 R
+-1 1 R
+-9 11 R
+-3 3 R
+-9 10 R
+-4 3 R
+-11 9 R
+-1 1 R
+-13 11 R
+-1 1 R
+-11 9 R
+-4 3 R
+-9 8 R
+-5 5 R
+-7 8 R
+-4 4 R
+-9 11 R
+-2 2 R
+-10 12 R
+0 1 R
+-12 12 R
+-1 1 R
+-12 12 R
+-13 7 R
+-10 5 R
+-2 1 R
+-13 3 R
+-12 3 R
+-13 4 R
+-12 1 R
+-4 1 R
+-9 1 R
+-13 1 R
+-12 0 R
+-13 2 R
+-12 0 R
+-13 1 R
+-12 2 R
+-13 -2 R
+-9 -5 R
+-3 -2 R
+-13 -8 R
+-7 -3 R
+-5 -2 R
+-13 -6 R
+-7 -4 R
+-5 -4 R
+-13 -9 R
+-12 -8 R
+-6 -5 R
+-7 -5 R
+-11 -7 R
+-1 -1 R
+-13 -8 R
+-6 -4 R
+-6 -4 R
+-13 -6 R
+-4 -2 R
+-9 -4 R
+-12 -5 R
+-11 -4 R
+-2 0 R
+-12 -4 R
+-13 -3 R
+-12 -2 R
+-13 -1 R
+-12 0 R
+-13 1 R
+-12 2 R
+-13 3 R
+-12 4 R
+-13 5 R
+-12 6 R
+-3 2 R
+-10 5 R
+-12 7 R
+0 1 R
+-13 8 R
+-7 4 R
+-5 4 R
+-13 7 R
+-3 1 R
+-10 5 R
+-12 5 R
+-7 3 R
+-6 2 R
+-12 5 R
+-9 6 R
+-4 1 R
+-12 7 R
+-7 4 R
+-6 4 R
+-12 0 R
+-11 -4 R
+-2 0 R
+-4 0 R
+-8 1 R
+-5 -1 R
+-7 -1 R
+-12 -3 R
+-13 3 R
+-1 1 R
+-9 13 R
+-2 2 R
+-7 10 R
+-5 13 R
+-1 5 R
+-1 7 R
+-8 13 R
+-3 2 R
+-13 8 R
+-9 2 R
+-3 1 R
+-13 6 R
+-13 5 R
+0 1 R
+0 4 R
+13 7 R
+3 1 R
+10 4 R
+7 9 R
+5 4 R
+13 3 R
+12 3 R
+6 2 R
+7 5 R
+9 8 R
+3 3 R
+11 9 R
+2 3 R
+8 10 R
+2 12 R
+2 2 R
+12 0 R
+12 4 R
+9 7 R
+4 1 R
+9 -1 R
+3 -1 R
+5 -12 R
+8 -12 R
+1 0 R
+11 -6 R
+11 -7 R
+-5 -12 R
+1 -13 R
+6 -4 R
+12 -4 R
+13 3 R
+12 1 R
+12 4 R
+1 1 R
+10 12 R
+3 3 R
+7 9 R
+5 13 R
+0 1 R
+3 11 R
+1 13 R
+2 13 R
+1 12 R
+1 13 R
+1 12 R
+2 13 R
+2 7 R
+1 5 R
+3 13 R
+5 12 R
+3 6 R
+4 7 R
+9 11 R
+1 1 R
+11 11 R
+3 2 R
+10 6 R
+12 6 R
+2 0 R
+11 4 R
+12 3 R
+13 2 R
+12 1 R
+13 0 R
+12 0 R
+13 -1 R
+12 -3 R
+13 -3 R
+8 -3 R
+4 -1 R
+13 -6 R
+9 -5 R
+4 -3 R
+12 -9 R
+1 -1 R
+12 -11 R
+1 -1 R
+10 -13 R
+1 -1 R
+8 -11 R
+5 -8 R
+4 -5 R
+8 -9 R
+4 -3 R
+9 -8 R
+8 -5 R
+4 -2 R
+10 2 R
+3 1 R
+5 12 R
+7 11 R
+1 1 R
+3 13 R
+3 12 R
+3 13 R
+3 6 R
+2 6 R
+5 13 R
+5 9 R
+2 3 R
+9 13 R
+2 3 R
+8 9 R
+4 5 R
+9 8 R
+4 3 R
+12 9 R
+2 1 R
+11 7 R
+10 5 R
+2 2 R
+13 6 R
+13 4 R
+0 1 R
+12 3 R
+13 2 R
+12 1 R
+13 -1 R
+12 -2 R
+13 -3 R
+1 0 R
+11 -4 R
+13 -4 R
+12 -4 R
+2 -1 R
+11 -4 R
+12 -5 R
+6 -3 R
+7 -4 R
+12 -7 R
+5 -2 R
+8 -5 R
+12 -8 R
+13 -9 R
+4 -3 R
+8 -7 R
+6 -6 R
+7 -7 R
+5 -5 R
+8 -11 R
+1 -2 R
+9 -12 R
+2 -5 R
+4 -8 R
+6 -12 R
+3 -9 R
+1 -4 R
+5 -12 R
+3 -13 R
+1 -12 R
+2 -10 R
+1 -3 R
+2 -12 R
+4 -13 R
+4 -13 R
+2 -3 R
+6 -9 R
+6 -8 R
+3 -5 R
+10 -12 R
+9 -13 R
+3 -4 R
+7 -8 R
+6 -7 R
+4 -6 R
+8 -10 R
+2 -2 R
+11 -10 R
+3 -3 R
+9 -6 R
+13 -6 R
+12 2 R
+13 1 R
+12 3 R
+13 5 R
+4 1 R
+8 3 R
+13 5 R
+13 5 R
+12 3 R
+13 4 R
+12 2 R
+13 1 R
+12 1 R
+13 1 R
+12 -1 R
+13 -1 R
+12 -3 R
+13 -5 R
+6 -2 R
+6 -3 R
+13 -6 R
+5 -4 R
+7 -4 R
+11 -8 R
+2 -2 R
+12 -10 R
+1 -1 R
+12 -11 R
+2 -1 R
+10 -12 R
+1 -1 R
+10 -12 R
+2 -4 R
+7 -9 R
+6 -10 R
+1 -2 R
+7 -13 R
+4 -13 R
+0 -1 R
+3 -11 R
+2 -13 R
+1 -12 R
+-2 -13 R
+-4 -12 R
+0 -1 R
+-4 -12 R
+-7 -12 R
+-1 -3 R
+-8 -10 R
+-5 -6 R
+-6 -6 R
+-7 -6 R
+-8 -7 R
+-4 -3 R
+-13 -7 R
+-5 -2 R
+-7 -4 R
+-13 -4 R
+-12 -4 R
+-2 -1 R
+-11 -3 R
+-12 -4 R
+-13 -4 R
+-6 -1 R
+-6 -2 R
+-13 -3 R
+-12 -6 R
+-5 -2 R
+-8 -4 R
+-12 -8 R
+-1 -1 R
+-9 -12 R
+-3 -4 R
+-5 -9 R
+-7 -12 R
+0 -1 R
+-6 -12 R
+-7 -11 R
+0 -1 R
+-7 -13 R
+-5 -9 R
+-3 -3 R
+-9 -13 R
+-1 -1 R
+-11 -11 R
+-2 -2 R
+-12 -11 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1067 235 M
+-1 -1 R
+-11 -7 R
+-12 -5 R
+-1 -1 R
+-12 -4 R
+-13 -3 R
+-12 -1 R
+-13 -1 R
+-12 0 R
+-13 1 R
+-12 2 R
+-13 3 R
+-12 3 R
+-1 1 R
+-12 4 R
+-12 6 R
+-4 2 R
+-9 5 R
+-11 8 R
+-1 0 R
+-13 10 R
+-3 2 R
+-9 10 R
+-3 3 R
+-10 11 R
+-1 1 R
+-9 13 R
+-3 5 R
+-4 7 R
+-5 13 R
+-3 11 R
+-1 1 R
+-2 13 R
+-2 12 R
+-1 13 R
+-1 12 R
+-1 13 R
+-1 13 R
+-2 12 R
+-2 8 R
+-1 5 R
+-7 12 R
+-4 7 R
+-3 6 R
+-10 10 R
+-2 2 R
+-10 11 R
+-2 2 R
+-11 7 R
+-5 5 R
+-7 7 R
+-5 6 R
+-8 7 R
+-6 5 R
+-6 8 R
+-5 5 R
+-8 11 R
+0 1 R
+-12 13 R
+-1 0 R
+-12 10 R
+-2 2 R
+-10 7 R
+-13 4 R
+-7 2 R
+-5 1 R
+-13 5 R
+-12 0 R
+-13 1 R
+-13 -1 R
+-12 -1 R
+-13 -1 R
+-12 -2 R
+-13 0 R
+-12 0 R
+-13 -1 R
+-5 -1 R
+-7 -1 R
+-11 -12 R
+-2 -2 R
+-10 -10 R
+-2 -2 R
+-13 -7 R
+-6 -4 R
+-6 -3 R
+-13 -6 R
+-7 -3 R
+-5 -2 R
+-13 -6 R
+-11 -5 R
+-1 0 R
+-13 -5 R
+-12 -6 R
+-3 -1 R
+-10 -4 R
+-13 -4 R
+-12 -4 R
+-1 -1 R
+-12 -3 R
+-12 -3 R
+-13 -3 R
+-12 -1 R
+-13 -2 R
+-12 0 R
+-13 2 R
+-12 1 R
+-13 3 R
+-12 4 R
+-6 2 R
+-7 3 R
+-12 6 R
+-8 4 R
+-5 2 R
+-12 7 R
+-6 3 R
+-7 5 R
+-12 8 R
+-1 0 R
+-12 8 R
+-7 4 R
+-6 3 R
+-12 6 R
+-8 4 R
+-5 2 R
+-12 6 R
+-8 4 R
+-5 3 R
+-12 9 R
+-1 1 R
+-12 5 R
+-12 -2 R
+-13 4 R
+-12 1 R
+-12 1 R
+-12 -3 R
+-13 -2 R
+-12 -2 R
+-12 11 R
+-1 1 R
+-7 11 R
+-5 11 R
+-2 2 R
+-4 12 R
+-5 13 R
+-2 2 R
+-11 10 R
+-1 2 R
+-13 9 R
+-2 2 R
+-11 9 R
+-4 3 R
+-8 8 R
+-4 5 R
+-9 11 R
+-1 1 R
+1 13 R
+0 2 R
+13 1 R
+12 2 R
+13 2 R
+6 5 R
+7 6 R
+10 7 R
+2 2 R
+13 8 R
+2 2 R
+10 12 R
+2 1 R
+11 10 R
+4 2 R
+8 5 R
+8 8 R
+5 4 R
+12 7 R
+5 2 R
+7 3 R
+12 5 R
+13 1 R
+9 3 R
+3 2 R
+13 3 R
+4 -5 R
+8 -12 R
+0 -2 R
+13 -3 R
+2 5 R
+10 8 R
+6 4 R
+7 5 R
+9 8 R
+3 4 R
+4 8 R
+5 13 R
+4 8 R
+1 4 R
+3 13 R
+4 12 R
+5 12 R
+0 1 R
+6 12 R
+6 10 R
+2 3 R
+11 11 R
+1 1 R
+11 9 R
+7 4 R
+6 3 R
+12 5 R
+13 4 R
+4 0 R
+8 3 R
+13 2 R
+12 1 R
+13 2 R
+12 0 R
+13 0 R
+12 0 R
+13 -1 R
+12 -2 R
+13 -2 R
+10 -3 R
+2 0 R
+13 -3 R
+13 -5 R
+7 -4 R
+5 -3 R
+13 -8 R
+3 -2 R
+9 -6 R
+8 -6 R
+5 -4 R
+11 -9 R
+1 0 R
+13 -10 R
+4 -2 R
+8 -7 R
+8 7 R
+5 2 R
+4 10 R
+4 13 R
+4 6 R
+3 6 R
+6 13 R
+4 7 R
+3 5 R
+7 13 R
+2 3 R
+8 10 R
+5 6 R
+5 6 R
+7 8 R
+6 5 R
+7 6 R
+8 6 R
+4 4 R
+12 9 R
+1 0 R
+12 9 R
+6 3 R
+7 5 R
+13 6 R
+5 2 R
+7 3 R
+13 2 R
+12 1 R
+13 0 R
+12 -3 R
+7 -3 R
+6 -2 R
+12 -6 R
+9 -5 R
+4 -1 R
+12 -7 R
+9 -4 R
+4 -2 R
+12 -6 R
+8 -5 R
+5 -2 R
+12 -7 R
+8 -3 R
+5 -2 R
+12 -6 R
+10 -5 R
+3 -1 R
+12 -7 R
+8 -4 R
+5 -4 R
+13 -7 R
+3 -2 R
+9 -6 R
+10 -7 R
+3 -1 R
+12 -8 R
+5 -3 R
+8 -5 R
+11 -8 R
+1 0 R
+13 -8 R
+7 -4 R
+5 -3 R
+13 -8 R
+4 -2 R
+8 -5 R
+10 -7 R
+3 -2 R
+10 -11 R
+2 -3 R
+6 -9 R
+7 -11 R
+1 -2 R
+2 -12 R
+3 -13 R
+3 -12 R
+0 -13 R
+-1 -12 R
+-3 -13 R
+-2 -13 R
+-1 -12 R
+1 -13 R
+8 -12 R
+1 -2 R
+13 -10 R
+0 -1 R
+12 -5 R
+13 0 R
+12 0 R
+13 2 R
+13 3 R
+8 0 R
+4 1 R
+13 4 R
+12 1 R
+13 0 R
+12 0 R
+13 1 R
+12 -1 R
+13 0 R
+12 -3 R
+7 -3 R
+6 -1 R
+12 -5 R
+13 -6 R
+12 -8 R
+8 -5 R
+5 -3 R
+12 -9 R
+0 -1 R
+13 -8 R
+4 -4 R
+8 -8 R
+5 -4 R
+8 -9 R
+4 -4 R
+9 -9 R
+2 -3 R
+10 -12 R
+1 -1 R
+10 -12 R
+2 -3 R
+8 -10 R
+4 -6 R
+4 -6 R
+7 -13 R
+2 -3 R
+4 -10 R
+5 -12 R
+2 -13 R
+1 -5 R
+1 -7 R
+0 -13 R
+-1 -12 R
+0 -1 R
+-2 -12 R
+-5 -12 R
+-5 -11 R
+-1 -2 R
+-8 -12 R
+-4 -5 R
+-6 -8 R
+-6 -7 R
+-6 -5 R
+-7 -6 R
+-9 -7 R
+-3 -3 R
+-13 -7 R
+-4 -2 R
+-9 -5 R
+-12 -4 R
+-13 -3 R
+-4 -1 R
+-8 -2 R
+-13 -2 R
+-12 -1 R
+-13 -3 R
+-12 -2 R
+-9 -3 R
+-4 -1 R
+-12 -4 R
+-13 -3 R
+-6 -4 R
+-6 -5 R
+-9 -8 R
+-4 -3 R
+-7 -9 R
+-5 -9 R
+-2 -4 R
+-7 -12 R
+-4 -9 R
+-2 -4 R
+-6 -12 R
+-4 -7 R
+-4 -6 R
+-9 -12 R
+-9 -13 R
+-3 -4 R
+-10 -8 R
+-3 -3 R
+-13 -9 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1042 172 M
+-7 -1 R
+-5 0 R
+-5 0 R
+-8 1 R
+-12 2 R
+-13 0 R
+-12 0 R
+-13 1 R
+-12 1 R
+-13 4 R
+-12 3 R
+-2 1 R
+-11 4 R
+-12 7 R
+-4 1 R
+-9 4 R
+-12 8 R
+-3 1 R
+-10 5 R
+-12 7 R
+-2 1 R
+-11 7 R
+-8 5 R
+-5 3 R
+-12 9 R
+-1 1 R
+-12 11 R
+-1 1 R
+-10 13 R
+-1 1 R
+-9 11 R
+-4 7 R
+-3 6 R
+-6 12 R
+-3 10 R
+-1 3 R
+-4 12 R
+-3 13 R
+-3 12 R
+-2 12 R
+0 1 R
+-2 12 R
+-4 13 R
+-4 13 R
+-2 5 R
+-3 7 R
+-6 13 R
+-4 5 R
+-7 7 R
+-5 6 R
+-7 7 R
+-6 5 R
+-10 7 R
+-2 2 R
+-13 9 R
+-2 2 R
+-10 6 R
+-13 2 R
+-12 3 R
+-7 1 R
+-6 2 R
+-4 -2 R
+-8 -3 R
+-13 -4 R
+-13 -2 R
+-12 1 R
+-13 2 R
+-12 3 R
+-13 3 R
+-2 0 R
+-10 2 R
+-13 1 R
+-12 1 R
+-11 -4 R
+-2 0 R
+-12 -6 R
+-13 -4 R
+-5 -2 R
+-7 -4 R
+-13 -4 R
+-12 -3 R
+-8 -2 R
+-5 -1 R
+-12 -3 R
+-13 -3 R
+-12 -5 R
+-3 0 R
+-10 -3 R
+-13 -2 R
+-12 -3 R
+-13 -3 R
+-11 -2 R
+-1 0 R
+-13 -3 R
+-12 -1 R
+-13 -1 R
+-12 0 R
+-13 2 R
+-12 1 R
+-6 2 R
+-7 2 R
+-12 4 R
+-13 5 R
+-2 2 R
+-10 5 R
+-13 6 R
+-1 1 R
+-11 8 R
+-6 5 R
+-7 5 R
+-10 7 R
+-2 2 R
+-13 10 R
+-1 1 R
+-12 7 R
+-10 5 R
+-2 2 R
+-13 7 R
+-8 4 R
+-4 2 R
+-13 7 R
+-5 3 R
+-7 5 R
+-13 6 R
+-5 2 R
+-7 2 R
+-13 7 R
+-11 3 R
+-1 1 R
+-12 0 R
+-12 0 R
+-4 -1 R
+-9 -2 R
+-12 -6 R
+-13 -1 R
+-12 9 R
+-1 0 R
+-12 8 R
+-8 5 R
+-4 4 R
+-6 9 R
+-6 12 R
+-1 5 R
+-2 8 R
+-6 12 R
+-5 5 R
+-12 5 R
+-2 3 R
+2 5 R
+3 7 R
+-3 3 R
+-7 10 R
+-6 6 R
+-4 6 R
+-6 13 R
+-2 2 R
+-12 10 R
+-1 2 R
+-12 6 R
+-2 5 R
+2 2 R
+10 10 R
+2 4 R
+7 9 R
+6 4 R
+12 5 R
+13 1 R
+12 -1 R
+6 3 R
+7 8 R
+4 5 R
+9 12 R
+9 13 R
+-2 13 R
+5 6 R
+10 6 R
+3 1 R
+12 3 R
+13 3 R
+12 5 R
+2 1 R
+11 4 R
+12 7 R
+3 1 R
+9 3 R
+11 -3 R
+1 0 R
+13 -2 R
+4 2 R
+8 8 R
+4 5 R
+9 11 R
+1 1 R
+10 13 R
+1 2 R
+8 10 R
+5 11 R
+1 2 R
+5 12 R
+4 13 R
+2 5 R
+3 7 R
+6 13 R
+4 7 R
+3 5 R
+9 11 R
+2 2 R
+11 8 R
+10 5 R
+3 1 R
+12 3 R
+13 3 R
+12 2 R
+13 0 R
+12 1 R
+13 0 R
+12 0 R
+13 1 R
+12 0 R
+13 1 R
+12 -1 R
+13 -1 R
+12 0 R
+13 -1 R
+12 0 R
+13 -1 R
+12 -1 R
+13 0 R
+13 -2 R
+12 -3 R
+13 -2 R
+3 0 R
+9 -2 R
+13 -3 R
+12 -3 R
+13 -2 R
+12 -1 R
+11 11 R
+2 2 R
+5 10 R
+7 13 R
+9 12 R
+4 5 R
+6 8 R
+6 7 R
+5 5 R
+8 8 R
+5 5 R
+7 6 R
+7 6 R
+6 5 R
+10 8 R
+2 1 R
+13 10 R
+2 1 R
+10 7 R
+9 6 R
+4 2 R
+13 7 R
+5 3 R
+7 4 R
+13 3 R
+12 3 R
+13 2 R
+12 -2 R
+13 -2 R
+12 -6 R
+3 -2 R
+10 -6 R
+9 -6 R
+3 -3 R
+13 -9 R
+1 -1 R
+11 -8 R
+6 -4 R
+7 -5 R
+12 -7 R
+1 -1 R
+12 -5 R
+12 -7 R
+2 0 R
+11 -4 R
+12 -6 R
+8 -3 R
+5 -2 R
+13 -4 R
+12 -5 R
+4 -1 R
+9 -3 R
+12 -4 R
+13 -5 R
+3 -1 R
+9 -3 R
+13 -3 R
+12 -5 R
+6 -1 R
+7 -2 R
+12 -4 R
+13 -4 R
+7 -3 R
+5 -2 R
+13 -6 R
+9 -4 R
+3 -3 R
+13 -8 R
+3 -2 R
+9 -7 R
+6 -6 R
+7 -7 R
+5 -5 R
+7 -9 R
+3 -4 R
+10 -12 R
+0 -1 R
+9 -12 R
+4 -4 R
+6 -8 R
+6 -8 R
+5 -5 R
+8 -8 R
+4 -4 R
+8 -8 R
+5 -5 R
+8 -6 R
+11 -6 R
+1 -1 R
+13 -6 R
+12 -5 R
+3 -1 R
+10 -4 R
+12 -4 R
+10 -4 R
+3 -2 R
+12 -7 R
+6 -4 R
+7 -5 R
+9 -7 R
+3 -4 R
+11 -9 R
+2 -2 R
+10 -11 R
+2 -2 R
+13 -10 R
+12 -12 R
+1 -1 R
+12 -12 R
+13 -11 R
+1 -2 R
+11 -10 R
+4 -2 R
+9 -8 R
+6 -5 R
+6 -4 R
+11 -8 R
+2 -1 R
+12 -9 R
+3 -3 R
+10 -8 R
+4 -4 R
+8 -9 R
+3 -4 R
+10 -12 R
+8 -13 R
+4 -7 R
+3 -5 R
+6 -13 R
+4 -8 R
+2 -4 R
+4 -13 R
+4 -13 R
+2 -7 R
+2 -5 R
+2 -13 R
+2 -12 R
+1 -13 R
+1 -12 R
+0 -13 R
+-2 -12 R
+-4 -13 R
+-2 -6 R
+-2 -6 R
+-7 -13 R
+-3 -6 R
+-5 -6 R
+-8 -10 R
+-2 -3 R
+-10 -10 R
+-2 -2 R
+-11 -11 R
+-2 -2 R
+-10 -10 R
+-3 -3 R
+-10 -9 R
+-3 -3 R
+-9 -9 R
+-4 -4 R
+-9 -9 R
+-4 -3 R
+-8 -8 R
+-6 -5 R
+-7 -6 R
+-11 -6 R
+-1 -1 R
+-13 -7 R
+-13 -3 R
+-11 -2 R
+-1 0 R
+-13 0 R
+-12 4 R
+-13 8 R
+-1 1 R
+-11 4 R
+-13 3 R
+-12 1 R
+-13 -6 R
+-3 -2 R
+-9 -7 R
+-7 -6 R
+-6 -4 R
+-4 -8 R
+-4 -13 R
+-4 -9 R
+-2 -3 R
+-2 -13 R
+-5 -12 R
+-4 -4 R
+-8 -9 R
+-4 -6 R
+-4 -6 R
+-9 -9 R
+-5 -4 R
+-7 -5 R
+-13 -6 R
+-2 -2 R
+-10 -6 R
+-13 -5 R
+-2 -1 R
+-11 -6 R
+-12 -5 R
+-13 -1 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1193 121 M
+-5 13 R
+1 12 R
+-1 13 R
+5 10 R
+12 0 R
+5 -10 R
+0 -13 R
+6 -12 R
+-7 -13 R
+-4 -1 R
+-12 1 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1903 109 M
+-1 12 R
+-4 13 R
+-4 10 R
+-3 2 R
+-6 13 R
+-3 12 R
+0 5 R
+-1 8 R
+1 5 R
+2 7 R
+6 13 R
+4 4 R
+13 7 R
+12 0 R
+13 -2 R
+11 -9 R
+1 -2 R
+6 -11 R
+3 -12 R
+-1 -13 R
+-1 -12 R
+-1 -13 R
+-1 -12 R
+0 -13 R
+-5 -12 R
+-12 -13 R
+-13 -2 R
+-4 2 R
+-8 4 R
+-4 9 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1770 -16 M
+12 7 R
+11 6 R
+1 1 R
+10 11 R
+3 2 R
+7 10 R
+4 13 R
+1 1 R
+3 11 R
+1 13 R
+2 12 R
+0 13 R
+0 12 R
+3 13 R
+-9 9 R
+-12 -9 R
+0 -1 R
+-8 -12 R
+-5 -4 R
+-12 -7 R
+-3 -1 R
+-10 -4 R
+-13 -1 R
+-12 1 R
+-13 2 R
+-2 2 R
+-10 4 R
+-13 7 R
+-2 1 R
+-10 7 R
+-12 6 R
+-1 0 R
+-12 7 R
+-12 5 R
+-1 1 R
+-2 -1 R
+-10 -2 R
+-13 -5 R
+-12 -3 R
+-3 -2 R
+-10 -9 R
+-5 -4 R
+-7 -4 R
+-13 -1 R
+-11 5 R
+-1 1 R
+-9 12 R
+-4 5 R
+-12 -2 R
+-12 -3 R
+0 -13 R
+1 -12 R
+0 -13 R
+2 -12 R
+-1 -13 R
+0 -12 R
+1 -13 R
+1 -12 R
+2 -12 R
+6 -8 R
+6 -5 R
+6 -3 R
+13 0 R
+12 -2 R
+13 -2 R
+12 0 R
+13 -2 R
+12 0 R
+13 -1 R
+12 -1 R
+13 0 R
+12 -1 R
+2 0 R
+11 -2 R
+12 0 R
+13 0 R
+12 1 R
+5 1 R
+8 2 R
+12 3 R
+13 7 R
+1 0 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1010 -78 M
+-5 -7 R
+-7 -6 R
+-6 -3 R
+-12 -6 R
+-13 -2 R
+-12 1 R
+-13 3 R
+-12 7 R
+-1 0 R
+-12 9 R
+-4 4 R
+-8 8 R
+-4 4 R
+-9 13 R
+-5 12 R
+-3 13 R
+0 12 R
+1 13 R
+4 12 R
+3 6 R
+3 6 R
+10 12 R
+1 1 R
+11 8 R
+6 4 R
+7 4 R
+12 6 R
+13 2 R
+1 1 R
+11 1 R
+13 -1 R
+3 0 R
+9 -3 R
+13 -5 R
+7 -5 R
+5 -6 R
+6 -6 R
+7 -13 R
+4 -12 R
+3 -12 R
+0 -13 R
+-1 -12 R
+-4 -13 R
+-2 -5 R
+-3 -7 R
+-7 -13 R
+-3 -3 R
+-7 -9 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1038 -153 M
+-8 -6 R
+-12 -7 R
+-1 0 R
+-12 -5 R
+-13 -3 R
+-12 -1 R
+-13 0 R
+-12 2 R
+-13 4 R
+-8 3 R
+-4 2 R
+-13 5 R
+-10 6 R
+-2 1 R
+-13 8 R
+-5 3 R
+-7 6 R
+-8 7 R
+-5 4 R
+-7 8 R
+-5 7 R
+-5 6 R
+-8 12 R
+0 1 R
+-5 12 R
+-6 12 R
+-2 6 R
+-2 7 R
+-3 12 R
+-3 13 R
+-1 12 R
+-2 13 R
+-1 12 R
+0 2 R
+-1 10 R
+0 13 R
+-1 12 R
+0 13 R
+-1 12 R
+-1 13 R
+-2 12 R
+-4 13 R
+-3 5 R
+-3 7 R
+-9 13 R
+-12 12 R
+-1 1 R
+-12 7 R
+-5 5 R
+-8 7 R
+-5 5 R
+-7 6 R
+-9 7 R
+-4 2 R
+-12 9 R
+-3 1 R
+-10 9 R
+-3 4 R
+-9 11 R
+-2 2 R
+-9 12 R
+-2 2 R
+-9 11 R
+-3 4 R
+-9 8 R
+-4 4 R
+-9 9 R
+-3 3 R
+-13 8 R
+-2 1 R
+-10 5 R
+-13 7 R
+-1 1 R
+-12 7 R
+-10 5 R
+-2 1 R
+-13 7 R
+-12 5 R
+-13 6 R
+-11 6 R
+-1 1 R
+-13 7 R
+-12 4 R
+-13 -6 R
+-12 -5 R
+-3 -1 R
+-10 -3 R
+-12 -4 R
+-13 -4 R
+-5 -1 R
+-7 -2 R
+-13 -3 R
+-12 -1 R
+-13 -2 R
+-12 -2 R
+-13 -1 R
+-13 -1 R
+-6 -1 R
+-6 0 R
+-13 -1 R
+-12 -1 R
+-13 0 R
+-12 1 R
+-13 1 R
+-1 0 R
+-11 2 R
+-13 2 R
+-12 2 R
+-13 1 R
+-12 2 R
+-13 1 R
+-12 1 R
+-13 1 R
+-12 -1 R
+-13 -1 R
+-12 -1 R
+-13 -1 R
+-13 0 R
+-12 3 R
+-4 2 R
+-7 12 R
+-2 9 R
+0 4 R
+0 2 R
+4 10 R
+3 13 R
+6 12 R
+0 2 R
+4 11 R
+3 13 R
+1 12 R
+-1 13 R
+-3 12 R
+-4 11 R
+-1 2 R
+-8 12 R
+-4 5 R
+-7 8 R
+-5 3 R
+-11 9 R
+-2 1 R
+-12 12 R
+-13 6 R
+-8 6 R
+-4 3 R
+-10 10 R
+-3 2 R
+-12 2 R
+-12 -1 R
+-5 -3 R
+-7 -3 R
+-13 0 R
+-12 -1 R
+-13 -5 R
+-12 3 R
+-7 6 R
+-6 6 R
+-12 2 R
+-13 2 R
+-5 2 R
+-8 4 R
+-9 9 R
+-3 5 R
+-5 7 R
+-8 8 R
+-7 5 R
+-3 13 R
+-2 3 R
+-12 9 R
+8 13 R
+-6 12 R
+-3 7 R
+-5 6 R
+0 12 R
+0 13 R
+0 12 R
+-7 4 R
+-13 7 R
+-12 0 R
+-13 0 R
+-4 2 R
+1 12 R
+3 5 R
+4 8 R
+9 9 R
+5 3 R
+3 13 R
+3 12 R
+1 5 R
+7 8 R
+-7 3 R
+-8 9 R
+5 13 R
+3 5 R
+13 2 R
+12 -2 R
+4 8 R
+8 12 R
+1 1 R
+6 12 R
+6 10 R
+2 2 R
+10 13 R
+1 0 R
+12 12 R
+1 0 R
+12 9 R
+8 4 R
+5 2 R
+12 4 R
+13 1 R
+12 1 R
+13 2 R
+6 2 R
+6 3 R
+13 8 R
+1 2 R
+11 11 R
+1 1 R
+8 13 R
+3 5 R
+4 7 R
+5 13 R
+3 9 R
+1 3 R
+3 13 R
+3 13 R
+4 12 R
+2 8 R
+1 5 R
+4 12 R
+5 13 R
+2 6 R
+3 6 R
+7 13 R
+3 4 R
+7 8 R
+5 5 R
+10 8 R
+3 2 R
+12 8 R
+9 2 R
+4 2 R
+12 2 R
+13 0 R
+13 -2 R
+8 -2 R
+4 -1 R
+13 -5 R
+12 -6 R
+1 0 R
+12 -7 R
+10 -6 R
+2 -1 R
+13 -7 R
+9 -4 R
+3 -2 R
+13 -4 R
+12 -4 R
+13 -1 R
+12 -2 R
+1 0 R
+12 -2 R
+12 0 R
+13 0 R
+12 2 R
+2 0 R
+11 4 R
+12 5 R
+8 4 R
+5 3 R
+13 8 R
+2 1 R
+10 8 R
+7 5 R
+6 4 R
+12 8 R
+0 1 R
+13 5 R
+12 2 R
+13 1 R
+11 4 R
+1 0 R
+13 8 R
+9 4 R
+3 2 R
+13 5 R
+12 6 R
+13 5 R
+12 7 R
+1 0 R
+12 7 R
+12 6 R
+13 8 R
+9 5 R
+3 2 R
+13 8 R
+3 2 R
+10 6 R
+12 6 R
+0 1 R
+13 6 R
+12 5 R
+2 1 R
+11 4 R
+12 4 R
+13 3 R
+12 1 R
+9 1 R
+4 0 R
+2 0 R
+10 -1 R
+13 -2 R
+12 -4 R
+13 -5 R
+1 -1 R
+11 -4 R
+13 -6 R
+6 -2 R
+6 -4 R
+13 -5 R
+11 -4 R
+1 -1 R
+13 -5 R
+13 -3 R
+12 -2 R
+13 0 R
+12 1 R
+13 3 R
+12 5 R
+5 2 R
+8 5 R
+9 8 R
+3 2 R
+9 10 R
+4 5 R
+6 8 R
+6 6 R
+7 6 R
+6 4 R
+12 7 R
+5 2 R
+8 3 R
+12 0 R
+13 0 R
+12 -1 R
+8 -2 R
+5 -2 R
+12 -4 R
+13 -6 R
+2 -1 R
+11 -6 R
+11 -6 R
+1 -1 R
+13 -9 R
+3 -3 R
+9 -9 R
+5 -3 R
+8 -9 R
+3 -4 R
+9 -12 R
+0 -2 R
+5 -11 R
+3 -13 R
+2 -12 R
+2 -13 R
+1 -2 R
+2 -10 R
+2 -13 R
+6 -12 R
+2 -6 R
+6 -7 R
+7 -5 R
+12 -7 R
+2 0 R
+11 -4 R
+12 1 R
+10 3 R
+3 0 R
+12 6 R
+9 6 R
+4 4 R
+9 9 R
+3 4 R
+7 8 R
+6 8 R
+3 5 R
+9 11 R
+1 1 R
+12 10 R
+4 3 R
+9 4 R
+12 4 R
+13 1 R
+12 -1 R
+13 -2 R
+12 -4 R
+4 -2 R
+9 -4 R
+12 -7 R
+2 -2 R
+7 -12 R
+4 -11 R
+0 -2 R
+1 -12 R
+1 -13 R
+-1 -12 R
+-1 -13 R
+0 -1 R
+-3 -11 R
+-3 -13 R
+-3 -12 R
+-2 -13 R
+-1 -12 R
+2 -13 R
+4 -13 R
+6 -7 R
+3 -5 R
+9 -11 R
+1 -2 R
+11 -12 R
+1 -1 R
+8 -12 R
+4 -7 R
+3 -5 R
+7 -13 R
+3 -5 R
+3 -7 R
+5 -13 R
+4 -11 R
+1 -1 R
+4 -13 R
+4 -12 R
+4 -12 R
+0 -1 R
+3 -12 R
+3 -13 R
+3 -13 R
+2 -12 R
+1 -6 R
+1 -7 R
+2 -12 R
+2 -13 R
+1 -12 R
+0 -13 R
+1 -12 R
+2 -13 R
+1 -12 R
+1 -13 R
+2 -12 R
+0 -2 R
+2 -11 R
+2 -12 R
+4 -13 R
+3 -12 R
+2 -4 R
+2 -9 R
+4 -13 R
+4 -12 R
+2 -8 R
+2 -5 R
+4 -12 R
+4 -13 R
+2 -12 R
+1 -6 R
+1 -7 R
+1 -12 R
+0 -13 R
+-2 -12 R
+0 -7 R
+-1 -6 R
+-3 -12 R
+-4 -13 R
+-5 -12 R
+-6 -13 R
+-6 -10 R
+-3 -3 R
+-10 -12 R
+-12 -13 R
+-1 0 R
+-12 -10 R
+-2 -2 R
+-11 -8 R
+-5 -5 R
+-7 -4 R
+-10 -8 R
+-3 -2 R
+-12 -11 R
+-13 -11 R
+-1 -1 R
+-11 -13 R
+-12 -12 R
+-1 -2 R
+-10 -11 R
+-2 -2 R
+-11 -10 R
+-2 -2 R
+-12 -10 R
+-1 -1 R
+-12 -10 R
+-2 -2 R
+-10 -9 R
+-5 -4 R
+-8 -8 R
+-4 -5 R
+-8 -9 R
+-3 -3 R
+-10 -12 R
+-1 -1 R
+-9 -12 R
+-3 -3 R
+-6 -10 R
+-6 -7 R
+-3 -5 R
+-4 -13 R
+-6 -11 R
+0 -1 R
+-2 -13 R
+-5 -12 R
+-5 -9 R
+-4 -4 R
+-9 -8 R
+-8 -4 R
+-4 -3 R
+-13 -8 R
+-3 -2 R
+-9 -5 R
+-13 -4 R
+-11 -3 R
+-1 -1 R
+-13 -3 R
+-12 -4 R
+-13 -4 R
+-1 -1 R
+-11 -9 R
+-3 -3 R
+-8 -12 R
+-2 -3 R
+-5 -10 R
+-6 -12 R
+-1 -4 R
+-4 -9 R
+-5 -12 R
+-4 -8 R
+-1 -5 R
+-6 -12 R
+-5 -9 R
+-2 -4 R
+-8 -12 R
+-3 -5 R
+-5 -8 R
+-8 -10 R
+-2 -2 R
+-10 -11 R
+-2 -2 R
+-11 -9 R
+-4 -3 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+-904 -4561 M
+6 0 R
+12 -1 R
+13 0 R
+12 0 R
+13 1 R
+12 0 R
+13 1 R
+13 2 R
+12 2 R
+13 2 R
+10 2 R
+2 1 R
+13 2 R
+12 4 R
+13 3 R
+5 2 R
+7 3 R
+13 6 R
+7 4 R
+5 3 R
+13 8 R
+4 2 R
+8 5 R
+13 5 R
+8 2 R
+4 1 R
+13 0 R
+1 -1 R
+11 -5 R
+13 -7 R
+1 0 R
+11 -5 R
+13 -4 R
+13 -3 R
+2 -1 R
+10 -3 R
+13 0 R
+12 1 R
+7 2 R
+6 2 R
+12 6 R
+9 5 R
+4 2 R
+12 10 R
+0 1 R
+13 9 R
+4 3 R
+8 5 R
+9 7 R
+4 3 R
+12 8 R
+2 2 R
+11 7 R
+11 5 R
+1 1 R
+13 4 R
+12 5 R
+13 2 R
+10 1 R
+2 0 R
+13 2 R
+13 4 R
+12 3 R
+7 3 R
+6 3 R
+12 5 R
+13 4 R
+1 1 R
+11 11 R
+2 1 R
+7 13 R
+0 12 R
+-5 13 R
+-4 7 R
+-3 5 R
+-7 13 R
+-2 4 R
+-5 8 R
+-6 13 R
+-2 6 R
+-2 7 R
+-2 12 R
+-1 13 R
+2 12 R
+3 13 R
+0 1 R
+5 11 R
+5 13 R
+3 3 R
+6 9 R
+6 8 R
+4 5 R
+9 12 R
+0 1 R
+11 12 R
+1 2 R
+9 10 R
+4 7 R
+3 6 R
+2 12 R
+-1 13 R
+-4 13 R
+-2 12 R
+-1 13 R
+3 11 R
+0 1 R
+5 13 R
+7 9 R
+13 -2 R
+7 -7 R
+4 -13 R
+0 -12 R
+0 -13 R
+1 -12 R
+0 -4 R
+2 -9 R
+5 -13 R
+6 -7 R
+7 -5 R
+5 -5 R
+6 -8 R
+7 -9 R
+3 -3 R
+8 -13 R
+1 -2 R
+8 -10 R
+5 -12 R
+1 -1 R
+0 -12 R
+-1 -3 R
+-1 -10 R
+-4 -12 R
+-6 -13 R
+-2 -3 R
+-3 -9 R
+-6 -13 R
+-3 -7 R
+-2 -5 R
+-6 -13 R
+-5 -12 R
+0 -1 R
+-6 -12 R
+-4 -13 R
+-2 -6 R
+-3 -6 R
+-1 -13 R
+2 -12 R
+2 -4 R
+5 -9 R
+7 -7 R
+6 -5 R
+7 -5 R
+12 -7 R
+3 -1 R
+10 -3 R
+12 -4 R
+13 -2 R
+13 -3 R
+2 0 R
+10 -2 R
+13 -1 R
+12 -1 R
+13 -1 R
+12 -1 R
+13 -2 R
+12 -3 R
+4 -2 R
+8 -3 R
+12 -6 R
+6 -3 R
+7 -4 R
+10 -9 R
+2 -2 R
+8 -10 R
+5 -6 R
+8 -7 R
+4 -5 R
+10 -7 R
+3 -4 R
+12 -9 R
+1 0 R
+12 -8 R
+12 -5 R
+13 -2 R
+13 -1 R
+12 2 R
+7 1 R
+6 2 R
+12 4 R
+13 5 R
+7 2 R
+5 2 R
+13 4 R
+12 3 R
+13 2 R
+12 1 R
+7 1 R
+6 0 R
+12 1 R
+13 1 R
+12 1 R
+13 2 R
+12 3 R
+12 4 R
+1 0 R
+12 4 R
+13 5 R
+10 4 R
+3 0 R
+12 5 R
+13 4 R
+7 3 R
+5 2 R
+13 5 R
+12 5 R
+3 1 R
+10 4 R
+12 6 R
+7 2 R
+6 3 R
+12 6 R
+13 -7 R
+2 -2 R
+10 -11 R
+1 -1 R
+8 -13 R
+4 -7 R
+7 -5 R
+5 -2 R
+13 -5 R
+12 -5 R
+4 -1 R
+9 -3 R
+12 -6 R
+7 -3 R
+6 -4 R
+13 -8 R
+1 -1 R
+11 -9 R
+4 -4 R
+9 -7 R
+5 -5 R
+7 -7 R
+5 -6 R
+8 -8 R
+4 -4 R
+8 -10 R
+3 -3 R
+10 -11 R
+1 -1 R
+11 -13 R
+0 -1 R
+10 -11 R
+3 -5 R
+6 -8 R
+6 -10 R
+3 -2 R
+10 -12 R
+1 -1 R
+11 -5 R
+13 0 R
+12 3 R
+7 2 R
+6 2 R
+12 3 R
+13 3 R
+12 2 R
+13 1 R
+13 1 R
+12 0 R
+13 -1 R
+12 -1 R
+13 -3 R
+12 -2 R
+13 -4 R
+2 -1 R
+10 -4 R
+13 -6 R
+3 -2 R
+9 -6 R
+12 -7 R
+1 0 R
+12 -9 R
+5 -3 R
+8 -8 R
+6 -5 R
+6 -5 R
+8 -8 R
+5 -7 R
+3 -5 R
+8 -13 R
+1 -5 R
+5 -7 R
+8 -12 R
+0 -1 R
+7 -12 R
+5 -10 R
+3 -3 R
+8 -12 R
+2 -2 R
+13 -10 R
+1 -1 R
+11 -7 R
+13 -2 R
+12 2 R
+13 6 R
+1 1 R
+10 13 R
+1 3 R
+4 9 R
+4 13 R
+1 12 R
+-1 13 R
+-3 12 R
+-5 10 R
+-1 3 R
+-8 12 R
+-3 5 R
+-6 8 R
+-7 10 R
+-1 3 R
+-7 12 R
+-4 9 R
+-2 4 R
+-5 12 R
+-4 13 R
+-2 6 R
+-1 6 R
+-3 13 R
+-2 12 R
+-3 13 R
+-3 12 R
+0 2 R
+-4 11 R
+-4 12 R
+-5 12 R
+0 1 R
+-6 12 R
+-7 12 R
+0 1 R
+-6 13 R
+-4 12 R
+-2 9 R
+-1 4 R
+-1 12 R
+2 13 R
+7 12 R
+5 7 R
+9 6 R
+4 1 R
+13 6 R
+12 5 R
+6 0 R
+7 1 R
+12 0 R
+13 2 R
+12 6 R
+4 4 R
+0 12 R
+-1 13 R
+-3 6 R
+-4 6 R
+-8 12 R
+-1 1 R
+-12 12 R
+-12 12 R
+-1 1 R
+-12 10 R
+-9 2 R
+-3 1 R
+-13 1 R
+-13 0 R
+-12 0 R
+-13 1 R
+-12 1 R
+-13 2 R
+-12 2 R
+-13 3 R
+-5 2 R
+-7 2 R
+-13 4 R
+-12 3 R
+-10 4 R
+-3 1 R
+-12 3 R
+-13 5 R
+-8 3 R
+-4 2 R
+-13 5 R
+-11 6 R
+-1 1 R
+-13 9 R
+-3 2 R
+-9 12 R
+-1 1 R
+-5 12 R
+-2 13 R
+-1 12 R
+1 13 R
+2 12 R
+1 13 R
+0 12 R
+-7 13 R
+-1 6 R
+-1 6 R
+-8 13 R
+-4 5 R
+-6 8 R
+0 12 R
+6 10 R
+4 3 R
+7 12 R
+2 13 R
+-8 12 R
+-5 4 R
+-11 9 R
+-1 0 R
+-13 5 R
+-12 -1 R
+-7 -4 R
+-6 -3 R
+-10 -10 R
+-2 -1 R
+-6 -11 R
+-7 -9 R
+-2 -4 R
+-5 -12 R
+-5 -12 R
+-1 -1 R
+-11 -12 R
+-1 -1 R
+-12 -8 R
+-10 -4 R
+-3 -1 R
+-12 -4 R
+-13 -2 R
+-12 0 R
+-13 0 R
+-12 1 R
+-13 -1 R
+-12 1 R
+-13 -2 R
+-13 -3 R
+-1 -2 R
+-11 -6 R
+-7 -6 R
+-6 -5 R
+-7 -8 R
+-5 -4 R
+-8 -8 R
+-5 -4 R
+-9 -9 R
+-3 -2 R
+-13 -8 R
+-2 -2 R
+-10 -6 R
+-9 -7 R
+-4 -2 R
+-8 -10 R
+-4 -5 R
+-4 -8 R
+-6 -12 R
+-2 -13 R
+-1 -1 R
+-3 -11 R
+-9 -13 R
+-6 -12 R
+-6 -13 R
+-1 -4 R
+-12 -7 R
+-13 5 R
+-12 5 R
+-5 1 R
+-8 2 R
+-12 3 R
+-13 4 R
+-13 3 R
+-3 1 R
+-9 2 R
+-13 3 R
+-12 2 R
+-13 1 R
+-12 1 R
+-13 0 R
+-12 -1 R
+-13 -1 R
+-12 0 R
+-13 0 R
+-12 1 R
+-13 2 R
+-7 2 R
+-5 1 R
+-13 4 R
+-12 4 R
+-11 4 R
+-2 0 R
+-12 4 R
+-13 3 R
+-13 2 R
+-12 0 R
+-13 -1 R
+-12 -2 R
+-13 -2 R
+-12 -2 R
+-12 -2 R
+-1 -1 R
+-12 -1 R
+-13 -2 R
+-12 1 R
+-12 1 R
+-10 2 R
+-2 0 R
+-13 4 R
+-12 6 R
+-5 2 R
+-8 5 R
+-11 8 R
+-1 1 R
+-13 11 R
+-1 0 R
+-11 12 R
+-1 1 R
+-7 12 R
+2 13 R
+6 9 R
+1 3 R
+7 13 R
+4 3 R
+6 9 R
+7 9 R
+1 4 R
+11 9 R
+1 3 R
+1 13 R
+-1 13 R
+-1 4 R
+-12 7 R
+-2 1 R
+-11 11 R
+0 2 R
+-1 12 R
+0 13 R
+1 3 R
+4 9 R
+9 12 R
+0 1 R
+12 11 R
+2 1 R
+11 7 R
+11 6 R
+1 0 R
+13 5 R
+12 5 R
+8 2 R
+4 2 R
+12 3 R
+13 3 R
+12 3 R
+7 2 R
+6 1 R
+12 4 R
+13 4 R
+12 2 R
+5 1 R
+8 3 R
+12 3 R
+13 2 R
+13 1 R
+12 0 R
+13 -1 R
+12 -2 R
+13 -3 R
+12 -1 R
+8 -2 R
+5 0 R
+12 -1 R
+11 1 R
+2 1 R
+12 0 R
+13 5 R
+12 3 R
+13 1 R
+11 3 R
+1 0 R
+13 0 R
+12 7 R
+13 4 R
+12 1 R
+13 -1 R
+13 -3 R
+12 -5 R
+7 -3 R
+6 -3 R
+12 -5 R
+9 -5 R
+4 -1 R
+12 -2 R
+13 -2 R
+12 -4 R
+10 -3 R
+3 -1 R
+12 -8 R
+7 -4 R
+6 -3 R
+12 -1 R
+13 -3 R
+2 -5 R
+10 -12 R
+1 -1 R
+12 -9 R
+11 -3 R
+1 -1 R
+2 1 R
+11 3 R
+10 9 R
+2 3 R
+5 10 R
+5 12 R
+3 8 R
+2 5 R
+5 12 R
+4 13 R
+2 6 R
+3 6 R
+9 12 R
+1 1 R
+12 6 R
+12 7 R
+13 4 R
+12 1 R
+13 1 R
+12 0 R
+13 0 R
+12 2 R
+10 4 R
+3 1 R
+12 8 R
+5 4 R
+8 7 R
+3 5 R
+9 13 R
+8 12 R
+5 8 R
+3 5 R
+7 12 R
+2 3 R
+6 10 R
+7 11 R
+1 1 R
+8 13 R
+3 5 R
+6 7 R
+7 12 R
+1 1 R
+7 12 R
+5 8 R
+2 5 R
+6 12 R
+4 8 R
+3 5 R
+4 13 R
+5 12 R
+1 4 R
+2 9 R
+4 12 R
+2 13 R
+3 12 R
+1 13 R
+-4 12 R
+-5 13 R
+-3 4 R
+-13 6 R
+-8 2 R
+-4 1 R
+-13 11 R
+0 1 R
+-13 9 R
+-3 3 R
+-9 8 R
+-13 3 R
+-3 2 R
+-9 3 R
+-13 7 R
+-4 2 R
+-8 5 R
+-9 8 R
+-4 3 R
+-7 10 R
+-5 7 R
+-3 5 R
+-6 13 R
+-4 9 R
+-1 3 R
+-11 12 R
+0 1 R
+-8 12 R
+-5 7 R
+-5 6 R
+-7 10 R
+-2 2 R
+-6 13 R
+-5 5 R
+-7 7 R
+-5 6 R
+-11 7 R
+-2 1 R
+-12 7 R
+-7 4 R
+-6 4 R
+-12 5 R
+-12 4 R
+-1 0 R
+-13 1 R
+-12 0 R
+-13 -1 R
+-2 0 R
+-10 -2 R
+-13 -1 R
+-12 -2 R
+-13 -1 R
+-12 -1 R
+-13 0 R
+-12 0 R
+-13 0 R
+-12 1 R
+-13 1 R
+-12 2 R
+-13 1 R
+-12 2 R
+-2 0 R
+-11 2 R
+-12 2 R
+-13 3 R
+-13 5 R
+-1 0 R
+-11 7 R
+-7 6 R
+-6 6 R
+-4 7 R
+-8 11 R
+-1 1 R
+-5 13 R
+-5 12 R
+-2 4 R
+-2 9 R
+-3 12 R
+-2 13 R
+-3 12 R
+-2 10 R
+-1 3 R
+-2 12 R
+-2 13 R
+-3 12 R
+-3 13 R
+-2 4 R
+-2 8 R
+-6 13 R
+-4 10 R
+-1 2 R
+-7 13 R
+-5 7 R
+-3 6 R
+-9 12 R
+0 1 R
+-8 12 R
+-5 7 R
+-4 5 R
+-8 11 R
+-2 2 R
+-9 12 R
+-2 6 R
+-12 6 R
+-2 1 R
+2 2 R
+12 1 R
+13 6 R
+6 3 R
+6 2 R
+13 4 R
+12 6 R
+2 1 R
+11 3 R
+12 7 R
+3 2 R
+10 6 R
+10 7 R
+2 1 R
+13 9 R
+2 2 R
+10 8 R
+6 5 R
+7 5 R
+9 7 R
+3 3 R
+13 8 R
+3 2 R
+10 6 R
+12 7 R
+13 5 R
+12 3 R
+13 3 R
+6 1 R
+6 1 R
+13 2 R
+12 1 R
+13 2 R
+12 2 R
+13 4 R
+1 1 R
+11 5 R
+13 6 R
+1 1 R
+11 7 R
+10 6 R
+3 2 R
+12 6 R
+7 4 R
+6 5 R
+12 8 R
+0 1 R
+7 11 R
+6 13 R
+6 12 R
+7 11 R
+0 2 R
+7 12 R
+5 7 R
+3 6 R
+5 12 R
+3 13 R
+2 9 R
+0 4 R
+0 12 R
+0 9 R
+-1 4 R
+-3 12 R
+-3 13 R
+-5 12 R
+-1 4 R
+-3 9 R
+-4 12 R
+-3 13 R
+-2 12 R
+1 13 R
+1 12 R
+5 13 R
+5 9 R
+2 3 R
+9 13 R
+2 1 R
+10 11 R
+2 2 R
+13 10 R
+1 1 R
+11 7 R
+11 6 R
+2 0 R
+12 5 R
+13 2 R
+12 1 R
+13 -2 R
+12 -3 R
+8 -3 R
+5 -3 R
+12 -8 R
+3 -2 R
+10 -8 R
+4 -5 R
+8 -7 R
+7 -5 R
+6 -6 R
+6 -7 R
+6 -7 R
+4 -5 R
+8 -13 R
+1 -2 R
+7 -10 R
+6 -11 R
+0 -2 R
+6 -12 R
+5 -13 R
+1 -4 R
+3 -8 R
+4 -13 R
+3 -12 R
+3 -7 R
+2 -6 R
+5 -12 R
+5 -10 R
+2 -3 R
+9 -12 R
+2 -2 R
+12 -9 R
+3 -2 R
+10 -6 R
+10 -7 R
+2 -1 R
+13 -3 R
+12 -3 R
+13 -1 R
+12 0 R
+13 0 R
+12 2 R
+13 1 R
+12 -1 R
+13 1 R
+12 0 R
+13 2 R
+13 3 R
+3 0 R
+9 4 R
+8 9 R
+3 13 R
+-4 12 R
+-6 13 R
+-1 1 R
+-9 11 R
+-3 5 R
+-5 8 R
+-8 10 R
+-2 2 R
+-9 13 R
+-2 2 R
+-9 10 R
+-3 5 R
+-6 8 R
+-7 10 R
+-1 2 R
+-11 13 R
+-10 12 R
+-3 4 R
+-8 9 R
+-4 6 R
+-8 6 R
+-5 4 R
+-12 7 R
+-4 2 R
+-9 4 R
+-12 4 R
+-13 4 R
+-1 0 R
+-11 5 R
+-13 6 R
+-4 2 R
+-8 6 R
+-8 7 R
+-5 6 R
+-4 6 R
+-6 13 R
+-2 5 R
+-4 7 R
+-4 13 R
+-4 12 R
+-1 4 R
+-2 9 R
+-2 12 R
+-3 13 R
+-3 12 R
+-2 13 R
+0 2 R
+-2 10 R
+-3 13 R
+-3 12 R
+-3 13 R
+-2 12 R
+0 1 R
+-2 12 R
+-2 13 R
+-1 12 R
+-1 13 R
+0 12 R
+0 13 R
+1 12 R
+3 13 R
+2 10 R
+1 2 R
+4 13 R
+5 12 R
+3 4 R
+5 9 R
+7 10 R
+2 2 R
+9 13 R
+2 2 R
+6 11 R
+3 12 R
+0 13 R
+-2 12 R
+-6 13 R
+-1 2 R
+-6 10 R
+-7 8 R
+-4 5 R
+-8 10 R
+-2 2 R
+-10 13 R
+-1 0 R
+-11 12 R
+-2 2 R
+-9 11 R
+-3 5 R
+-5 7 R
+-8 11 R
+-1 2 R
+-9 12 R
+-2 4 R
+-7 9 R
+-6 11 R
+-1 1 R
+-5 13 R
+-6 12 R
+0 1 R
+-6 12 R
+-7 12 R
+0 1 R
+-6 12 R
+-6 12 R
+0 1 R
+-6 12 R
+-6 13 R
+-1 0 R
+-5 12 R
+-4 13 R
+-3 12 R
+0 9 R
+-1 4 R
+1 2 R
+1 10 R
+3 13 R
+5 12 R
+3 6 R
+3 7 R
+8 13 R
+2 2 R
+7 10 R
+5 5 R
+7 8 R
+6 4 R
+12 8 R
+13 11 R
+3 2 R
+9 9 R
+3 3 R
+10 9 R
+4 4 R
+6 12 R
+-1 13 R
+-3 12 R
+6 4 R
+7 -4 R
+6 -8 R
+10 8 R
+3 2 R
+12 11 R
+1 0 R
+12 8 R
+2 4 R
+7 13 R
+3 3 R
+13 7 R
+1 2 R
+11 12 R
+3 1 R
+10 5 R
+12 0 R
+13 -1 R
+12 1 R
+13 4 R
+10 4 R
+2 1 R
+13 8 R
+3 3 R
+9 11 R
+2 2 R
+11 9 R
+4 3 R
+8 6 R
+10 7 R
+3 2 R
+12 7 R
+7 3 R
+6 3 R
+13 6 R
+8 4 R
+4 2 R
+13 5 R
+12 4 R
+4 1 R
+9 3 R
+12 2 R
+13 0 R
+12 -2 R
+9 -3 R
+4 -1 R
+12 -7 R
+7 -4 R
+6 -5 R
+7 -8 R
+5 -6 R
+5 -6 R
+8 -11 R
+1 -2 R
+8 -12 R
+3 -8 R
+3 -5 R
+5 -12 R
+5 -12 R
+0 -1 R
+6 -13 R
+4 -12 R
+2 -5 R
+5 -8 R
+8 -12 R
+12 -11 R
+4 -2 R
+9 -4 R
+13 -5 R
+7 -3 R
+5 -2 R
+13 -9 R
+2 -2 R
+9 -12 R
+1 -5 R
+2 -8 R
+0 -12 R
+-2 -10 R
+0 -3 R
+-4 -12 R
+-5 -13 R
+-3 -12 R
+0 -4 R
+-2 -9 R
+0 -13 R
+2 -6 R
+1 -6 R
+5 -13 R
+6 -11 R
+1 -1 R
+7 -13 R
+5 -7 R
+4 -5 R
+8 -12 R
+1 -1 R
+8 -12 R
+4 -6 R
+4 -7 R
+8 -10 R
+4 -2 R
+9 -7 R
+12 -2 R
+11 9 R
+2 1 R
+11 11 R
+1 1 R
+13 11 R
+1 1 R
+11 8 R
+7 4 R
+6 4 R
+12 8 R
+3 1 R
+10 4 R
+13 7 R
+1 1 R
+11 10 R
+13 -7 R
+1 -3 R
+10 -12 R
+1 -1 R
+13 -9 R
+12 -2 R
+13 0 R
+12 10 R
+2 2 R
+11 7 R
+8 5 R
+4 3 R
+9 10 R
+4 4 R
+6 8 R
+6 9 R
+4 4 R
+9 12 R
+0 1 R
+9 12 R
+3 4 R
+7 9 R
+6 5 R
+6 7 R
+6 7 R
+5 6 R
+8 8 R
+3 4 R
+9 13 R
+9 12 R
+4 7 R
+3 6 R
+6 12 R
+4 9 R
+1 4 R
+2 12 R
+1 13 R
+-1 12 R
+-1 13 R
+-2 12 R
+0 4 R
+-2 9 R
+-1 13 R
+-2 12 R
+0 13 R
+0 12 R
+0 13 R
+1 12 R
+0 13 R
+1 12 R
+0 13 R
+0 12 R
+0 13 R
+1 12 R
+-1 13 R
+2 12 R
+1 3 R
+3 10 R
+9 10 R
+8 2 R
+5 2 R
+2 -2 R
+10 -4 R
+6 -8 R
+5 -13 R
+2 -2 R
+3 -10 R
+3 -13 R
+4 -12 R
+2 -5 R
+2 -8 R
+6 -12 R
+5 -11 R
+0 -2 R
+7 -12 R
+5 -8 R
+3 -5 R
+10 -12 R
+11 -13 R
+1 -1 R
+11 -11 R
+2 -2 R
+12 -10 R
+2 -1 R
+11 -7 R
+9 -5 R
+3 -2 R
+13 -7 R
+7 -4 R
+5 -3 R
+13 -5 R
+10 -5 R
+2 -1 R
+13 -4 R
+13 -4 R
+12 -3 R
+13 1 R
+12 1 R
+13 3 R
+12 6 R
+2 1 R
+11 8 R
+6 5 R
+6 8 R
+3 5 R
+7 12 R
+2 13 R
+1 4 R
+0 8 R
+0 3 R
+-2 10 R
+-5 12 R
+-6 12 R
+0 1 R
+-7 12 R
+-5 9 R
+-2 4 R
+-7 12 R
+-4 7 R
+-3 6 R
+-6 12 R
+-3 8 R
+-3 5 R
+-3 12 R
+-4 13 R
+-1 12 R
+-1 13 R
+-1 4 R
+-1 9 R
+-2 12 R
+-2 13 R
+-7 11 R
+-1 1 R
+-12 9 R
+-5 4 R
+-7 4 R
+-13 5 R
+-6 3 R
+-7 3 R
+-12 5 R
+-10 5 R
+-3 1 R
+-12 3 R
+-13 4 R
+-12 3 R
+-6 1 R
+-7 1 R
+-12 2 R
+-13 0 R
+-12 -1 R
+-10 -2 R
+-3 0 R
+-12 -1 R
+-13 -1 R
+-12 1 R
+-13 1 R
+-2 0 R
+-10 3 R
+-13 6 R
+-12 3 R
+-3 1 R
+-10 3 R
+-13 6 R
+-10 3 R
+-2 1 R
+-13 3 R
+-12 4 R
+-13 3 R
+-6 2 R
+-6 2 R
+-13 3 R
+-12 5 R
+-6 2 R
+-7 3 R
+-12 7 R
+-4 3 R
+-9 7 R
+-5 5 R
+-6 13 R
+-1 4 R
+-3 9 R
+1 12 R
+1 13 R
+1 0 R
+4 12 R
+5 13 R
+3 4 R
+6 8 R
+7 10 R
+2 3 R
+10 12 R
+0 1 R
+11 12 R
+2 1 R
+10 11 R
+2 3 R
+10 10 R
+3 3 R
+11 9 R
+1 1 R
+13 10 R
+2 2 R
+10 7 R
+10 5 R
+3 2 R
+12 5 R
+13 2 R
+13 1 R
+12 0 R
+13 -3 R
+12 -3 R
+9 -4 R
+4 -1 R
+12 -5 R
+13 -5 R
+3 -1 R
+9 -4 R
+13 -4 R
+12 -3 R
+13 -1 R
+12 0 R
+13 1 R
+12 4 R
+13 5 R
+3 2 R
+9 5 R
+13 7 R
+1 0 R
+11 7 R
+12 6 R
+1 0 R
+13 5 R
+12 4 R
+13 1 R
+12 1 R
+13 0 R
+12 -3 R
+13 -3 R
+10 -5 R
+2 -1 R
+13 -8 R
+5 -4 R
+7 -5 R
+12 -7 R
+1 -1 R
+12 -8 R
+10 -4 R
+3 -1 R
+12 -3 R
+13 -1 R
+12 2 R
+9 3 R
+4 1 R
+12 5 R
+13 5 R
+4 2 R
+9 4 R
+12 5 R
+7 3 R
+6 3 R
+12 4 R
+13 4 R
+5 2 R
+7 2 R
+13 4 R
+12 5 R
+5 2 R
+8 2 R
+12 5 R
+13 5 R
+1 0 R
+11 5 R
+13 5 R
+7 3 R
+5 2 R
+13 6 R
+10 4 R
+2 1 R
+13 5 R
+12 5 R
+6 2 R
+7 1 R
+7 -1 R
+6 -2 R
+12 -1 R
+13 -1 R
+12 -2 R
+13 -1 R
+12 1 R
+13 1 R
+12 -2 R
+13 -2 R
+12 -2 R
+13 -1 R
+12 1 R
+13 1 R
+12 3 R
+13 3 R
+9 4 R
+3 1 R
+13 5 R
+12 4 R
+7 2 R
+6 2 R
+13 5 R
+12 3 R
+10 3 R
+3 0 R
+12 5 R
+13 3 R
+10 4 R
+2 1 R
+13 4 R
+12 3 R
+13 5 R
+12 5 R
+13 6 R
+1 1 R
+10 13 R
+1 5 R
+4 7 R
+-4 6 R
+-4 7 R
+-8 5 R
+-13 4 R
+-12 2 R
+-6 1 R
+-7 2 R
+-12 -1 R
+-13 2 R
+-12 2 R
+-13 1 R
+-12 2 R
+-13 1 R
+-12 1 R
+-13 1 R
+-13 0 R
+-12 1 R
+-13 0 R
+-12 0 R
+-13 -1 R
+-12 -1 R
+-13 -2 R
+-12 -2 R
+-13 -1 R
+-12 -2 R
+-13 0 R
+-12 -1 R
+-13 0 R
+-12 1 R
+-13 1 R
+-12 0 R
+-13 -1 R
+-12 -2 R
+-8 -1 R
+-5 0 R
+-13 0 R
+-12 4 R
+-13 4 R
+-9 5 R
+-3 2 R
+-13 9 R
+-3 1 R
+-9 8 R
+-7 5 R
+-6 7 R
+-9 6 R
+-3 3 R
+-13 2 R
+-12 -5 R
+-1 0 R
+-12 -5 R
+-12 -5 R
+-5 -3 R
+-8 -4 R
+-12 -9 R
+-13 -10 R
+-3 -2 R
+-9 -8 R
+-6 -5 R
+-7 -5 R
+-10 -7 R
+-2 -2 R
+-13 -8 R
+-5 -3 R
+-8 -3 R
+-12 -5 R
+-13 -3 R
+-11 -1 R
+-1 0 R
+-2 0 R
+-11 0 R
+-12 2 R
+-13 4 R
+-12 6 R
+-1 0 R
+-12 8 R
+-6 5 R
+-6 7 R
+-5 5 R
+-8 12 R
+0 1 R
+-6 12 R
+-4 13 R
+-2 10 R
+-1 3 R
+-1 12 R
+0 13 R
+2 8 R
+0 4 R
+3 13 R
+5 12 R
+4 10 R
+2 3 R
+7 12 R
+4 5 R
+6 8 R
+6 6 R
+7 6 R
+6 7 R
+10 6 R
+2 2 R
+13 3 R
+12 4 R
+13 0 R
+12 -1 R
+13 -1 R
+12 -3 R
+9 -4 R
+4 -2 R
+13 -9 R
+1 -2 R
+10 -12 R
+1 -1 R
+5 -12 R
+3 -12 R
+-1 -13 R
+6 -12 R
+9 12 R
+3 11 R
+1 2 R
+11 12 R
+1 1 R
+12 0 R
+4 -1 R
+9 -1 R
+1 1 R
+11 4 R
+5 -4 R
+8 -10 R
+1 -2 R
+6 -13 R
+4 -12 R
+1 -4 R
+7 -9 R
+6 -7 R
+12 2 R
+6 5 R
+7 3 R
+6 10 R
+1 12 R
+2 13 R
+3 12 R
+-2 13 R
+-4 12 R
+6 11 R
+3 2 R
+10 4 R
+12 -3 R
+2 -1 R
+11 -9 R
+2 -4 R
+-2 -4 R
+-13 -8 R
+13 -4 R
+11 -9 R
+1 -1 R
+13 -6 R
+13 6 R
+2 1 R
+10 8 R
+8 5 R
+5 2 R
+12 5 R
+13 4 R
+4 1 R
+8 4 R
+13 2 R
+12 3 R
+13 3 R
+2 1 R
+10 3 R
+13 9 R
+0 1 R
+7 12 R
+3 12 R
+1 13 R
+0 13 R
+-3 12 R
+-6 13 R
+-2 2 R
+-9 10 R
+-4 3 R
+-12 9 R
+-2 1 R
+-11 5 R
+-12 6 R
+-4 1 R
+-9 3 R
+-12 2 R
+-13 0 R
+-12 -1 R
+-13 -1 R
+-5 -3 R
+-7 -5 R
+-7 -7 R
+-6 -7 R
+-3 -6 R
+-6 -12 R
+-4 -11 R
+-1 -2 R
+1 -1 R
+11 -11 R
+2 -8 R
+1 -5 R
+0 -13 R
+-1 -2 R
+-7 -10 R
+-6 -4 R
+-12 4 R
+-13 10 R
+-2 2 R
+-7 13 R
+-3 5 R
+-7 8 R
+-6 1 R
+-12 -1 R
+-2 0 R
+-11 -9 R
+-12 -3 R
+-13 0 R
+-12 1 R
+-13 3 R
+-12 2 R
+-13 3 R
+-6 3 R
+-6 1 R
+-13 2 R
+-12 1 R
+-13 -1 R
+-12 -3 R
+-3 0 R
+-10 -3 R
+-13 -2 R
+-12 -4 R
+-13 -2 R
+-10 -2 R
+-2 -1 R
+-13 -2 R
+-12 0 R
+-13 -3 R
+-12 1 R
+-13 2 R
+-12 -2 R
+-13 -1 R
+-12 -3 R
+-13 -3 R
+-3 -1 R
+-9 -2 R
+-13 -2 R
+-12 -2 R
+-13 -2 R
+-12 -2 R
+-13 -1 R
+-5 -1 R
+-8 -1 R
+-12 -2 R
+-13 -2 R
+-12 -3 R
+-13 -3 R
+-3 -2 R
+-9 -4 R
+-11 -8 R
+-2 -2 R
+-7 -11 R
+-5 -12 R
+0 -2 R
+-3 -11 R
+-6 -12 R
+-3 -13 R
+-1 -6 R
+-1 -6 R
+-11 -12 R
+-2 -1 R
+-11 -10 R
+-2 -2 R
+-10 -7 R
+-13 0 R
+-12 4 R
+-4 3 R
+-6 12 R
+-3 6 R
+-2 7 R
+0 12 R
+-2 13 R
+-1 12 R
+-2 13 R
+-1 12 R
+-3 13 R
+-1 10 R
+-1 2 R
+-2 13 R
+-1 12 R
+-1 13 R
+-2 13 R
+0 12 R
+-1 13 R
+-3 12 R
+-2 3 R
+-7 10 R
+-5 6 R
+-5 6 R
+-8 10 R
+-2 3 R
+-11 11 R
+-1 1 R
+-6 13 R
+-4 12 R
+1 13 R
+2 12 R
+3 13 R
+3 12 R
+2 13 R
+-1 12 R
+-1 13 R
+2 13 R
+0 1 R
+4 11 R
+7 13 R
+2 2 R
+7 10 R
+6 6 R
+6 7 R
+6 5 R
+12 7 R
+1 1 R
+12 5 R
+13 0 R
+12 0 R
+13 0 R
+12 1 R
+13 1 R
+12 1 R
+12 4 R
+1 0 R
+12 7 R
+10 5 R
+3 3 R
+6 10 R
+6 9 R
+2 3 R
+3 13 R
+-5 11 R
+-1 1 R
+-11 12 R
+-13 -2 R
+-12 -3 R
+-13 -4 R
+-12 2 R
+-13 8 R
+-12 10 R
+-5 2 R
+-8 6 R
+-12 6 R
+-13 1 R
+-12 -4 R
+-13 -5 R
+-7 -4 R
+-5 -2 R
+-13 -7 R
+-7 -3 R
+-6 -3 R
+-12 -7 R
+-4 -3 R
+-9 -3 R
+-12 -6 R
+-7 -3 R
+-6 -3 R
+-12 -4 R
+-12 -6 R
+-1 0 R
+-12 -5 R
+-13 -4 R
+-10 -3 R
+-2 -1 R
+-13 -4 R
+-12 -4 R
+-13 -3 R
+-1 -1 R
+-11 -3 R
+-13 -3 R
+-12 -3 R
+-13 -3 R
+-12 -4 R
+-13 -3 R
+-13 -4 R
+-5 -2 R
+-7 -2 R
+-13 -4 R
+-12 -3 R
+-11 -3 R
+-2 -1 R
+-12 -3 R
+-13 -3 R
+-12 -2 R
+-13 -3 R
+-11 -1 R
+-1 0 R
+-13 -2 R
+-12 -3 R
+-13 -2 R
+-12 -2 R
+-13 -3 R
+-3 0 R
+-9 -2 R
+-13 -6 R
+-11 -5 R
+-2 -1 R
+-12 -9 R
+-3 -2 R
+-10 -10 R
+-3 -3 R
+-8 -13 R
+-1 -3 R
+-5 -9 R
+-7 -13 R
+-1 -4 R
+-12 0 R
+-1 4 R
+-12 12 R
+0 1 R
+-12 11 R
+-1 1 R
+-12 9 R
+-5 4 R
+-7 4 R
+-13 7 R
+-3 2 R
+-9 5 R
+-13 5 R
+-3 2 R
+-9 5 R
+-13 5 R
+-11 3 R
+-1 0 R
+-13 2 R
+-12 1 R
+-13 -2 R
+-6 -1 R
+-7 -2 R
+-12 -4 R
+-13 -6 R
+-2 -1 R
+-10 -4 R
+-13 -6 R
+-4 -2 R
+-8 -5 R
+-13 -4 R
+-10 -4 R
+-2 -1 R
+-6 1 R
+-7 1 R
+-12 11 R
+0 1 R
+-8 12 R
+-5 12 R
+0 1 R
+-3 12 R
+-2 13 R
+-3 12 R
+-3 13 R
+-1 5 R
+-3 7 R
+-6 13 R
+-4 7 R
+-3 5 R
+-9 13 R
+-1 0 R
+-12 10 R
+-3 2 R
+-9 8 R
+-8 5 R
+-5 3 R
+-12 5 R
+-9 4 R
+-4 2 R
+-13 6 R
+-7 5 R
+-5 4 R
+-10 9 R
+-3 3 R
+-6 9 R
+-6 9 R
+-2 4 R
+-5 12 R
+-5 13 R
+-1 3 R
+-2 9 R
+-4 13 R
+-3 12 R
+-3 7 R
+-3 6 R
+-4 12 R
+-4 13 R
+-2 5 R
+-3 7 R
+-5 13 R
+-4 7 R
+-4 5 R
+-8 13 R
+-1 1 R
+-12 3 R
+-13 2 R
+-12 -2 R
+-11 -4 R
+-2 -1 R
+-12 -6 R
+-12 -6 R
+-1 0 R
+-12 -5 R
+-13 -5 R
+-8 -2 R
+-4 -1 R
+-13 -2 R
+-13 -1 R
+-12 2 R
+-10 2 R
+-3 0 R
+-12 4 R
+-13 5 R
+-10 3 R
+-2 1 R
+-13 6 R
+-10 6 R
+-2 2 R
+-11 10 R
+-2 2 R
+-6 10 R
+-6 11 R
+-1 2 R
+-6 12 R
+-6 10 R
+-5 3 R
+-7 4 R
+-13 1 R
+-12 -3 R
+-3 -2 R
+-10 -7 R
+-10 -6 R
+-2 -1 R
+-13 -10 R
+-2 -1 R
+-10 -7 R
+-12 -6 R
+-1 0 R
+-13 -4 R
+-12 -3 R
+-13 -2 R
+-12 -2 R
+-13 -1 R
+-12 0 R
+-13 1 R
+-12 2 R
+-13 3 R
+-12 6 R
+-1 0 R
+-12 10 R
+-2 3 R
+-8 12 R
+-2 4 R
+-5 9 R
+-6 12 R
+-2 5 R
+-4 8 R
+-8 12 R
+-1 0 R
+-12 12 R
+-1 1 R
+-11 5 R
+-13 2 R
+-12 -7 R
+0 -1 R
+-13 -9 R
+-2 -3 R
+-11 -10 R
+-1 -2 R
+-10 -13 R
+-1 -1 R
+-8 -11 R
+-5 -7 R
+-3 -6 R
+-7 -12 R
+-2 -5 R
+-3 -8 R
+-4 -12 R
+-1 -12 R
+-1 -13 R
+-3 -12 R
+-1 -4 R
+-1 -9 R
+-1 -12 R
+2 -13 R
+0 -12 R
+-11 -13 R
+-1 -1 R
+-13 -6 R
+-12 3 R
+-13 -4 R
+-12 0 R
+-12 5 R
+-12 0 R
+-13 -8 R
+-3 -1 R
+-8 -13 R
+11 -11 R
+13 7 R
+12 -3 R
+6 -5 R
+5 -13 R
+-1 -12 R
+-10 -13 R
+-12 2 R
+-12 11 R
+0 12 R
+-1 10 R
+0 3 R
+-12 12 R
+-12 -12 R
+-1 -5 R
+-2 -8 R
+-10 -11 R
+-5 -1 R
+-8 -3 R
+-12 1 R
+-2 2 R
+-11 8 R
+-13 2 R
+-12 -2 R
+-9 -8 R
+-4 -4 R
+-3 -9 R
+3 -10 R
+3 -2 R
+10 -9 R
+3 -4 R
+9 -7 R
+10 -6 R
+3 -4 R
+11 -8 R
+-8 -13 R
+-3 0 R
+-13 0 R
+-12 -9 R
+-13 -3 R
+-10 -13 R
+0 -12 R
+1 -13 R
+1 -12 R
+-3 -13 R
+0 -12 R
+0 -13 R
+2 -12 R
+1 -13 R
+8 -4 R
+13 2 R
+2 2 R
+3 13 R
+7 5 R
+13 3 R
+13 -2 R
+12 -2 R
+5 -4 R
+8 -10 R
+12 8 R
+1 2 R
+-1 3 R
+-7 9 R
+2 13 R
+1 12 R
+4 4 R
+10 9 R
+3 3 R
+12 8 R
+13 -1 R
+12 -6 R
+12 5 R
+12 1 R
+13 -9 R
+5 -1 R
+7 -4 R
+1 4 R
+2 12 R
+-3 10 R
+-2 3 R
+-2 12 R
+4 13 R
+13 12 R
+12 -6 R
+13 -5 R
+1 -1 R
+11 -3 R
+13 -2 R
+12 -4 R
+6 -4 R
+7 -9 R
+2 -3 R
+9 -13 R
+2 0 R
+12 -10 R
+5 -2 R
+8 -4 R
+12 -6 R
+6 -3 R
+7 -2 R
+12 -3 R
+13 -3 R
+12 -2 R
+13 -2 R
+1 0 R
+11 -4 R
+13 -6 R
+4 -3 R
+8 -5 R
+8 -7 R
+5 -4 R
+10 -9 R
+2 -1 R
+13 -11 R
+1 0 R
+11 -9 R
+8 -4 R
+5 -2 R
+12 -5 R
+13 -2 R
+13 -1 R
+12 -2 R
+13 0 R
+12 0 R
+13 0 R
+12 1 R
+13 0 R
+12 -1 R
+5 -1 R
+8 0 R
+12 -2 R
+13 -2 R
+12 -4 R
+13 -4 R
+12 -4 R
+13 -5 R
+11 -4 R
+1 0 R
+13 -4 R
+12 -3 R
+13 -1 R
+13 1 R
+12 1 R
+13 3 R
+12 3 R
+2 0 R
+11 3 R
+12 1 R
+13 -1 R
+4 -3 R
+8 -4 R
+6 -8 R
+7 -10 R
+1 -3 R
+4 -12 R
+3 -13 R
+1 -12 R
+1 -13 R
+-1 -12 R
+-1 -13 R
+-1 -12 R
+-2 -13 R
+-2 -12 R
+-3 -13 R
+0 -4 R
+-2 -8 R
+-2 -13 R
+-2 -13 R
+-1 -12 R
+-1 -13 R
+-1 -12 R
+0 -13 R
+2 -12 R
+5 -13 R
+2 -2 R
+9 -10 R
+3 -4 R
+13 -7 R
+9 -2 R
+3 -1 R
+13 0 R
+2 1 R
+10 3 R
+13 7 R
+4 3 R
+8 4 R
+13 8 R
+1 0 R
+11 7 R
+11 6 R
+2 1 R
+13 4 R
+12 4 R
+13 -2 R
+12 -7 R
+13 -10 R
+3 -3 R
+9 -8 R
+5 -4 R
+8 -6 R
+8 -7 R
+4 -3 R
+13 -9 R
+12 -9 R
+6 -4 R
+7 -4 R
+12 -8 R
+2 0 R
+11 -8 R
+9 -5 R
+3 -3 R
+13 -9 R
+11 -13 R
+1 -3 R
+5 -10 R
+2 -12 R
+-1 -13 R
+-1 -12 R
+-3 -13 R
+-2 -3 R
+-2 -9 R
+-6 -13 R
+-4 -6 R
+-3 -6 R
+-9 -13 R
+-1 0 R
+-12 -12 R
+-1 0 R
+-12 -11 R
+-2 -2 R
+-10 -6 R
+-9 -6 R
+-4 -2 R
+-12 -8 R
+-6 -3 R
+-7 -3 R
+-12 -7 R
+-4 -2 R
+-9 -6 R
+-10 -7 R
+-2 -2 R
+-13 -9 R
+-1 -1 R
+-11 -11 R
+-2 -2 R
+-10 -13 R
+-1 -1 R
+-7 -11 R
+-5 -9 R
+-2 -4 R
+-7 -12 R
+-4 -7 R
+-2 -6 R
+-5 -12 R
+-4 -13 R
+-2 -4 R
+-2 -8 R
+-4 -13 R
+-6 -9 R
+-3 -3 R
+-10 -9 R
+-12 -3 R
+-13 3 R
+-8 -4 R
+1 -12 R
+-1 -13 R
+-4 -5 R
+-8 -7 R
+-5 -5 R
+-6 -8 R
+-6 -13 R
+-7 -12 R
+-6 -8 R
+-3 -5 R
+-9 -11 R
+-2 -1 R
+-11 -4 R
+-12 -1 R
+-7 5 R
+-6 3 R
+-12 8 R
+-5 1 R
+-8 4 R
+-11 9 R
+-1 1 R
+-10 11 R
+-3 1 R
+-2 -1 R
+-10 -7 R
+-4 -5 R
+-9 -7 R
+-6 -6 R
+-7 -7 R
+-12 -2 R
+-13 5 R
+-11 4 R
+-1 1 R
+-1 -1 R
+-12 -5 R
+-12 -3 R
+-13 0 R
+-12 2 R
+-13 2 R
+-12 3 R
+-7 1 R
+-6 2 R
+-12 4 R
+-13 4 R
+-7 3 R
+-5 2 R
+-13 5 R
+-8 5 R
+-4 3 R
+-13 3 R
+-12 5 R
+-6 2 R
+-7 3 R
+-13 7 R
+-3 3 R
+-9 7 R
+-6 5 R
+-7 7 R
+-5 6 R
+-7 8 R
+-3 4 R
+-10 12 R
+0 1 R
+-11 12 R
+-1 2 R
+-11 11 R
+-2 1 R
+-12 10 R
+-2 1 R
+-11 7 R
+-12 6 R
+-13 4 R
+-12 4 R
+-13 2 R
+-12 2 R
+-2 0 R
+-11 2 R
+-12 1 R
+-13 1 R
+-12 1 R
+-13 0 R
+-13 0 R
+-12 0 R
+-13 1 R
+-12 1 R
+-13 1 R
+-12 -1 R
+-13 2 R
+-12 0 R
+-13 2 R
+-8 2 R
+-4 1 R
+-12 3 R
+-12 2 R
+-13 2 R
+-12 2 R
+-13 0 R
+-12 -1 R
+-13 -3 R
+-12 -6 R
+0 -1 R
+-13 -6 R
+-8 -6 R
+-5 -3 R
+-12 -3 R
+-13 1 R
+-6 5 R
+-6 4 R
+-8 9 R
+-5 6 R
+-5 6 R
+-7 8 R
+-4 5 R
+-9 10 R
+-2 2 R
+-8 13 R
+-2 6 R
+-4 7 R
+2 12 R
+2 3 R
+5 10 R
+7 7 R
+5 5 R
+8 7 R
+10 6 R
+2 1 R
+13 6 R
+9 5 R
+3 2 R
+13 9 R
+2 2 R
+10 8 R
+6 4 R
+7 7 R
+4 6 R
+9 11 R
+0 1 R
+6 13 R
+2 12 R
+1 13 R
+-3 12 R
+-3 13 R
+1 12 R
+8 7 R
+11 6 R
+-5 13 R
+-6 10 R
+-2 2 R
+-10 7 R
+-6 6 R
+-7 3 R
+-13 2 R
+-12 3 R
+-5 4 R
+-8 7 R
+-6 6 R
+-6 7 R
+-7 5 R
+-6 9 R
+-5 4 R
+-6 12 R
+-1 1 R
+-4 -1 R
+-9 -2 R
+-12 -4 R
+-13 6 R
+-12 6 R
+-13 -1 R
+-11 -5 R
+-1 0 R
+-13 -6 R
+-8 -6 R
+-4 -3 R
+-13 -9 R
+0 -1 R
+-12 -11 R
+-2 -1 R
+-11 -11 R
+-2 -2 R
+-10 -10 R
+-3 -2 R
+-10 -9 R
+-7 -4 R
+-6 -4 R
+-12 -5 R
+-13 -3 R
+-1 0 R
+-11 -3 R
+-13 2 R
+-1 1 R
+-11 3 R
+-13 7 R
+-2 2 R
+-10 9 R
+-4 4 R
+-8 12 R
+-1 2 R
+-5 11 R
+-3 12 R
+-1 13 R
+2 12 R
+3 13 R
+4 6 R
+3 6 R
+9 13 R
+1 1 R
+9 11 R
+3 3 R
+11 10 R
+2 2 R
+12 10 R
+0 1 R
+13 8 R
+7 4 R
+5 3 R
+13 7 R
+6 3 R
+6 2 R
+13 4 R
+13 3 R
+12 2 R
+8 1 R
+5 1 R
+12 1 R
+13 2 R
+12 5 R
+7 4 R
+6 3 R
+7 9 R
+5 13 R
+0 1 R
+4 11 R
+6 13 R
+3 4 R
+6 8 R
+6 5 R
+13 8 R
+12 8 R
+2 4 R
+11 13 R
+-10 12 R
+1 13 R
+-4 8 R
+-2 4 R
+-10 12 R
+-1 1 R
+-12 10 R
+-2 2 R
+-10 11 R
+-2 2 R
+-11 12 R
+0 1 R
+-10 12 R
+-2 3 R
+-9 10 R
+-4 4 R
+-8 8 R
+-4 3 R
+-13 2 R
+-12 3 R
+-13 1 R
+-12 -2 R
+-13 -3 R
+-9 -4 R
+-4 -2 R
+-12 -9 R
+-2 -1 R
+-11 -9 R
+-4 -4 R
+-8 -7 R
+-6 -5 R
+-7 -8 R
+-5 -5 R
+-7 -8 R
+-5 -5 R
+-8 -8 R
+-5 -4 R
+-7 -6 R
+-10 -7 R
+-3 -2 R
+-12 -5 R
+-13 -4 R
+-9 -1 R
+-3 -1 R
+-13 1 R
+-1 0 R
+-11 2 R
+-13 2 R
+-12 3 R
+-13 3 R
+-12 2 R
+-7 0 R
+-6 1 R
+-13 2 R
+-12 0 R
+-13 -2 R
+-1 -1 R
+-11 -4 R
+-11 -8 R
+-2 -2 R
+-11 -11 R
+-1 -2 R
+-4 -10 R
+-4 -13 R
+-1 -12 R
+0 -13 R
+1 -12 R
+5 -13 R
+3 -5 R
+5 -7 R
+7 -7 R
+11 -6 R
+2 -1 R
+12 -8 R
+6 -3 R
+7 -5 R
+12 -7 R
+2 -1 R
+11 -12 R
+1 0 R
+8 -13 R
+4 -5 R
+5 -8 R
+6 -12 R
+1 -4 R
+2 -9 R
+1 -12 R
+-2 -13 R
+-1 -3 R
+-7 -9 R
+-5 -4 R
+-13 -7 R
+-4 -2 R
+-9 -2 R
+-6 2 R
+-6 3 R
+-13 6 R
+-5 4 R
+-7 5 R
+-8 7 R
+-5 6 R
+-5 7 R
+-7 8 R
+-3 4 R
+-7 13 R
+-3 5 R
+-4 7 R
+-8 12 R
+-1 1 R
+-10 13 R
+-2 1 R
+-12 8 R
+-7 3 R
+-6 2 R
+-12 3 R
+-13 -1 R
+-12 -1 R
+-13 -1 R
+-7 -2 R
+-5 -1 R
+-13 -4 R
+-12 -5 R
+-6 -2 R
+-7 -3 R
+-13 -5 R
+-12 -4 R
+-6 -1 R
+-7 -1 R
+-12 -1 R
+-13 0 R
+-12 2 R
+-6 0 R
+thin_line
+dashed_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</Shapefile=/Users/SamHill/Desktop/PIPA for ODV/Winslow/Winslow topography.shp>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1155 935 M
+-20 -35 R
+-18 -32 R
+-17 -30 R
+-15 -27 R
+-13 -25 R
+-12 -24 R
+-11 -22 R
+-11 -21 R
+-11 -20 R
+-10 -20 R
+-10 -19 R
+-10 -18 R
+-11 -18 R
+-10 -17 R
+-11 -16 R
+-11 -16 R
+-12 -15 R
+-12 -15 R
+-13 -14 R
+-14 -13 R
+-16 -14 R
+-17 -12 R
+-19 -13 R
+-21 -13 R
+-24 -13 R
+-26 -12 R
+-30 -13 R
+-33 -13 R
+-36 -13 R
+-40 -12 R
+-44 -13 R
+-48 -12 R
+-52 -11 R
+-57 -11 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1034 1001 M
+-35 -17 R
+-31 -14 R
+-29 -12 R
+-26 -10 R
+-23 -8 R
+-21 -7 R
+-20 -5 R
+-18 -3 R
+-17 -2 R
+-16 -2 R
+-15 0 R
+-15 0 R
+-16 1 R
+-16 1 R
+-17 2 R
+-18 3 R
+-21 3 R
+-23 5 R
+-26 7 R
+-30 7 R
+-33 10 R
+-39 11 R
+-43 12 R
+-49 15 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+1671 537 M
+-59 -10 R
+-54 -11 R
+-49 -12 R
+-46 -13 R
+-41 -14 R
+-39 -14 R
+-35 -16 R
+-34 -17 R
+-31 -17 R
+-29 -18 R
+-28 -19 R
+-27 -19 R
+-27 -20 R
+-26 -20 R
+-28 -21 R
+-30 -21 R
+-33 -21 R
+-37 -21 R
+-42 -22 R
+-47 -21 R
+-53 -21 R
+-61 -22 R
+-69 -21 R
+-78 -20 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+720 643 M
+-26 6 R
+-24 7 R
+-23 7 R
+-20 7 R
+-19 7 R
+-17 8 R
+-16 7 R
+-14 7 R
+-14 8 R
+-13 7 R
+-11 7 R
+-12 7 R
+-10 7 R
+-11 7 R
+-10 7 R
+-10 8 R
+-10 9 R
+-10 10 R
+-10 12 R
+-11 15 R
+-12 16 R
+-12 19 R
+-14 22 R
+-14 26 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+829 552 M
+-26 1 R
+-26 2 R
+-25 4 R
+-24 5 R
+-23 5 R
+-22 6 R
+-21 6 R
+-20 7 R
+-19 6 R
+-17 6 R
+-17 5 R
+-15 5 R
+-15 4 R
+-14 4 R
+-13 3 R
+-12 2 R
+-12 2 R
+-12 0 R
+-11 0 R
+-11 0 R
+-10 -2 R
+-10 -1 R
+-10 -2 R
+-9 -3 R
+-9 -2 R
+-9 -4 R
+-9 -4 R
+-10 -6 R
+-11 -7 R
+-13 -9 R
+-14 -11 R
+-16 -13 R
+-17 -15 R
+-20 -17 R
+-21 -18 R
+-23 -20 R
+-25 -21 R
+-26 -22 R
+-28 -23 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+437 343 M
+33 -28 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+437 343 M
+21 30 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+181 425 M
+12 45 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+184 425 M
+41 3 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+371 883 M
+-6 -46 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+374 886 M
+54 -12 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+437 995 M
+24 -39 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+434 998 M
+44 19 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<PathObject>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+%<Polygon>
+gsave
+%<ClipPath>
+np 0 0 M
+1900 0 L
+1900 1366 L
+0 1366 L
+0 0 L
+clip
+%</ClipPath>
+
+np
+665 109 M
+21 27 R
+medium_line
+solid_line
+0.219608 setgray
+stroke
+grestore
+%</Polygon>
+
+grestore
+%</PathObject>
+
+%<Annotation>
+gsave
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+/lorg 0 def   12.9 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(-2 m)
+0 1155 555 rotatedText
+grestore
+%</Annotation>
+
+%<Annotation>
+gsave
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+/lorg 0 def   12.9 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(-851 m)
+0 300 655 rotatedText
+grestore
+%</Annotation>
+
+%<Annotation>
+gsave
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+/lorg 0 def   12.9 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(-882 m)
+0 1002 370 rotatedText
+grestore
+%</Annotation>
+
+%<Annotation>
+gsave
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+/lorg 0 def   12.9 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(-2340 m)
+0 945 610 rotatedText
+grestore
+%</Annotation>
+
+%<Annotation>
+gsave
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+/lorg 0 def   12.9 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(-2928 m)
+0 470 722 rotatedText
+grestore
+%</Annotation>
+
+%<Annotation>
+gsave
+0 1900 19 4.04834 0 1366 13.6622 11.7842 UsrSys
+/lorg 0 def   12.9 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(-20 m)
+0 677 813 rotatedText
+grestore
+%</Annotation>
+
+%<Annotation>
+gsave
+0 2970 29.7 -5.45166 0 2100 21 7.61531 UsrSys
+/lorg 4 def   16.8 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(Magnitude [mm/s] @ Depth [m]=50)
+0 2850 1803 rotatedText
+grestore
+%</Annotation>
+
+%<UnitArrow>
+gsave
+0 2970 29.7 -5.45166 0 2100 21 7.61531 UsrSys
+%<Polygon>
+gsave
+np
+960 426 M
+431 0 R
+0 67 R
+-431 0 R
+0 -67 R
+0.956863 setgray
+Fill
+very_thin_line
+solid_line
+0 setgray
+stroke
+grestore
+%</Polygon>
+
+/lorg 8 def   13.1 SetMyFont
+/fill? false def
+/stroke? false def
+0 setgray
+(175 mm/s)
+0 1142 460 rotatedText
+%<Arrows>
+gsave
+solid_line
+thin_line
+0 setgray
+1 0 1051 460 arrow
+grestore
+%</Arrows>
+
+grestore
+%</UnitArrow>
+
+%</DataWindow>
+
+%<CollectionStamp>
+gsave
+0.755682 magnify /fill? false def /stroke? false def /frame? false def
+default_usrsys /lorg TA_RU def 6.2 dfltFont getfont very_thin_line
+0.8 setgray
+(SamHill@Samuels-MacBook-Pro.local  Aug/11/2015 20:26:53) 30 1.83 showstring
+11.6 dfltFont getfont 0.8 0.8 0.8 setTextFrameColor 0.8 0.8 0.8 setTextFillColor
+/fill? true def /stroke? true def 1 setgray
+(odv) 3.4 1.75 showstring
+/fill? false def /stroke? false def
+6.2 dfltFont getfont /lorg TA_LU def
+0.8 setgray
+(/Users/SamHill/Desktop/ADCP/S261_ADCP.odv)
+3.5 1.83 showstring
+(/Users/SamHill/Desktop/ADCP/S261_ADCP.Data/views/S261_mag-50meters_flow_lines.xview)
+3.5 1.6 showstring
+(/Users/SamHill/Desktop/ADCP/S261_ADCP.Data/views/S261_ADCP.sec)
+3.5 1.37 showstring
+1.32331 magnify 12 SetMyFont /lorg 0 def 0 setgray
+/fill? false def /stroke? false def
+0 0 0 setTextFrameColor 1 1 1 setTextFillColor
+grestore
+%</CollectionStamp>
+
+%<Document=S261_mag-50meters_flow_lines.eps>
+
+showpage
+EndPlot
+
+%%Trailer

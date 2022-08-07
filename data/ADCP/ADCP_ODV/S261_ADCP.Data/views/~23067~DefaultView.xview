@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="S261_ADCP">
+<GeographicMap>
+<MapDomain lon_max="203.057" lat_max="21.5434" lon_min="200.872" lat_min="20.0973"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="1" x_right="203.057" y_offset_bb="7" y_length_bb="7" y_top="21.5434" x_length_bb="7" x_projection="100" y_projection="100" y_bottom="20.0973" x_left="200.872"/>
+</Window>
+</MapWindow>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis var_list="2" var_id="0" is_reversed="F"/>
+<!--Latitude-->
+<yAxis var_list="2" var_id="1" is_reversed="F"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<zAxis var_list="2" var_id="7" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="6" window_mode="3" window_type="0"/>
+<Arrows arrow_color="-2" scale="200" x_var_id="5" y_var_id="6" line_style="0" line_width="1"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="11" x_right="203.057" y_offset_bb="2" y_length_bb="17" y_top="21.5434" x_length_bb="15.5" x_projection="100" y_projection="100" y_bottom="20.0973" x_left="200.872"/>
+<ColorScale z_range_start="50" z_range_end="750"/>
+<UnitArrow arrow_color="0" post_data="T" background_color="30" frame_color="0" own_coordinates="F" arrow_length="1" x_coordinate="11.1" dragging="T" y_coordinate="5.11042" text="200 mm/s" font_size="11.938" text_color="0" frame_width="0" clipping="F"/>
+</Window>
+</DataWindow>
+<IsoSurfaceVariables>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--North Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="9" sampleID="0"/>
+</View>

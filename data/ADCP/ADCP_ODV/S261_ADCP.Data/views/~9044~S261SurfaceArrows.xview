@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="S261_ADCP">
+<GeographicMap>
+<MapDomain lon_max="185.89" lat_max="-1.96046" lon_min="185.494" lat_min="-2.14424"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="1" x_right="185.89" y_offset_bb="7" y_length_bb="7" y_top="-1.96046" x_length_bb="7" x_projection="100" y_projection="100" y_bottom="-2.14424" x_left="185.494"/>
+</Window>
+</MapWindow>
+<Section width="0.004912" coordinate="2">
+<xNodes>185.836,185.746,185.675,185.513</xNodes>
+<yNodes>-2.28547,-2.07046,-1.72537,-1.42541</yNodes>
+</Section>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis var_list="2" var_id="0" is_reversed="F"/>
+<!--Latitude-->
+<yAxis var_list="2" var_id="1" is_reversed="F"/>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<zAxis var_list="2" var_id="4" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="6" window_mode="3" window_type="0"/>
+<Arrows arrow_color="0" scale="150" x_var_id="5" y_var_id="6" line_style="0" line_width="3"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="10.5" x_right="185.89" y_offset_bb="11.1" y_length_bb="7.9" y_top="-1.96046" x_length_bb="17" x_projection="100" y_projection="100" y_bottom="-2.14424" x_left="185.494"/>
+<ColorScale z_range_start="80" z_range_end="210"/>
+<UnitArrow arrow_color="0" post_data="T" background_color="30" frame_color="0" own_coordinates="F" arrow_length="1" x_coordinate="14.8372" dragging="T" y_coordinate="11.2" text="150 mm/s" font_size="9.87004" text_color="0" frame_width="0" clipping="F"/>
+</Window>
+</DataWindow>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis var_list="2" var_id="0" is_reversed="F"/>
+<!--Latitude-->
+<yAxis var_list="2" var_id="1" is_reversed="F"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<zAxis var_list="2" var_id="5" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="0" window_mode="3" window_type="0"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="10.5" x_right="185.89" y_offset_bb="1" y_length_bb="7.9" y_top="-1.96046" x_length_bb="17" x_projection="100" y_projection="100" y_bottom="-2.14424" x_left="185.494"/>
+<ColorScale z_range_start="-350" z_range_end="200"/>
+</Window>
+</DataWindow>
+<BasicVariables>
+<!--Depth [m]-->
+<Variable min_value="0" var_id="0" max_value="500"/>
+<!--Echo Amplitude [counts]-->
+<Variable min_value="0" var_id="1" max_value="200"/>
+<!--East Component [mm/s]-->
+<Variable min_value="-1000" var_id="2" max_value="750"/>
+<!--Direction [deg]-->
+<Variable min_value="0" var_id="5" max_value="400"/>
+</BasicVariables>
+<IsoSurfaceVariables>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--North Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+<!--East Component [mm/s] @ Depth [m]=150-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="150"/>
+<!--North Component [mm/s] @ Depth [m]=150-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="150"/>
+<!--North Component [mm/s] @ Depth [m]=200-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="200"/>
+<!--East Component [mm/s] @ Depth [m]=200-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="200"/>
+<!--East Component [mm/s] @ Depth [m]=50-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="50"/>
+<!--North Component [mm/s] @ Depth [m]=50-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="50"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="1290" sampleID="0"/>
+</View>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="winslow_tows">
+<GeographicMap>
+<MapDomain lon_max="186.075" lat_max="-1.337" lon_min="184.414" lat_min="-2.13625"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="8" x_right="186.075" y_offset_bb="1" y_length_bb="6.5" y_top="-1.337" x_length_bb="13.5" x_projection="100" y_projection="100" y_bottom="-2.13625" x_left="184.414"/>
+<GraphicsObjects>
+<GObject post_data="T" own_coordinates="T" type="15" dragging="F" clipping="T">
+<CdtFile border_color="0" line_color="0" symbol_type="-1" file_name="//lib2/studata/Data/OceanDataView/PIPA for ODV/Winslow/Winslow topography.shp" symbol_size="0" line_style="0" fill_color="-1" border_style="0" border_width="-1" line_width="1"/>
+</GObject>
+</GraphicsObjects>
+</Window>
+</MapWindow>
+<Section width="0.002832">
+<xNodes>185.738,185.669,185.64,185.508,185.492,185.309,185.28,185.116,185.084,185.041,185.016,185,184.952,184.879,184.913,184.722</xNodes>
+<yNodes>-2.07494,-1.75706,-1.71392,-1.41647,-1.46869,-1.63899,-1.70711,-1.86378,-1.91373,-1.62991,-1.6231,-1.40512,-1.44145,-1.61174,-1.63672,-1.87967</yNodes>
+</Section>
+<DataWindow>
+<AxisVariables>
+<!--Section Distance [km]-->
+<xAxis var_list="1" var_id="200000" is_reversed="F"/>
+<!--Depth-->
+<yAxis var_list="1" var_id="2" is_reversed="T"/>
+<!--Temperature-->
+<zAxis var_list="1" var_id="3" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="7" window_mode="2" window_type="0"/>
+<Contours draw="T">
+<Contour z_value="10" font_size="8"/>
+<Contour z_value="12.5" font_size="8"/>
+<Contour z_value="15" font_size="8"/>
+<Contour z_value="17.5" font_size="8"/>
+<Contour z_value="20" font_size="8"/>
+<Contour z_value="22.5" font_size="8"/>
+<Contour z_value="25" font_size="8"/>
+<Contour z_value="27.5" font_size="8"/>
+<Contour z_value="30" font_size="8"/>
+<Contour z_value="32.5" font_size="8"/>
+</Contours>
+<Gridding draw_shaded="T" auto_scale_lengths="T" x_scale_length="0.785117" y_scale_length="0.785117"/>
+<BadEstimateHiding hide="T" max_distance="3"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="3.5" x_right="277.512" y_offset_bb="8.9" y_length_bb="9.6" y_top="0" x_length_bb="23" y_bottom="205.479" x_left="0"/>
+<ColorScale z_range_start="10" z_range_end="32.5"/>
+</Window>
+</DataWindow>
+<BasicVariables>
+<!--Depth-->
+<Variable min_value="0" var_id="2" max_value="225"/>
+<!--Temperature-->
+<Variable min_value="10" var_id="3" max_value="32.5"/>
+<!--Salinity-->
+<Variable min_value="0" var_id="4" max_value="40"/>
+<!--Fluorescence-->
+<Variable min_value="0" var_id="5" max_value="1.5"/>
+</BasicVariables>
+<IsoSurfaceVariables>
+<!--Time @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--Depth @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--Temperature @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Salinity @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+</IsoSurfaceVariables>
+</View>

@@ -1,0 +1,2 @@
+ADD file: C:/Documents and Settings/Labutil/Desktop/Winslow tows combined.txt
+	39222 station(s) read from file.

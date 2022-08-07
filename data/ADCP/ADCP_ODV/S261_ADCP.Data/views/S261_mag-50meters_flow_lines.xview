@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="S261_ADCP">
+<GeographicMap>
+<MapDomain lat_min="-2.15183" lat_max="-1.24333" lon_min="184.602" lon_max="185.866"/>
+</GeographicMap>
+<MapWindow>
+<Symbol type="0" small_size="0.4" size="1.2" color="1"/>
+<Window>
+<Geometry y_top="-1.24333" x_length_bb="7" y_bottom="-2.15183" x_left="184.602" y_offset_bb="7" x_projection="100" x_offset_bb="1" y_projection="100" y_length_bb="7" x_right="185.866"/>
+</Window>
+</MapWindow>
+<Section width="0.006056">
+<xNodes>185.777,185.507,185.085,184.98,184.762,184.793,184.715</xNodes>
+<yNodes>-2.13107,-1.40946,-1.93379,-1.39388,-1.87149,-1.95975,-1.98571</yNodes>
+</Section>
+<DataWindow>
+<AxisVariables>
+<!--Longitude-->
+<xAxis var_id="0" is_reversed="F" var_list="2"/>
+<!--Latitude-->
+<yAxis var_id="1" is_reversed="F" var_list="2"/>
+<!--Magnitude [mm/s] @ Depth [m]=50-->
+<zAxis var_id="14" is_reversed="F" var_list="2"/>
+</AxisVariables>
+<Modes plot_mode="6" window_mode="3" window_type="0"/>
+<Arrows x_var_id="12" y_var_id="13" arrow_color="-2" line_style="0" scale="175" line_width="3"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry y_top="-1.24333" x_length_bb="19" y_bottom="-2.15183" x_left="184.602" y_offset_bb="2" x_projection="100" x_offset_bb="9.5" y_projection="100" y_length_bb="18" x_right="185.866"/>
+<ColorScale z_range_end="550" z_range_start="0"/>
+<UnitArrow y_coordinate="4.26651" dragging="T" font_size="13.1456" text_color="0" clipping="F" background_color="30" arrow_color="0" post_data="T" arrow_length="1" own_coordinates="F" frame_color="0" x_coordinate="9.6" frame_width="0" text="175 mm/s"/>
+<GraphicsObjects>
+<GObject dragging="T" type="1" clipping="F" post_data="T" own_coordinates="T">
+<Annotation y_coordinate="-1.61077" font_size="12.886" text_color="0" frame_type="0" background_color="-1" text_alignment="0" frame_color="-1" angle="0" x_coordinate="185.053" frame_width="-1" text="-20 m"/>
+</GObject>
+<GObject dragging="T" type="1" clipping="F" post_data="T" own_coordinates="T">
+<Annotation y_coordinate="-1.67133" font_size="12.886" text_color="0" frame_type="0" background_color="-1" text_alignment="0" frame_color="-1" angle="0" x_coordinate="184.915" frame_width="0" text="-2928 m"/>
+</GObject>
+<GObject dragging="T" type="1" clipping="F" post_data="T" own_coordinates="T">
+<Annotation y_coordinate="-1.74603" font_size="12.886" text_color="0" frame_type="0" background_color="-1" text_alignment="0" frame_color="-1" angle="0" x_coordinate="185.231" frame_width="0" text="-2340 m"/>
+</GObject>
+<GObject dragging="T" type="1" clipping="F" post_data="T" own_coordinates="T">
+<Annotation y_coordinate="-1.90553" font_size="12.886" text_color="0" frame_type="0" background_color="-1" text_alignment="0" frame_color="-1" angle="0" x_coordinate="185.269" frame_width="0" text="-882 m"/>
+</GObject>
+<GObject dragging="T" type="1" clipping="F" post_data="T" own_coordinates="T">
+<Annotation y_coordinate="-1.71575" font_size="12.886" text_color="0" frame_type="0" background_color="-1" text_alignment="0" frame_color="-1" angle="0" x_coordinate="184.802" frame_width="0" text="-851 m"/>
+</GObject>
+<GObject dragging="T" type="1" clipping="F" post_data="T" own_coordinates="T">
+<Annotation y_coordinate="-1.78237" font_size="12.886" text_color="0" frame_type="0" background_color="-1" text_alignment="0" frame_color="-1" angle="0" x_coordinate="185.371" frame_width="0" text="-2 m"/>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>185.045,185.059</xValues>
+<yValues>-2.07915,-2.06098</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.891,184.92</xValues>
+<yValues>-1.48762,-1.4755</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.893,184.909</xValues>
+<yValues>-1.48963,-1.51588</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.851,184.887</xValues>
+<yValues>-1.56231,-1.57039</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.849,184.845</xValues>
+<yValues>-1.56433,-1.59462</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.725,184.752</xValues>
+<yValues>-1.86919,-1.86717</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.723,184.731</xValues>
+<yValues>-1.86919,-1.8389</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.893,184.907</xValues>
+<yValues>-1.9237,-1.90351</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>184.893,184.915</xValues>
+<yValues>-1.9237,-1.94187</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="T" line_color="17" line_type="0" line_width="3"/>
+<xValues>185.154,185.108,185.023,184.948,184.893,184.853,184.774,184.725</xValues>
+<yValues>-1.78439,-1.78439,-1.76017,-1.7319,-1.73796,-1.75613,-1.82881,-1.86919</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="T" line_color="17" line_type="0" line_width="3"/>
+<xValues>185.081,185.009,184.934,184.893,184.853</xValues>
+<yValues>-1.72383,-1.70767,-1.66326,-1.63499,-1.56231</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="T" line_color="17" line_type="0" line_width="3"/>
+<xValues>185.714,185.551,185.391,185.267,185.047</xValues>
+<yValues>-1.79449,-1.81871,-1.90553,-2.02666,-2.08117</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="T" line_color="17" line_type="0" line_width="3"/>
+<xValues>185.29,185.193,185.114,185.031,184.893</xValues>
+<yValues>-1.4856,-1.53405,-1.54616,-1.53001,-1.48762</yValues>
+</GObject>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="T">
+<Path fill_color="-1" smoothing="T" line_color="17" line_type="0" line_width="3"/>
+<xValues>185.371,185.33,185.288,185.233,185.154,185.006,184.895</xValues>
+<yValues>-1.53001,-1.59865,-1.68547,-1.78439,-1.85303,-1.90351,-1.9237</yValues>
+</GObject>
+<GObject dragging="F" type="15" clipping="T" post_data="T" own_coordinates="T">
+<CdtFile border_width="-1" symbol_type="-1" fill_color="-1" symbol_size="0" line_style="1" line_color="0" border_style="0" file_name="/Users/SamHill/Desktop/PIPA for ODV/Winslow/Winslow topography.shp" line_width="1" border_color="0"/>
+</GObject>
+</GraphicsObjects>
+</Window>
+</DataWindow>
+<Canvas>
+<GraphicsObjects>
+<GObject dragging="T" type="11" clipping="T" post_data="T" own_coordinates="F">
+<Path fill_color="-1" smoothing="F" line_color="17" line_type="0" line_width="3"/>
+<xValues>16.142,16.4764</xValues>
+<yValues>5.2576,5.13603</yValues>
+</GObject>
+</GraphicsObjects>
+</Canvas>
+<BasicVariables>
+<!--Depth [m]-->
+<Variable var_id="0" max_value="600" min_value="0"/>
+<!--Echo Amplitude [counts]-->
+<Variable var_id="1" max_value="200" min_value="0"/>
+<!--East Component [mm/s]-->
+<Variable var_id="2" max_value="750" min_value="-1000"/>
+<!--Direction [deg]-->
+<Variable var_id="5" max_value="400" min_value="0"/>
+</BasicVariables>
+<IsoSurfaceVariables>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<IsoVariable surface_value="first" var_id="1" surface_var_id="0"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_value="first" var_id="2" surface_var_id="0"/>
+<!--North Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_value="first" var_id="3" surface_var_id="0"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_value="first" var_id="4" surface_var_id="0"/>
+<!--East Component [mm/s] @ Depth [m]=150-->
+<IsoVariable surface_value="150" var_id="2" surface_var_id="0"/>
+<!--North Component [mm/s] @ Depth [m]=150-->
+<IsoVariable surface_value="150" var_id="3" surface_var_id="0"/>
+<!--North Component [mm/s] @ Depth [m]=200-->
+<IsoVariable surface_value="200" var_id="3" surface_var_id="0"/>
+<!--East Component [mm/s] @ Depth [m]=200-->
+<IsoVariable surface_value="200" var_id="2" surface_var_id="0"/>
+<!--East Component [mm/s] @ Depth [m]=50-->
+<IsoVariable surface_value="50" var_id="2" surface_var_id="0"/>
+<!--North Component [mm/s] @ Depth [m]=50-->
+<IsoVariable surface_value="50" var_id="3" surface_var_id="0"/>
+<!--Magnitude [mm/s] @ Depth [m]=50-->
+<IsoVariable surface_value="50" var_id="4" surface_var_id="0"/>
+<!--Magnitude [mm/s] @ Depth [m]=150-->
+<IsoVariable surface_value="150" var_id="4" surface_var_id="0"/>
+<!--Magnitude [mm/s] @ Depth [m]=200-->
+<IsoVariable surface_value="200" var_id="4" surface_var_id="0"/>
+<!--Magnitude [mm/s] @ Depth [m]=100-->
+<IsoVariable surface_value="100" var_id="4" surface_var_id="0"/>
+<!--East Component [mm/s] @ Depth [m]=100-->
+<IsoVariable surface_value="100" var_id="2" surface_var_id="0"/>
+<!--North Component [mm/s] @ Depth [m]=100-->
+<IsoVariable surface_value="100" var_id="3" surface_var_id="0"/>
+<SampleSelectionCriteria>
+<SampleSelectionEntry var_id="0">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+<SampleSelectionEntry var_id="1">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+<SampleSelectionEntry var_id="2">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+<SampleSelectionEntry var_id="3">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+<SampleSelectionEntry var_id="4">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+<SampleSelectionEntry var_id="5">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+<SampleSelectionEntry var_id="6">
+<QualityFilter schema_id="0">56</QualityFilter>
+</SampleSelectionEntry>
+</SampleSelectionCriteria>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="1354" sampleID="0"/>
+</View>

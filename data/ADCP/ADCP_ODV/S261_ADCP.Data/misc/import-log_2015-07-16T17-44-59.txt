@@ -1,0 +1,2 @@
+ADD file: C:/Data/OceanDataView/ADCP Text Files/ODV_S261001_483-626_1-30.txt
+	144 station(s) read from file.

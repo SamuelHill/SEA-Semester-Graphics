@@ -1,0 +1,1 @@
+Station 4 has temp copied for both temp and sal data.

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="S261_ADCP">
+<GeographicMap>
+<MapDomain lon_max="206.88" lat_max="21.8279" lon_min="193.645" lat_min="13.1666"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="1" x_right="206.88" y_offset_bb="1" y_length_bb="6.6" y_top="21.8279" x_length_bb="8.5" x_projection="100" y_projection="100" y_bottom="13.1666" x_left="193.645"/>
+</Window>
+</MapWindow>
+<Section width="0.01" coordinate="2">
+<xNodes>202.088,202.088,201.972,201.837,201.605,201.45,200.794,200.523,199.963,199.074,198.301</xNodes>
+<yNodes>21.2946,21.2026,20.9452,20.0809,19.6396,18.9775,18.6465,17.5616,16.3847,14.8951,13.6447</yNodes>
+</Section>
+<DataWindow>
+<AxisVariables>
+<!--Section Latitude-->
+<xAxis var_list="1" var_id="200000" is_reversed="T"/>
+<!--Depth [m]-->
+<yAxis var_list="1" var_id="0" is_reversed="T"/>
+<!--Echo Amplitude [counts]-->
+<zAxis var_list="1" var_id="1" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="2" window_mode="2" window_type="0"/>
+<Gridding draw_shaded="T" auto_scale_lengths="T" x_scale_length="0.282488" y_scale_length="1.06399"/>
+<BadEstimateHiding hide="T" max_distance="3"/>
+<Window>
+<Geometry x_offset_bb="3.5" x_right="13.6447" y_offset_bb="9.3" y_length_bb="9.2" y_top="0" x_length_bb="23" y_bottom="600" x_left="21.2946"/>
+<ColorScale z_range_start="0" z_range_end="200"/>
+</Window>
+</DataWindow>
+<DataWindow>
+<AxisVariables>
+<!--Echo Amplitude [counts]-->
+<xAxis var_list="1" var_id="1" is_reversed="F"/>
+<!--Depth [m]-->
+<yAxis var_list="1" var_id="0" is_reversed="T"/>
+</AxisVariables>
+<Modes plot_mode="0" window_mode="2" window_type="0"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="12" x_right="200" y_offset_bb="1.5" y_length_bb="5.2" y_top="0" x_length_bb="6" y_bottom="600" x_left="0"/>
+</Window>
+</DataWindow>
+<DataWindow>
+<AxisVariables>
+<!--East Component [mm/s]-->
+<xAxis var_list="1" var_id="2" is_reversed="F"/>
+<!--Depth [m]-->
+<yAxis var_list="1" var_id="0" is_reversed="T"/>
+</AxisVariables>
+<Modes plot_mode="0" window_mode="2" window_type="0"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="21" x_right="1000" y_offset_bb="1.5" y_length_bb="5.2" y_top="0" x_length_bb="6" y_bottom="600" x_left="-2250"/>
+</Window>
+</DataWindow>
+<BasicVariables>
+<!--Depth [m]-->
+<Variable min_value="0" var_id="0" max_value="600"/>
+<!--Echo Amplitude [counts]-->
+<Variable min_value="0" var_id="1" max_value="200"/>
+<!--East Component [mm/s]-->
+<Variable min_value="-2500" var_id="2" max_value="1000"/>
+</BasicVariables>
+<IsoSurfaceVariables>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--North Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="168" sampleID="42"/>
+</View>

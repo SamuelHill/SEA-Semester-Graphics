@@ -1,0 +1,36 @@
+
+[Application Window]
+Status = 000000ff00000000fd0000000100000001000000be00000289fc0200000003fb00000016004300750072007200530074006100740069006f006e0100000015000000a5000000a5000000a5fb00000014004300750072007200530061006d0070006c006501000000be000000bb000000bb000000bbfb00000010004300750072007200490073006f0076010000017d00000121000000d1000000d1000004890000028900000004000000040000000800000008fc00000000
+
+[Good Coverage]
+# Values = 4
+% Values = 60
+Gap Slope = 0.5
+Gap Upper Limit = 700
+Gap@minPrimVar = 175
+
+[Import Sample Matching]
+AddNonMatchingSamples = 1
+ToleranceFactor = 0.02
+ToleranceLowerBound = 10
+ToleranceOffset = 0
+
+[Import Station Matching]
+CheckCruiseLabel = 1
+CheckLatitude = 1
+CheckLongitude = 1
+CheckStationLabel = 1
+CheckStationType = 1
+CheckTime = 1
+CruiseAliases = 
+Cruises = 
+LatitudeTolerance = 0.1
+LongitudeTolerance = 0.1
+TimeTolerance = 1
+
+[Recent]
+ImportDir = //Lib2/studata/Research resources/Seamounts!/Data/Winslow tows in ODV/HC data.txt
+MapProperties_Page = 4
+OGRDir = //lib2/studata/Data/OceanDataView/PIPA for ODV/Winslow/
+View = //Lib2/studata/Research resources/Seamounts!/Data/~13514~Win_SAL.xview
+WinProperties_Page = 3

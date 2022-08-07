@@ -1,0 +1,2 @@
+MERGE file: C:/Data/OceanDataView/ADCP Text Files/ODV_S261001_1-23_31-60.txt
+	23 station(s) read from file.

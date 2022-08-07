@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="Winslow tows combined">
+<GeographicMap>
+<MapDomain lon_max="186.075" lat_max="-1.337" lon_min="184.414" lat_min="-2.13625"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="8" x_right="186.075" y_offset_bb="1" y_length_bb="6.5" y_top="-1.337" x_length_bb="13.5" x_projection="100" y_projection="100" y_bottom="-2.13625" x_left="184.414"/>
+<GraphicsObjects>
+<GObject post_data="T" own_coordinates="T" type="15" dragging="F" clipping="T">
+<CdtFile border_color="0" line_color="0" symbol_type="-1" file_name="//lib2/studata/Data/OceanDataView/PIPA for ODV/Winslow/Winslow topography.shp" symbol_size="0" line_style="0" fill_color="-1" border_style="0" border_width="-1" line_width="1"/>
+</GObject>
+</GraphicsObjects>
+</Window>
+</MapWindow>
+<Section width="0.002576">
+<xNodes>185.76,185.679,185.493,185.502,185.315,185.287,185.117,185.084,185.043,185.022,184.995,184.955,184.879,184.898,184.721</xNodes>
+<yNodes>-2.08956,-1.75282,-1.39711,-1.46509,-1.6469,-1.7133,-1.85716,-1.90459,-1.63899,-1.63425,-1.39395,-1.43821,-1.61528,-1.64374,-1.87297</yNodes>
+</Section>
+<PickedStations>
+<Station line_color="4" text_alignment="5" symbol_type="0" frame_color="4" line_style="0" sequence_id="29448" fill_color="4" frame_width="1"/>
+<Station line_color="2" text_alignment="7" symbol_type="1" frame_color="2" line_style="0" sequence_id="34025" fill_color="2" frame_width="1"/>
+<Station line_color="5" text_alignment="8" symbol_type="2" frame_color="5" line_style="0" sequence_id="36275" fill_color="5" frame_width="1"/>
+<Station line_color="6" text_alignment="8" symbol_type="3" frame_color="6" line_style="0" sequence_id="24529" fill_color="6" frame_width="1"/>
+<Station line_color="8" text_alignment="5" symbol_type="4" frame_color="8" line_style="0" sequence_id="1925" fill_color="8" frame_width="1"/>
+<Station line_color="0" text_alignment="8" symbol_type="5" frame_color="0" line_style="0" sequence_id="6828" fill_color="0" frame_width="2"/>
+<Station line_color="1" text_alignment="6" symbol_type="6" frame_color="1" line_style="0" sequence_id="10790" fill_color="1" frame_width="2"/>
+<Station line_color="3" text_alignment="7" symbol_type="7" frame_color="3" line_style="0" sequence_id="18362" fill_color="3" frame_width="2"/>
+<Station line_color="9" text_alignment="7" symbol_type="0" frame_color="9" line_style="0" sequence_id="15989" fill_color="-1" frame_width="1"/>
+<Station line_color="12" text_alignment="8" symbol_type="1" frame_color="12" line_style="0" sequence_id="20517" fill_color="-1" frame_width="1"/>
+</PickedStations>
+<DataWindow>
+<AxisVariables>
+<!--Section Distance [km]-->
+<xAxis var_list="1" var_id="200000" is_reversed="F"/>
+<!--Depth-->
+<yAxis var_list="1" var_id="2" is_reversed="T"/>
+<!--Salinity-->
+<zAxis var_list="1" var_id="4" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="7" window_mode="2" window_type="0"/>
+<Contours draw="T">
+<Contour z_value="34.25" font_size="8"/>
+<Contour z_value="34.5" font_size="8"/>
+<Contour z_value="34.75" font_size="8"/>
+<Contour z_value="35" font_size="8"/>
+<Contour z_value="35.25" font_size="8"/>
+<Contour z_value="35.5" font_size="8"/>
+<Contour z_value="35.75" font_size="8"/>
+<Contour z_value="36" font_size="8"/>
+</Contours>
+<Gridding draw_shaded="T" auto_scale_lengths="T" x_scale_length="1.2099" y_scale_length="0.460787"/>
+<BadEstimateHiding hide="T" max_distance="3"/>
+<DataMark size="0.2" color="17"/>
+<Window>
+<Geometry x_offset_bb="3.5" x_right="282.191" y_offset_bb="8.9" y_length_bb="9.6" y_top="0" x_length_bb="23" y_bottom="205.479" x_left="0"/>
+<ColorScale z_range_start="34.25" z_range_end="36"/>
+</Window>
+</DataWindow>
+<BasicVariables>
+<!--Depth-->
+<Variable min_value="0" var_id="2" max_value="225"/>
+<!--Salinity-->
+<Variable min_value="34" var_id="4" max_value="36.25"/>
+<!--Fluorescence-->
+<Variable min_value="0" var_id="5" max_value="1.5"/>
+</BasicVariables>
+<IsoSurfaceVariables>
+<!--Time @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--Depth @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--Temperature @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Salinity @ Date=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="35280" sampleID="0"/>
+</View>

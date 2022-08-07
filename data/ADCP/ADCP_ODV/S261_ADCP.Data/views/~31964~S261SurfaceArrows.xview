@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.18" collection="S261_ADCP">
+<GeographicMap>
+<MapDomain lon_max="209.582" lat_max="22.7848" lon_min="185.548" lat_min="-0.54884"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="8" x_right="209.582" y_offset_bb="1" y_length_bb="6.5" y_top="22.7848" x_length_bb="13.5" x_projection="100" y_projection="100" y_bottom="-0.54884" x_left="185.548"/>
+</Window>
+</MapWindow>
+<Section width="0.036628" coordinate="2">
+<xNodes>202.044,201.212,200.82,199.205,196.415,194.946,194.016,193.771,193.331,193.331,192.939</xNodes>
+<yNodes>21.2484,18.9439,18.5598,14.8629,9.82167,7.94921,5.26056,3.24408,2.42788,1.2756,0.891508</yNodes>
+</Section>
+<DataWindow>
+<AxisVariables>
+<!--Section Latitude-->
+<xAxis var_list="1" var_id="200000" is_reversed="F"/>
+<!--Depth [m]-->
+<yAxis var_list="1" var_id="0" is_reversed="T"/>
+<!--East Component [mm/s]-->
+<zAxis var_list="1" var_id="2" is_reversed="F"/>
+</AxisVariables>
+<Modes plot_mode="1" window_mode="2" window_type="0"/>
+<Contours draw="T">
+<Contour z_value="-1250" font_size="8"/>
+<Contour z_value="-1000" font_size="8"/>
+<Contour z_value="-750" font_size="8"/>
+<Contour z_value="-500" font_size="8"/>
+<Contour z_value="-250" font_size="8"/>
+<Contour z_value="0" font_size="8"/>
+<Contour z_value="250" font_size="8"/>
+<Contour z_value="500" font_size="8"/>
+<Contour z_value="750" font_size="8"/>
+</Contours>
+<Gridding draw_shaded="T" auto_scale_lengths="F" x_scale_length="1.2" y_scale_length="1.5"/>
+<BadEstimateHiding hide="T" max_distance="3"/>
+<Window>
+<Geometry x_offset_bb="3.5" x_right="21.2484" y_offset_bb="8.9" y_length_bb="9.6" y_top="0" x_length_bb="17.5" y_bottom="600" x_left="0.891508"/>
+<ColorScale z_range_start="-1001.82" z_range_end="743.636"/>
+</Window>
+</DataWindow>
+<BasicVariables>
+<!--Depth [m]-->
+<Variable min_value="0" var_id="0" max_value="600"/>
+<!--Echo Amplitude [counts]-->
+<Variable min_value="0" var_id="1" max_value="200"/>
+<!--East Component [mm/s]-->
+<Variable min_value="-2500" var_id="2" max_value="1500"/>
+</BasicVariables>
+<IsoSurfaceVariables>
+<!--Echo Amplitude [counts] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--East Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+<!--North Component [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="3" surface_value="first"/>
+<!--Magnitude [mm/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="4" surface_value="first"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="621" sampleID="40"/>
+</View>

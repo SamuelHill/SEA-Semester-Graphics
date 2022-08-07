@@ -1,0 +1,79 @@
+
+[Application Window]
+Status = 000000ff00000000fd00000001000000010000010c000002dafc0200000003fb00000016004300750072007200530074006100740069006f006e0100000000000000bb00000069000000bbfb00000014004300750072007200530061006d0070006c006501000000bc000000bb00000069000000d1fb00000010004300750072007200490073006f007601000001780000016200000069000001d9000003f3000002da00000004000000040000000800000008fc00000000
+
+[Good Coverage]
+# Values = 4
+% Values = 60
+Gap Slope = 0.5
+Gap Upper Limit = 700
+Gap@minPrimVar = 175
+
+[Import Sample Matching]
+AddNonMatchingSamples = 1
+ToleranceFactor = 0.02
+ToleranceLowerBound = 10
+ToleranceOffset = 0
+
+[Import Station Matching]
+CheckCruiseLabel = 1
+CheckLatitude = 1
+CheckLongitude = 1
+CheckStationLabel = 1
+CheckStationType = 1
+CheckTime = 1
+CruiseAliases = 
+Cruises = 
+LatitudeTolerance = 0.1
+LongitudeTolerance = 0.1
+TimeTolerance = 1
+
+[Key Variables]
+CFC-10 [pmol/kg] = -1
+CFC-10 [pmol/l] = -1
+CFC-11 [pmol/kg] = -1
+CFC-11 [pmol/l] = -1
+CFC-113 [pmol/kg] = -1
+CFC-113 [pmol/l] = -1
+CFC-12 [pmol/kg] = -1
+CFC-12 [pmol/l] = -1
+CH4 [nmol/kg] = -1
+CH4 [nmol/l] = -1
+CO~_2 Fugacity fCO2 [~$m~#Atm] = -1
+CO~_2 Partial Pressure pCO2 [~$m~#Atm] = -1
+Conductivity [mS/cm] = -1
+Depth in Water Column [m] = 0
+Nitrate [~$m~#mol/kg] = -1
+Nitrate [~$m~#mol/l] = -1
+Oxygen [ml/l] = -1
+Oxygen [~$m~#mol/kg] = -1
+Phosphate [~$m~#mol/kg] = -1
+Phosphate [~$m~#mol/l] = -1
+Pot. Temperature [degC] (any ref.) = -1
+Practical Salinity [psu] = -1
+Pressure in Water Column [db] = -1
+SF6 [fmol/kg] = -1
+SF6 [fmol/l] = -1
+Seawater pH = -1
+Seawater pH [Free Scale] = -1
+Seawater pH [SWS Scale] = -1
+Seawater pH [Total Scale] = -1
+Silicate [~$m~#mol/kg] = -1
+Silicate [~$m~#mol/l] = -1
+Temperature [degC] = -1
+Total Alkalinity [~$m~#mol/kg] = -1
+Total Alkalinity [~$m~#mol/l] = -1
+Total Dissolved Inorganic Carbon [~$m~#mol/kg] = -1
+Total Dissolved Inorganic Carbon [~$m~#mol/l] = -1
+Variable with fCO2, pCO2 or pH input pressure values = -1
+Variable with fCO2, pCO2 or pH input temperature values = -1
+
+[Recent]
+ExportDir = /Users/SamHill/Desktop/ADCP/
+ImageFile = /Users/SamHill/Desktop/ADCP/S261_mag-200meters_flow_lines.eps
+ImportDir = C:/Data/OceanDataView/ADCP Text Files/ODV_S261003_546-637_31-60.txt
+MapProperties_Page = 0
+OGRDir = /Users/SamHill/Desktop/PIPA for ODV/Winslow/
+StatSelCriteria_Page = 0
+View = S261_mag-200meters_flow_lines.xview
+WinProperties_Page = 3
